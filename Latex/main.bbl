@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{Kajita2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KT}{%
+         family={Kajita},
+         familyi={K\bibinitperiod},
+         given={Takaaki},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society ({APS})}%
+    }
+    \strng{namehash}{KT1}
+    \strng{fullhash}{KT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kaj16}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1103/revmodphys.88.030501
+    \endverb
+    \field{number}{3}
+    \field{title}{Nobel Lecture: Discovery of atmospheric neutrino
+  oscillations}
+    \verb{url}
+    \verb https://doi.org/10.1103/revmodphys.88.030501
+    \endverb
+    \field{volume}{88}
+    \field{journaltitle}{Reviews of Modern Physics}
+    \field{month}{07}
+    \field{year}{2016}
+  \endentry
+\enddatalist
+\endinput

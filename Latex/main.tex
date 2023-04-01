@@ -1,0 +1,145 @@
+% !TeX root = ./main.tex
+
+% TEMPLATE thesis UniPD
+
+\documentclass[a4paper,12pt]{memoir} % memoir is book with abstract support
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%PACKAGES%%%%%%%%%%%%%%%%%%
+\usepackage[font=small,labelfont=bf]{caption} %Makes image caption small
+\usepackage[a-1b]{pdfx} % Generate a PDF/A
+
+\pdfpagewidth\paperwidth
+\pdfpageheight\paperheight
+
+\usepackage[english]{babel} % [english]
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern,amsmath,amssymb,graphicx}
+
+% Useful for SI units:
+\usepackage[per-mode=fraction,binary-units]{siunitx}
+
+% Useful for bibliography:
+\usepackage[style=alphabetic,natbib=false,doi=true,url=false, backend=bibtex]{biblatex}
+\addbibresource{Bibliography/bibl}
+
+% If you want to use subsections:
+\setsecnumdepth{subsection}
+
+\aliaspagestyle{chapter}{empty} % No page number on new chapter page
+
+% Small margins:
+\setulmarginsandblock{3cm}{*}{*}
+\setlrmarginsandblock{2cm}{*}{*}
+\checkandfixthelayout
+
+\title{Inverse Beta Decay events selection in JUNO using Machine Learning algorithms}
+\author{Candidate}
+\date{Discussion date}
+
+% METADATA for PDF
+\begin{filecontents*}{\jobname.xmpdata}
+\Title{Thesis title}
+\Author{Candidate}
+\Language{en-US} %{en-US}
+\Date{YYYY-MM-DD}
+\Keywords{keyword1\sep keyqord2\sep keyword3}
+\end{filecontents*}
+
+\hypersetup{hidelinks} % Hide link color boxes on pdf
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \frontmatter
+  \begin{titlingpage} % titlepage in book
+    \vspace{5mm}
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[scale=.13]{Images/logo.png}
+    \end{figure}
+    \vspace{5mm}
+    \begin{center}
+      {{\Large{\textsc{\textbf{UNIVERSITÀ DEGLI STUDI DI PADOVA}}}}\\}
+      \vspace{5mm}
+      {\textbf{Dipartimento di Fisica e Astronomia}} \\ % Department of XXXXXXXXXXXX
+      \vspace{5mm}
+      {\textsc{\textbf{Corso di Laurea Triennale in Fisica}}}\\ % Master's Degree in
+      \vspace{20mm}
+      {\textsc{\textbf{Tesi di Laurea}}}\\ % Final Dissertation
+      \vspace{25mm}
+      \begin{Spacing}{3}
+        {\Large \textbf{\thetitle}}\\
+      \end{Spacing}
+      \vspace{8mm}
+    \end{center}
+
+    \vspace{15mm}
+    \begin{Spacing}{1.5}
+      \begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+        Relatore && Laureando\\ % Supervisor && Candidate
+        \textbf{prof. Alberto Garfagnini} && \textbf{\theauthor}\\
+        Correlatori && \textbf{Badge Number}\\ % Co-supervisors
+        \textbf{dott. XXXXXX} && \\ % Dr.
+        \textbf{dott. XXXXXX} && \\ % Dr.
+      \end{tabular}
+    \end{Spacing}
+    \vspace{8 mm}
+    \begin{center}
+      \textbf{Anno Accademico YYYY/YYYY} % Academic Year
+          \vspace{5 mm}\\\textbf{\thedate}
+    \end{center}
+  \end{titlingpage}
+  \clearpage{\pagestyle{empty}\cleardoublepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{abstract}
+   The Jiangmen Underground Neutrino Observatory (JUNO) will be the largest liquid scintillator-based neutrino detectors in the World, for the next decade. Thanks to its large active mass (20 kt) and state of the art performances (3\% effective energy resolution at 1 MeV), it will be able to perform important measurements in neutrino physics. The proposed thesis will study the application of different Machine Learning inspired algorithms for the discrimination of signal events (interactions of anti-neutrinos coming from the nearby nuclear power plants) from background events.
+  \end{abstract}
+  \newpage
+% If abstract is required also in another language:
+% requires: \usepackage[italian, english]{babel}
+%   \begin{otherlanguage}{italian}
+%     \begin{abstract}
+%       Abstract in second language.
+%     \end{abstract}
+%   \end{otherlanguage}
+%   \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \tableofcontents
+  \newpage
+  %\listoffigures
+  %\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \mainmatter
+
+  \input{Chapters/chapter_1}
+  \input{Chapters/chapter_2}
+  
+%	\input{section/intro}
+% 	\input{section/more}
+%   \input{section/trials}
+%   \input{section/results}
+%   \input{section/conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \backmatter
+
+  \renewcommand{\bibname}{References}
+  \nocite{*}
+  \printbibliography
+
+
+
+
+
+\end{document}
