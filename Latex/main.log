@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  1 APR 2023 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  1 APR 2023 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,7 +1212,7 @@ Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
 Package biblatex Info: Reference section=0 on input line 55.
 Package biblatex Info: Reference segment=0 on input line 55.
-<Images/logo.png, id=34, 598.235pt x 602.25pt>
+<Images/logo.png, id=38, 598.235pt x 602.25pt>
 File: Images/logo.png Graphic file (type png)
 <use Images/logo.png>
 Package pdftex.def Info: Images/logo.png  used on input line 63.
@@ -1301,7 +1301,7 @@ n/12 2\OML/lmm/m/it/12 ^^R[]c[] [][] [] \OMS/lmsy/m/n/12 ^^@ [][] \OT1/lmr/m/n/
 12 2\OML/lmm/m/it/12 ^^R[] []
  []
 
-<Images/antineutino_to_antineutrino_probability_plot.png, id=76, 619.56468pt x 
+<Images/antineutino_to_antineutrino_probability_plot.png, id=81, 619.56468pt x 
 526.96875pt>
 File: Images/antineutino_to_antineutrino_probability_plot.png Graphic file (typ
 e png)
@@ -1311,14 +1311,31 @@ g  used on input line 59.
 (pdftex.def)             Requested size: 193.19705pt x 164.31548pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 60.
+<Images/juno_scheme_experiment.png, id=85, 616.55344pt x 550.30594pt>
+File: Images/juno_scheme_experiment.png Graphic file (type png)
+<use Images/juno_scheme_experiment.png>
+Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line 
+78.
+(pdftex.def)             Requested size: 338.09853pt x 301.77911pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
 [2 <./Images/antineutino_to_antineutrino_probability_plot.png>]
-<Images/juno_cheme_experiment.png, id=90, 895.09406pt x 545.03625pt>
-File: Images/juno_cheme_experiment.png Graphic file (type png)
-<use Images/juno_cheme_experiment.png>
-Package pdftex.def Info: Images/juno_cheme_experiment.png  used on input line 7
-9.
-(pdftex.def)             Requested size: 289.80295pt x 176.46936pt.
- [3 <./Images/juno_cheme_experiment.png>]) (Chapters/chapter_2.tex [4]) [5
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+[3 <./Images/juno_scheme_experiment.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+) (Chapters/chapter_2.tex [4]) [5
 
 ] [6
 
@@ -1345,18 +1362,18 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 42ACD91B716BBB5CEEEDED418677B5CD;387
-(rerunfilecheck)             After:  56189F0A04FC0ED057EC6858C36464CE;457.
+(rerunfilecheck)             Before: 23C418A764B07A093DE1A6AC3B182CB6;466
+(rerunfilecheck)             After:  D4755A17FFBD78FC31C8D4B0D6FA0637;466.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30598 strings out of 475385
- 567267 string characters out of 2776907
+ 30608 strings out of 475385
+ 567233 string characters out of 2776907
  1093484 words of memory out of 3000000
- 51578 multiletter control sequences out of 15000+600000
- 530082 words of font info for 67 fonts, out of 8000000 for 9000
+ 51583 multiletter control sequences out of 15000+600000
+ 536079 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,22n,93p,1886b,2568s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
@@ -1381,9 +1398,9 @@ io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fab
 io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fab
 io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabi
 o/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (11 pages, 1702208 bytes).
+Output written on main.pdf (11 pages, 1030564 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 84 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

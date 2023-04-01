@@ -22,13 +22,12 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: Bibliography/bibl.bib
-Warning--I didn't find a database entry for "einstein"
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 2 entries,
             6399 wiz_defined-function locations,
-            1214 strings with 9216 characters,
+            1213 strings with 9208 characters,
 and the built_in function-call counts, 7287 in all, are:
 = -- 465
 > -- 196
@@ -67,4 +66,3 @@ warning$ -- 0
 while$ -- 130
 width$ -- 0
 write$ -- 52
-(There was 1 warning)
