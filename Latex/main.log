@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  1 APR 2023 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  4 APR 2023 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1311,36 +1311,38 @@ g  used on input line 59.
 (pdftex.def)             Requested size: 193.19705pt x 164.31548pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 60.
-<Images/juno_scheme_experiment.png, id=85, 616.55344pt x 550.30594pt>
-File: Images/juno_scheme_experiment.png Graphic file (type png)
-<use Images/juno_scheme_experiment.png>
-Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line 
-78.
-(pdftex.def)             Requested size: 338.09853pt x 301.77911pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 [2 <./Images/antineutino_to_antineutrino_probability_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
+ []
+
+<Images/juno_scheme_experiment.png, id=95, 616.55344pt x 550.30594pt>
+File: Images/juno_scheme_experiment.png Graphic file (type png)
+<use Images/juno_scheme_experiment.png>
+Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line 
+84.
+(pdftex.def)             Requested size: 338.09853pt x 301.77911pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 [3 <./Images/juno_scheme_experiment.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 [4]
-<Images/backgrounds_spectrum.png, id=113, 1110.39844pt x 606.76688pt>
+<Images/backgrounds_spectrum.png, id=111, 1110.39844pt x 606.76688pt>
 File: Images/backgrounds_spectrum.png Graphic file (type png)
 <use Images/backgrounds_spectrum.png>
-Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 12
-8.
+Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 13
+6.
 (pdftex.def)             Requested size: 338.09853pt x 184.75346pt.
 ) (Chapters/chapter_2.tex [5 <./Images/backgrounds_spectrum.png>] [6
 
@@ -1370,8 +1372,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30624 strings out of 475385
- 567680 string characters out of 2776907
+ 30625 strings out of 475385
+ 567694 string characters out of 2776907
  1094269 words of memory out of 3000000
  51594 multiletter control sequences out of 15000+600000
  536079 words of font info for 69 fonts, out of 8000000 for 9000
@@ -1399,9 +1401,9 @@ io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fab
 io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fab
 io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabi
 o/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (13 pages, 1185647 bytes).
+Output written on main.pdf (13 pages, 1190811 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
+ 233 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,7 +51,7 @@ The theoretical framework for neutrino oscillations involves the calculation of 
 \end{equation*}
 
 where $s_{i j} \equiv \sin \theta_{i j}, c_{i j} \equiv \cos \theta_{i j}, \mathcal{E}$ is the neutrino energy, $L$ the travelled distance and $\Delta m_{i j}^2 \equiv m_i^2-m_j^2$. \\
-Past experiments have already given estimates for  $\Delta m_{21}^2,\left|\Delta m_{31}^2\right|$ and the  3 mixing angles. 
+Past experiments have already given estimates for  $\Delta m_{21}^2,\left|\Delta m_{31}^2\right|$ and the  3 mixing angles.
 
 
 \begin{figure}[h]
@@ -69,7 +69,13 @@ In fact, depending on the sign of $\Delta m_{31}^2$, the plot of \ref{fig:antine
 
 \section{The JUNO detector}
 
-The Jiangmen Underground Neutrino Observatory (JUNO) is an experiment that is currently under construction in Southern China. It is a multipurpose experiment that will use a 20 kton liquid scintillator (LS) detector, a water Cherenkov detector in which the detector is submerged, and a plastic scintillator array on the top of them to study neutrinos from a variety of natural sources as well as from nuclear reactors.
+The Jiangmen Underground Neutrino Observatory (JUNO) is an experiment that is currently under construction in Southern China, in Jinji town, 43 km to the southwest of Kaiping city. This multipurpose experiment is expected to detect a large number of antineutrinos from nuclear reactors, with most of them originating from the Taishan and Yangjiang nuclear power plants (NPPs). These two plants are located at a baseline of about 52.5 km from the JUNO detector, which was optimized for the best sensitivity to the neutrino mass ordering, and have a combined nominal thermal power of 26.6 $GW_{th}$. JUNO requires knowledge of the unoscillated reactor antineutrino spectrum shape, which is why a specialized small detector named TAO will be situated approximately 30 meters from one of the Taishan reactors to precisely measure it. The data collected by TAO will serve as a data-driven input to restrict the spectra of the other reactor cores.\\
+
+
+The JUNO detector comprises three main components, namely the Central Detector (CD), a water Cherenkov detector, and a Top Tracker (TT). The CD is a liquid scintillator (LS) detector, featuring an effective energy resolution of $\sigma_E/E =3\% / \sqrt{E (MeV)}$. It is composed of a 20 kton LS, enclosed within a spherical acrylic vessel, submerged in a water pool, that has a diameter of 43.5 m and a height of 44 m, providing sufficient buffer in all directions to protect the LS from the surrounding rock radioactivity. The water pool contains PMTs, which detect the Cherenkov light emitted from cosmic muons, acting as a veto detector.
+The vessel is supported by a stainless steel (SS) structure, via Connecting Bars, with CD Photomultiplier Tubes (PMTs) installed on the inner surface of the SS structure. 
+Compensation coils are mounted on the SS structure, aimed at suppressing the Earth's magnetic field and reducing its impact on the photoelectron collection efficiency of the PMTs. 
+Atop the water pool lies a Top Tracker, which comprises a plastic scintillator array designed to precisely measure muon tracks. The CD is connected to the outside through a chimney, which facilitates calibration operations. The Calibration House, located above the chimney, contains special radioactivity shielding and a muon detector.\\
 
 A schematic illustrating the location of both JUNO and TAO is shown in Fig. \ref{fig:junoschemeexperiment}.
 
@@ -80,26 +86,28 @@ A schematic illustrating the location of both JUNO and TAO is shown in Fig. \ref
 	\label{fig:junoschemeexperiment}
 \end{figure}
 
-%TAO
-JUNO is expected to detect a large number of antineutrinos from nuclear reactors, with most of them originating from the Taishan and Yangjiang nuclear power plants (NPPs). These two plants are located at a baseline of about 52.5 km from the JUNO detector, which was optimized for the best sensitivity to the neutrino mass ordering, and have a combined nominal thermal power of 26.6 $GW_{th}$. However, in order to precisely measure the unoscillated reactor antineutrino spectrum shape, a dedicated small satellite detector called TAO will be placed at about 30 m from one of the Taishan reactors. TAO will serve as a data-driven input to constrain the spectra of the other cores.\\
 
+\section{JUNO signal and background}
+\subsection{Signal}
 %LIQUID SCINTILLATOR
-To achieve its scientific goals, JUNO employs a large liquid scintillator detector with a fiducial mass of 20 kton. The detector is located in a cylindrical cavity excavated under a hill in Jiangmen City, Guangdong Province, China, at a depth of 700 m.w.e. to reduce background radiation from cosmic rays. The scintillator is doped with a small amount of gadolinium to enhance its sensitivity to antineutrinos via the inverse beta decay (IBD) process. The liquid scintillator used in JUNO is a combination of LAB (linear alkyl benzene) and PPO (2,5-diphenyloxazole) doped with a small amount of bis-MSB (1,4-bis(2-methylstyryl) benzene). When a neutrino interacts with the scintillator, it can produce charged particles such as electrons, protons, and alpha particles that travel through the scintillator and excite the scintillation molecules. This excitation results in the emission of photons with a wavelength of around 430 nm. These photons are detected by 20,000 20-inch photomultiplier tubes (PMTs) distributed in a 3-dimensional arrangement inside the detector.\\
+The scintillator is doped with a small amount of gadolinium to enhance its sensitivity to antineutrinos via the inverse beta decay (IBD) process. The liquid scintillator used in JUNO is a combination of LAB (linear alkyl benzene) and PPO (2,5-diphenyloxazole) doped with a small amount of bis-MSB (1,4-bis(2-methylstyryl) benzene). When a neutrino interacts with the scintillator, it can produce charged particles such as electrons, protons, and alpha particles that travel through the scintillator and excite the scintillation molecules. This excitation results in the emission of photons with a wavelength of around 430 nm. These photons are detected by 20,000 20-inch photomultiplier tubes (PMTs) distributed in a 3-dimensional arrangement inside the detector.\\
 
+
+
+
+\begin{equation}
+	\begin{aligned}
+		\overline{\nu}e + p &\rightarrow e^+ + n \\
+		n + ^A_ZX &\rightarrow ^{A}_{Z-1}X^* + \gamma \\
+		e^+ + e^- &\rightarrow 2\gamma
+	\end{aligned}
+\end{equation}
 
 The PMTs detect the light and convert it into an electrical signal. The signals from all the PMTs are then combined to reconstruct the position and energy of the original neutrino interaction. This technique allows JUNO to measure the energy of the incoming neutrino to high precision, which is crucial for studying neutrino oscillation.
 
 Moreover, the scintillator's composition and the detector's design are optimized to reduce background noise from other sources of radiation, such as cosmic rays and natural radioactivity. By carefully controlling these backgrounds, JUNO aims to achieve a signal-to-background ratio of better than 1:10,000, which is essential for observing the subtle effects of neutrino oscillation.
 
-
 In JUNO's location, the energy spectrum will be distorted by two types of oscillations. The first is a slow (low frequency) oscillation driven by $\Delta m_{21}^2$ and modulated by $\sin ^2 \theta_{12}$, while the second is a fast (high frequency) oscillation driven by $\Delta m_{31}^2$ and modulated by $\sin ^2 \theta_{13}$. Fitting the data spectrum against the predicted spectrum distorted by standard neutrino oscillations enables measuring the oscillation parameters.\\
-
-In addition to studying reactor antineutrinos, JUNO will also investigate neutrinos from natural sources such as the Sun, supernovae, and atmospheric neutrinos.
-
-\section{JUNO signal and background}
-\subsection{Signal}
-
-
 \subsection{Background}
 Several different types of backgrounds signal are produced in the detector. For analysis we deeply analysed only the three most important contributes:
 
@@ -121,9 +129,9 @@ Atmospheric neutrino backgrounds arise from interactions of cosmic ray protons a
 Reactor antineutrino backgrounds arise from the neutrinos produced in the nuclear reactors that power the JUNO experiment. These antineutrinos are the main signal for JUNO, but a small fraction of them can interact with the detector in ways that mimic background events. These interactions can produce both charged and neutral current events, which can be difficult to distinguish from the signal.
 
 
+Here a viasualization sumary of all the bacgrounds contributions:
 
-
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Images/backgrounds_spectrum}
 	\caption{Visible energy spectrum as measured by the LPMT system with (grey) and without (black) backgrounds is that which is anticipated for JUNO. The energy resolution is one of the assumptions listed in the text. The predicted backgrounds, which make up around 7$\%$ of the whole sample of IBD candidates and are primarily confined below, are shown in the inset as spectra. ~ 3 MeV}
