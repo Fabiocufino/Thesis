@@ -9,31 +9,35 @@ There are several machine learning algorithms that can be used for this purpose,
 
 \subsection{Supervised Learning}
 
-In supervised learning, the algorithm is trained on a labeled dataset, where the input data is accompanied by the correct output. The goal of the algorithm is to learn a function that can map input data to output data. Some examples of supervised learning algorithms include linear regression, logistic regression, decision trees, and support vector machines.
+Supervised learning is a machine learning technique in which the algorithm is trained on a labeled dataset, where the input data is accompanied by the correct output. The goal of the algorithm is to learn a function that can map input data to output data. Some examples of supervised learning algorithms include linear regression, logistic regression, decision trees, and support vector machines.
 
 To understand the consepts of supervised learning it is useful to discuss a simle machin learning algorithm, linear regression. 
 
-\section{Linear Regression}
+\subsection{Linear Regression}
 Linear regression is a type of supervised learning algorithm used in machine learning for predictive analysis. It is used to model the relationship between a dependent variable (also called the target variable) and one or more independent variables (also called the features or predictors).
-
+\\
 The basic idea behind linear regression is to find the best-fitting line that describes the relationship between the independent and dependent variables. This line is often called the regression line or the line of best fit. The equation of this line can be written as:
 
 \begin{equation}
-	y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p + \epsilon
+	y = w_0 + w_1 x_1 + w_2 x_2 + ... + w_n x_n 
 \end{equation}
+ where 
+\begin{itemize}
+	\item $y$ is the dependent variable
+	\item $x_1, x_2, ..., x_p$ are the independent variables
+	\item $w_0, w_1, w_2, ..., w_n$ are the coefficients or parameters of the model
+\end{itemize}
 
-where $y$ is the dependent variable, $x_1, x_2, ..., x_p$ are the independent variables, $\beta_0, \beta_1, \beta_2, ..., \beta_p$ are the coefficients or parameters of the model, and $\epsilon$ is the error term. The error term captures the deviation of the actual values of the dependent variable from the predicted values.
-
-In order to determine the values of the coefficients $\beta_0, \beta_1, \beta_2, ..., \beta_p$, a common approach is to minimize a loss function, which measures the difference between the predicted values of the dependent variable and the actual values. The most commonly used loss function in linear regression is the mean squared error (MSE) function, which is defined as:
+In order to determine the values of the coefficients $w_0, w_1, w_2, ..., w_n$, a common approach is to minimize a loss function, which measures the difference between the predicted values of the dependent variable and the actual values. The most commonly used loss function in linear regression is the mean squared error (MSE) function, which is defined as:
 
 \begin{equation}
-	L(\beta_0, \beta_1, \beta_2, ..., \beta_p) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
+	L(w_0, w_1, w_2, ..., w_n) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
 \end{equation}
 
 where $n$ is the number of observations, $y_i$ is the actual value of the dependent variable for the $i$-th observation, and $\hat{y_i}$ is the predicted value of the dependent variable for the $i$-th observation.
 
-The goal of linear regression is to find the values of the coefficients $\beta_0, \beta_1, \beta_2, ..., \beta_p$ that minimize the loss function $L(\beta_0, \beta_1, \beta_2, ..., \beta_p)$. This can be achieved using various optimization techniques such as gradient descent or normal equations.
+The goal of linear regression is to find the values of the coefficients $w_0, w_1, w_2, ..., w_n$ that minimize the loss function $L(w_0, w_1, w_2, ..., w_n)$. This can be achieved using various optimization techniques such as gradient descent or normal equations.\\
 
-However, it is important to note that linear regression can suffer from overfitting or underfitting. Overfitting occurs when the model is too complex and captures noise in the data, while underfitting occurs when the model is too simple and fails to capture the underlying patterns in the data. To prevent overfitting or underfitting, regularization techniques such as Ridge regression or Lasso regression can be used.
+However, it is important to note that linear regression, and also other machine learning alghoritms can suffer from overfitting or underfitting. Overfitting occurs when the model is too complex and captures noise in the data, while underfitting occurs when the model is too simple and fails to capture the underlying patterns in the data. To prevent overfitting or underfitting, regularization techniques such as Ridge regression or Lasso regression can be used.
 
 
