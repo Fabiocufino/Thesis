@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  8 MAY 2023 23:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  7 JUN 2023 00:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,7 +1212,7 @@ Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
 Package biblatex Info: Reference section=0 on input line 55.
 Package biblatex Info: Reference segment=0 on input line 55.
-<Images/logo.png, id=58, 598.235pt x 602.25pt>
+<Images/logo.png, id=70, 598.235pt x 602.25pt>
 File: Images/logo.png Graphic file (type png)
 <use Images/logo.png>
 Package pdftex.def Info: Images/logo.png  used on input line 63.
@@ -1301,7 +1301,7 @@ n/12 2\OML/lmm/m/it/12 ^^R[]c[] [][] [] \OMS/lmsy/m/n/12 ^^@ [][] \OT1/lmr/m/n/
 12 2\OML/lmm/m/it/12 ^^R[] []
  []
 
-<Images/antineutino_to_antineutrino_probability_plot.png, id=106, 619.56468pt x
+<Images/antineutino_to_antineutrino_probability_plot.png, id=121, 619.56468pt x
  526.96875pt>
 File: Images/antineutino_to_antineutrino_probability_plot.png Graphic file (typ
 e png)
@@ -1321,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--79
 
  []
 
-<Images/juno_scheme_experiment.png, id=120, 616.55344pt x 550.30594pt>
+<Images/juno_scheme_experiment.png, id=135, 616.55344pt x 550.30594pt>
 File: Images/juno_scheme_experiment.png Graphic file (type png)
 <use Images/juno_scheme_experiment.png>
 Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line 
@@ -1338,7 +1338,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
  []
 
 [4]
-<Images/backgrounds_spectrum.png, id=136, 1110.39844pt x 606.76688pt>
+<Images/backgrounds_spectrum.png, id=151, 1110.39844pt x 606.76688pt>
 File: Images/backgrounds_spectrum.png Graphic file (type png)
 <use Images/backgrounds_spectrum.png>
 Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 13
@@ -1351,27 +1351,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[7]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-6.
- (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+2.
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+) [7]
+Overfull \hbox (28.26588pt too wide) in paragraph at lines 36--37
+[]\T1/lmr/m/n/12 The ob-jec-tive of lin-ear re-gres-sion is to de-ter-mine the 
+op-ti-mal val-ues of co-ef-fi-cients $\OML/lmm/m/it/12 w[]; w[]; w[]; :::; w[]$
 
  []
 
-) (Chapters/chapter_3.tex [8]) [9
 
-] [10
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+[8]
+<Images/XGBoost.png, id=179, 724.20563pt x 517.935pt>
+File: Images/XGBoost.png Graphic file (type png)
+<use Images/XGBoost.png>
+Package pdftex.def Info: Images/XGBoost.png  used on input line 91.
+(pdftex.def)             Requested size: 386.40147pt x 276.34564pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (Chapters/chapter_3.tex [9] [10 <./Images/XGBoost.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
 
 ]
+[12]
+<Images/hist_features.png, id=202, 1073.9322pt x 715.473pt>
+File: Images/hist_features.png Graphic file (type png)
+<use Images/hist_features.png>
+Package pdftex.def Info: Images/hist_features.png  used on input line 88.
+(pdftex.def)             Requested size: 483.0pt x 321.7852pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]) [14 <./Images/hist_features.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 40.
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [11
+) [15
+
 
 ]
 \tf@toc=\write7
@@ -1383,16 +1417,16 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B3FB81A029E97EB658B09204D19B6D36;762.
+(rerunfilecheck)             Checksum: 2EB260C0127990FA715DF8259D278619;962.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30680 strings out of 475385
- 568958 string characters out of 2776907
- 1094276 words of memory out of 3000000
- 51631 multiletter control sequences out of 15000+600000
+ 30726 strings out of 475385
+ 569766 string characters out of 2776907
+ 1094396 words of memory out of 3000000
+ 51655 multiletter control sequences out of 15000+600000
  536454 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,22n,93p,1886b,2568s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1419,9 +1453,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (15 pages, 1204300 bytes).
+Output written on main.pdf (19 pages, 1325211 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
