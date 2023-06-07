@@ -1,4 +1,12 @@
 \chapter{Introduction}
+
+The Jiangmen Underground Neutrino Observatory (JUNO), currently under construction in southern China, is a large liquid scintillator neutrino detector. It is designed to detect electron antineutrino interactions produced by nearby Nuclear Power Plants (NPP) through the inverse beta decay reaction. The primary objective of this experiment is to determine the neutrino mass hierarchy, thereby addressing the Neutrino Mass Ordering (NMO) problem.
+
+The field of neutrino physics has entered a new era of precision following the measurement of the third lepton mixing angle, the so-called reactor angle $\theta_{13}$. This has had a significant impact on models of neutrino mass and mixing. The JUNO experiment, with its excellent energy resolution and large fiducial volume, is expected to make significant contributions to this field.
+
+This leads us to the theory of neutrino oscillation, a quantum mechanical phenomenon whereby a neutrino created with a specific lepton flavor can later be measured to have a different flavor. The oscillation is quantified in terms of parameters that the JUNO experiment aims to measure with high precision.
+
+
 \section{Neutrinos Oscillation}
 The Standard Model of elementary particle interactions provides an accurate description of strong, weak, and electromagnetic interactions, but it treats these interactions as distinct and unrelated. Within this framework, neutrinos are assumed to be massless, but this assumption has been called into question by physicists. Neutrino oscillations, which occur when neutrinos change from one flavor to another, are a potential indication of neutrino mass.\\
 The term "neutrino oscillations" refers to this phenomena and it involve the conversion of a neutrino of a particular flavor to another as it propagates through space.
@@ -18,7 +26,7 @@ Each known flavor eigenstate, $(\nu_e,\nu_{\mu},\nu_{\tau})$, linked to three re
 \end{equation*}
 in wich $\nu_i$ are the three mass eigensates, that have 3 masses  $m_i$  $(i = 1,2,3)$, which are non-degenerate, with $m_i \neq m_j$ for $i \neq j$.\\
 
-The matrix $U_{\mathrm{PMNS}}$, called Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix, is composed of three rotation matrices, $R_{23}$, $R_{13}$, and $R_{12}$, each corresponding to a different mixing angle, $\theta_{23}$, $\theta_{13}$, and $\theta_{12}$, respectively and a parameter $\delta_{CP}$ called the Dirac CP-violating phase. For this case, the Majorana $C P$ phases are $eta i(i=1,2)$, which are only physically possible if neutrinos are Majorana-type particles and do not participate in neutrino oscillations. Therefore, $U$ can be expressed as:
+The matrix $U_{\mathrm{PMNS}}$, called Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix, is composed of three rotation matrices, $R_{23}$, $R_{13}$, and $R_{12}$, each corresponding to a different mixing angle, $\theta_{23}$, $\theta_{13}$, and $\theta_{12}$, respectively and a parameter $\delta_{CP}$ called the Dirac CP-violating phase. For this case, the Majorana $C P$ phases are $\eta_i(i=1,2)$, which are only physically possible if neutrinos are Majorana-type particles and do not participate in neutrino oscillations. Therefore, $U$ can be expressed as:
 
 \begin{equation*} 
 	\begin{split}
@@ -43,8 +51,9 @@ The matrix $U_{\mathrm{PMNS}}$, called Pontecorvo-Maki-Nakagawa-Sakata (PMNS) ma
 		\end{array}\right)
 	\end{split}
 \end{equation*}
+where $s_{i j} \equiv \sin \theta_{i j}, c_{i j} \equiv \cos \theta_{i j}$.
 
-The theoretical framework for neutrino oscillations involves the calculation of the oscillation probability as a function of the distance traveled by the neutrino, the neutrino mixing matrix, and the difference in squared masses between the three neutrino mass states, $\Delta m_{ij}^2$. Specifically,two nuclear power reactors 53 $\unit{\kilo\meter}$ away from the detector, which mostly produce anti-electron neutrinos $\bar{\nu}_e$ with energy below 10 MeV, are the principal sources of neutrinos for the JUNO experiment. So, it is necessary for the JUNO experiment to calculate the survival probability $P\left(\bar{\nu}_e \rightarrow \bar{\nu}_e\right)$ of electron antineutrinos.
+The theoretical framework for neutrino oscillations involves the calculation of the oscillation probability as a function of the distance traveled by the neutrino, the neutrino mixing matrix, and the difference in squared masses between the three neutrino mass states, $\Delta m_{ij}^2 = m^2_i - m^2_j$ for $i,j = 1,2,3, i>j$ . Specifically, two nuclear power reactors 53 $\unit{\kilo\meter}$ away from the detector, which mostly produce anti-electron neutrinos $\bar{\nu}_e$ with energy below 10 MeV, are the principal sources of neutrinos for the JUNO experiment. So, it is necessary for the JUNO experiment to calculate the survival probability $P\left(\bar{\nu}_e \rightarrow \bar{\nu}_e\right)$ of electron antineutrinos.
 
 \begin{equation*}
 	P\left(\bar{\nu}_e \rightarrow \bar{\nu}_e\right)=1-\sin ^2 2 \theta_{12} c_{13}^4 \sin ^2\left(\frac{\Delta m_{21}^2 L}{4 \mathcal{E}}\right)-\sin ^2 2 \theta_{13}\left[c_{12}^2 \sin ^2\left(\frac{\Delta m_{31}^2 L}{4 \mathcal{E}}\right)+s_{12}^2 \sin ^2\left(\frac{\Delta m_{32}^2 L}{4 \mathcal{E}}\right)\right]
@@ -56,28 +65,29 @@ Past experiments have already given estimates for  $\Delta m_{21}^2,\left|\Delta
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{Images/antineutino_to_antineutrino_probability_plot}
+	\includegraphics[width=0.3\linewidth]{Images/antineutino_to_antineutrino_probability_plot}
 	\caption{JUNO's reactor antineutrino energy spectrum is shown with and without the effect of neutrino oscillation. The gray dashed curve includes only the term in the disappearance probability modulated by $sin^2(2\theta_{12})$, while the blue and red curves use the full oscillation probability for normal and inverted mass orderings. Spectral features driven by oscillation parameters are illustrated, highlighting the rich information available in JUNO's high-resolution measurement of the oscillated spectrum.}
 	\label{fig:antineutinotoantineutrinoprobabilityplot}
 \end{figure}
 
 
-%TODO: Questo paragrafo da modificare come è scritto, FrMa
-The aim of JUNO is then to improve these results, and especially fix the sign of $\Delta m_{31}^2$ by discriminating between two possibilities:\textit{ Normal Ordering} (\textbf{NO}), where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|+\left|\Delta m_{21}^2\right|$, and if $m_1<m_2<m_3$ we have the so called \textit{ Inverted Ordering} (\textbf{IO}), where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|-\left|\Delta m_{21}^2\right|$, and $m_3<m_1<m_2$.
-In fact, depending on the sign of $\Delta m_{31}^2$, the plot of \ref{fig:antineutinotoantineutrinoprobabilityplot} is minimally different.
+JUNO's primary objective is to refine these results, particularly to ascertain the sign of $\Delta m_{31}^2$, which will distinguish between two potential scenarios: Normal Ordering (NO), where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|+\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_1<m_2<m_3$, and Inverted Ordering (IO), where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|-\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_3<m_1<m_2$. The sign of $\Delta m_{31}^2$ subtly alters the plot of \ref{fig:antineutinotoantineutrinoprobabilityplot}. However, it remains uncertain whether the $\nu_3$ neutrino mass eigenstate is heavier or lighter than the $\nu_1$ and $\nu_2$ mass eigenstates.
 
 
 \section{The JUNO detector}
 
-The Jiangmen Underground Neutrino Observatory (JUNO) is an experiment that is currently under construction in Southern China, in Jinji town, 43 km to the southwest of Kaiping city. This multipurpose experiment is expected to detect a large number of antineutrinos from nuclear reactors, with most of them originating from the Taishan and Yangjiang nuclear power plants (NPPs). These two plants are located at a baseline of about 52.5 km from the JUNO detector, which was optimized for the best sensitivity to the neutrino mass ordering, and have a combined nominal thermal power of 26.6 $GW_{th}$. JUNO requires knowledge of the unoscillated reactor antineutrino spectrum shape, which is why a specialized small detector named TAO will be situated approximately 30 meters from one of the Taishan reactors to precisely measure it. The data collected by TAO will serve as a data-driven input to restrict the spectra of the other reactor cores.\\
+Nestled beneath the Dashi hill in Jinji town, Southern China, the Jiangmen Underground Neutrino Observatory (JUNO) is an ongoing experiment. Its placement 43 km southwest of Kaiping city was strategically chosen to significantly reduce background noise from cosmic rays due to its underground location. JUNO is anticipated to detect a plethora of antineutrinos, predominantly originating from the Taishan and Yangjiang nuclear power plants (NPPs). These power plants are approximately 52.5 km away from the JUNO detector and together, they have a combined nominal thermal power of 26.6 $GW_{th}$. The detector's design has been meticulously optimized for the highest sensitivity to the ordering of neutrino masses.\\
 
+Furthermore, the JUNO experiment deploys a specialized compact detector named TAO. Situated approximately 30 meters from one of the Taishan reactors, TAO serves to measure the unoscillated reactor antineutrino spectrum shape precisely. The data collected by TAO is intended to provide a crucial data-driven input to refine the spectra from the other reactor cores. The core of the JUNO detector, the \textbf{Central Detector (CD)}, is complemented by a water \textbf{Cherenkov detector} and a \textbf{Top Tracker (TT)}. Notably, the CD, designed as a compact, non-segmented detector, boasts an effective energy resolution of $\sigma_E/E =3\% / \sqrt{E (MeV)}$, a testament to the advantage of opting for a compact design over a segmented one.\\
 
-The JUNO detector comprises three main components, namely the Central Detector (CD), a water Cherenkov detector, and a Top Tracker (TT). The CD is a liquid scintillator (LS) detector, featuring an effective energy resolution of $\sigma_E/E =3\% / \sqrt{E (MeV)}$. It is composed of a 20 kton LS, enclosed within a spherical acrylic vessel, submerged in a water pool, that has a diameter of 43.5 m and a height of 44 m, providing sufficient buffer in all directions to protect the LS from the surrounding rock radioactivity. The water pool contains PMTs, which detect the Cherenkov light emitted from cosmic muons, acting as a veto detector.
-The vessel is supported by a stainless steel (SS) structure, via Connecting Bars, with CD Photomultiplier Tubes (PMTs) installed on the inner surface of the SS structure. 
-Compensation coils are mounted on the SS structure, aimed at suppressing the Earth's magnetic field and reducing its impact on the photoelectron collection efficiency of the PMTs. 
-Atop the water pool lies a Top Tracker, which comprises a plastic scintillator array designed to precisely measure muon tracks. The CD is connected to the outside through a chimney, which facilitates calibration operations. The Calibration House, located above the chimney, contains special radioactivity shielding and a muon detector.\\
+The CD contains a 20 kton liquid scintillator (LS), safely housed within a spherical acrylic vessel and submerged in a water pool. The pool, with a diameter of 43.5 m and a height of 44 m, provides an adequate buffer to shield the LS from the radioactive influence of the surrounding rock.
 
-A schematic illustrating the location of both JUNO and TAO is shown in Fig. \ref{fig:junoschemeexperiment}.
+The vessel is supported by a stainless steel (SS) structure through connecting bars. Additional CD PMTs are mounted on the inner surface of this structure, which also hosts compensation coils designed to mitigate the Earth's magnetic field and thereby minimize its impact on the photoelectron collection efficiency of the PMTs.
+
+Above the water pool resides the Top Tracker, an assembly of a plastic scintillator array, meticulously arranged to measure muon tracks accurately. The CD is connected to the external environment through a chimney, which facilitates calibration operations. Located above this chimney is the Calibration House, equipped with special radioactivity shielding and a muon detector, playing a crucial role in the overall experimental setup.
+
+A schematic illustration of both JUNO and TAO's location is presented in Fig. \ref{fig:junoschemeexperiment}.
+
 
 \begin{figure}[h]
 	\centering
@@ -88,9 +98,13 @@ A schematic illustrating the location of both JUNO and TAO is shown in Fig. \ref
 
 
 \section{JUNO signals and backgrounds}
-%TODO: Add info about the energy resolution with other terms. Add also the fact that JUNO is segmented, not compact. Add the fact that JUNO is a calorimeter.
+
 \subsection{Signal}
+%TODO: da qui in poi devi modificare
 %LIQUID SCINTILLATOR
+
+The primary ingredient of the LS is Linear Alkyl-Benzene (LAB) with a density of 0.859 $g/mL$. LAB is characterized by a straight alkyl chain of 10-13 carbons attached to a benzene ring, known for its remarkable transparency, high flash points, robust light yield, and low chemical reactivity, all critical factors in enhancing the detector's performance. The LS also contains 3 $g/L$ of 2,5-diphenyloxazole, serving as the fluor, and 15 $mg/L$ of p-bis-(o-methylstyryl)-benzene, which acts as the wavelength shifter. These ingredients, in collaboration with 17612 large 20-inch photomultiplier tubes (PMTs) and 25600 smaller 3-inch PMTs installed on a spherical structure with a 19.5 m radius, amplify the scintillation light signals, significantly contributing to the detection of neutrino events.
+
 The scintillator is doped with a small amount of gadolinium to enhance its sensitivity to antineutrinos via the inverse beta decay (IBD) process. The liquid scintillator used in JUNO is a combination of LAB (linear alkyl benzene) and PPO (2,5-diphenyloxazole) doped with a small amount of bis-MSB (1,4-bis(2-methylstyryl) benzene). When a neutrino interacts with the scintillator, it can produce charged particles such as electrons, protons, and alpha particles that travel through the scintillator and excite the scintillation molecules. This excitation results in the emission of photons with a wavelength of around 430 nm. These photons are detected by 20,000 20-inch photomultiplier tubes (PMTs) distributed in a 3-dimensional arrangement inside the detector.\\
 
 

@@ -2,11 +2,11 @@
 \contentsline {chapter}{Contents}{ii}{section*.2}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Neutrinos Oscillation}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}The JUNO detector}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}JUNO signals and backgrounds}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Signal}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Background}{4}{subsection.1.3.2}%
-\contentsline {paragraph}{Radiogenic Backgrounds}{4}{section*.5}%
+\contentsline {section}{\numberline {1.2}The JUNO detector}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}JUNO signals and backgrounds}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Signal}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Background}{5}{subsection.1.3.2}%
+\contentsline {paragraph}{Radiogenic Backgrounds}{5}{section*.5}%
 \contentsline {paragraph}{Cosmogenic Backgrounds}{5}{section*.6}%
 \contentsline {paragraph}{Atmospheric Neutrino Backgrounds}{5}{section*.7}%
 \contentsline {paragraph}{Reactor Antineutrino Backgrounds}{5}{section*.8}%
