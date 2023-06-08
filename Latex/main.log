@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  7 JUN 2023 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  9 JUN 2023 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1330,37 +1330,39 @@ Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
-[4 <./Images/juno_scheme_experiment.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-<Images/backgrounds_spectrum.png, id=148, 1110.39844pt x 606.76688pt>
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+20.
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [4 <./Images/juno_scheme_experiment.png>] [5]
+<Images/backgrounds_spectrum.png, id=158, 1110.39844pt x 606.76688pt>
 File: Images/backgrounds_spectrum.png Graphic file (type png)
 <use Images/backgrounds_spectrum.png>
-Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 15
-1.
+Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 17
+4.
 (pdftex.def)             Requested size: 338.09853pt x 184.75346pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (Chapters/chapter_2.tex [5] [6 <./Images/backgrounds_spectrum.png>]
+[6]) (Chapters/chapter_2.tex [7 <./Images/backgrounds_spectrum.png>] [8
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-2.
-(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [7
-
-]
+[9]
 Overfull \hbox (28.26588pt too wide) in paragraph at lines 36--37
 []\T1/lmr/m/n/12 The ob-jec-tive of lin-ear re-gres-sion is to de-ter-mine the 
 op-ti-mal val-ues of co-ef-fi-cients $\OML/lmm/m/it/12 w[]; w[]; w[]; :::; w[]$
@@ -1377,8 +1379,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
-[8]
-<Images/XGBoost.png, id=178, 724.20563pt x 517.935pt>
+[10]
+<Images/XGBoost.png, id=190, 724.20563pt x 517.935pt>
 File: Images/XGBoost.png Graphic file (type png)
 <use Images/XGBoost.png>
 Package pdftex.def Info: Images/XGBoost.png  used on input line 91.
@@ -1387,14 +1389,14 @@ Package pdftex.def Info: Images/XGBoost.png  used on input line 91.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (Chapters/chapter_3.tex [9] [10 <./Images/XGBoost.png>]
+) (Chapters/chapter_3.tex [11] [12 <./Images/XGBoost.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [13
 
 ]
-[12]
-<Images/hist_features.png, id=201, 1073.9322pt x 715.473pt>
+[14]
+<Images/hist_features.png, id=212, 1073.9322pt x 715.473pt>
 File: Images/hist_features.png Graphic file (type png)
 <use Images/hist_features.png>
 Package pdftex.def Info: Images/hist_features.png  used on input line 88.
@@ -1403,13 +1405,13 @@ Package pdftex.def Info: Images/hist_features.png  used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]) [14 <./Images/hist_features.png>]
+[15]) [16 <./Images/hist_features.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 40.
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [15
+) [17
 
 
 ]
@@ -1428,9 +1430,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30726 strings out of 475385
- 569766 string characters out of 2776907
- 1097396 words of memory out of 3000000
+ 30731 strings out of 475385
+ 569793 string characters out of 2776907
+ 1097260 words of memory out of 3000000
  51655 multiletter control sequences out of 15000+600000
  536454 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1458,9 +1460,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (19 pages, 1327076 bytes).
+Output written on main.pdf (21 pages, 1331928 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

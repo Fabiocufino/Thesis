@@ -100,55 +100,89 @@ A schematic illustration of both JUNO and TAO's location is presented in Fig. \r
 \section{JUNO signals and backgrounds}
 
 \subsection{Signal}
-%TODO: da qui in poi devi modificare
+%TODO: Aggiungere REACTOR FLUX sul unoscill file
+%TODO: Aggiungere la formula con i parametri per la risoluione energetica di JUNO, unoscill file
 %LIQUID SCINTILLATOR
 
-The primary ingredient of the LS is Linear Alkyl-Benzene (LAB) with a density of 0.859 $g/mL$. LAB is characterized by a straight alkyl chain of 10-13 carbons attached to a benzene ring, known for its remarkable transparency, high flash points, robust light yield, and low chemical reactivity, all critical factors in enhancing the detector's performance. The LS also contains 3 $g/L$ of 2,5-diphenyloxazole, serving as the fluor, and 15 $mg/L$ of p-bis-(o-methylstyryl)-benzene, which acts as the wavelength shifter. These ingredients, in collaboration with 17612 large 20-inch photomultiplier tubes (PMTs) and 25600 smaller 3-inch PMTs installed on a spherical structure with a 19.5 m radius, amplify the scintillation light signals, significantly contributing to the detection of neutrino events.
+The Jiangmen Underground Neutrino Observatory (JUNO) employs a Liquid Scintillator (LS) primarily composed of Linear Alkyl-Benzene (LAB), known for its transparency, high flash points, robust light yield, and low chemical reactivity. The LS, with a density of 0.859 $g/mL$, is further enhanced with 3 $g/L$ of 2,5-diphenyloxazole (PPO) as the fluor, and 15 $mg/L$ of p-bis-(o-methylstyryl)-benzene (bis-MSB) as the wavelength shifter. The scintillator is doped with a small amount of gadolinium, increasing its sensitivity to antineutrinos via the inverse beta decay (IBD) process.\\
 
-The scintillator is doped with a small amount of gadolinium to enhance its sensitivity to antineutrinos via the inverse beta decay (IBD) process. The liquid scintillator used in JUNO is a combination of LAB (linear alkyl benzene) and PPO (2,5-diphenyloxazole) doped with a small amount of bis-MSB (1,4-bis(2-methylstyryl) benzene). When a neutrino interacts with the scintillator, it can produce charged particles such as electrons, protons, and alpha particles that travel through the scintillator and excite the scintillation molecules. This excitation results in the emission of photons with a wavelength of around 430 nm. These photons are detected by 20,000 20-inch photomultiplier tubes (PMTs) distributed in a 3-dimensional arrangement inside the detector.\\
-
-
-
+This process is initiated when an antineutrino interacts with a proton in the liquid scintillator, producing a positron and a neutron. It can be described by the following reaction:
 
 \begin{equation}
 	\begin{aligned}
-		\overline{\nu}e + p &\rightarrow e^+ + n \\
-		n + ^A_ZX &\rightarrow ^{A}_{Z-1}X^* + \gamma \\
-		e^+ + e^- &\rightarrow 2\gamma
+		\overline{\nu}_e + p &\rightarrow e^+ + n \\
 	\end{aligned}
-\end{equation} =
+\end{equation} 
+
+The positron, carrying the majority of the antineutrino's initial energy, deposits this energy in the scintillator through ionization. This energy deposition, coupled with the positron's subsequent annihilation typically into two 0.511 MeV photons, forms the prompt signal, characterized as follow: $e^{+} + e^{-} \rightarrow 2\gamma$.
+The energy deposited by the positron directly correlates with the antineutrino energy, providing a precise measure critical for neutrino oscillation studies.\\
+
+Following the prompt signal, the neutron is captured primarily on hydrogen (approximately 99$\%$ of the time) after an average delay of about 220 µs. This capture event releases a single 2.2 MeV photon, creating the delayed signal. Occasionally, the neutron is captured on carbon (around 1$\%$ of the time), resulting in a gamma-ray signal with a total energy of 4.9 MeV. Despite carrying only a small fraction of the initial antineutrino energy, typically from zero to a few tens of keV, neutron recoils are considered in the calculations due to JUNO's exceptional energy resolution.
+
+The light output from these events is detected by the photomultiplier tubes (PMTs). PMTs are sensitive detectors that convert light into an electrical signal. They operate based on the photoelectric effect and subsequent electron multiplication. When a photon hits the photocathode (the light-sensitive surface inside the PMT), it can eject an electron through the photoelectric effect. This electron is then accelerated by an electric field towards a series of electrodes called dynodes. Each time an electron hits a dynode, more electrons are released. This process is repeated multiple times, resulting in a cascade of electrons and a significant amplification of the original signal. The final electrical signal, which can be easily measured, is proportional to the number of photons that hit the photocathode.
+
 
 The PMTs detect the light and convert it into an electrical signal. The signals from all the PMTs are then combined to reconstruct the position and energy of the original neutrino interaction. This technique allows JUNO to measure the energy of the incoming neutrino to high precision, which is crucial for studying neutrino oscillation.
 
-Moreover, the scintillator's composition and the detector's design are optimized to reduce background noise from other sources of radiation, such as cosmic rays and natural radioactivity. By carefully controlling these backgrounds, JUNO aims to achieve a signal-to-background ratio of better than 1:10,000, which is essential for observing the subtle effects of neutrino oscillation.
-
-In JUNO's location, the energy spectrum will be distorted by two types of oscillations. The first is a slow (low frequency) oscillation driven by $\Delta m_{21}^2$ and modulated by $\sin ^2 \theta_{12}$, while the second is a fast (high frequency) oscillation driven by $\Delta m_{31}^2$ and modulated by $\sin ^2 \theta_{13}$. Fitting the data spectrum against the predicted spectrum distorted by standard neutrino oscillations enables measuring the oscillation parameters.\\
-\subsection{Background}
-Several different types of backgrounds signal are produced in the detector. For analysis we deeply analysed only the three most important contributes:
+\subsection{Backgrounds}
+The design and composition of the scintillator in the JUNO experiment are meticulously optimized to minimize background noise from various radiation sources, such as cosmic rays and natural radioactivity. Despite these efforts, several types of background signals are inevitably produced in the detector. For the purpose of analysis, we focus primarily on the three most significant contributors:
 
 
-\paragraph{Radiogenic Backgrounds}
+\subsubsection*{Radiogenic Backgrounds}
 
-Radiogenic backgrounds arise from decays of radioactive isotopes in detector materials and surrounding rock. These decays can produce various forms of radiation, such as gamma rays and neutrons, which can interact with the detector and produce background events. Examples of radiogenic isotopes include $^{238}\mathrm{U}$, $^{232}\mathrm{Th}$, $^{40}\mathrm{K}$, and their daughter products. The main contributions to the radiogenic backgrounds come from the $^{238}\mathrm{U}$ and $^{232}\mathrm{Th}$ decay chains, with a smaller contribution from $^{40}\mathrm{K}$.
+Radiogenic backgrounds in the JUNO experiment primarily arise from the decay of radioactive isotopes such as $^{238}\mathrm{U}$, $^{232}\mathrm{Th}$, and $^{40}\mathrm{K}$. These isotopes are naturally present in the detector materials and the surrounding rock, and they undergo radioactive decay, emitting various forms of radiation. The decay of $^{238}\mathrm{U}$ and $^{232}\mathrm{Th}$ occurs via a series of steps known as decay chains, in which each isotope decays into a different isotope, emitting radiation in the process. The radiation emitted in these decay chains includes alpha particles, beta particles, and gamma rays. $^{40}\mathrm{K}$ decays via beta decay to $^{40}\mathrm{Ca}$ or via electron capture to $^{40}\mathrm{Ar}$, with a small fraction (0.001$\%$) of decays resulting in the emission of a gamma ray.
 
-\paragraph{Cosmogenic Backgrounds}
+These radiogenic backgrounds can potentially mimic the signal from inverse beta decay (IBD) in several ways:
 
-Cosmogenic backgrounds arise from interactions of cosmic rays with materials surrounding the detector, such as the atmosphere and the Earth's crust. Muons produced in these interactions can penetrate the detector and produce background events. Specifically they interact with detector materials, producing isotopes such as $^{11}\mathrm{C}$, $^{9}\mathrm{Li}$, and $^{8}\mathrm{He}$, instable atoms which decay and produce additional background events.
+\begin{enumerate}
 
-\paragraph{Atmospheric Neutrino Backgrounds}
+	\item \textbf{Beta decays and electron captures}: These processes result in the emission of electrons or positrons, which can produce a scintillation signal similar to the prompt signal from IBD.
+
+	\item \textbf{Gamma rays}: High-energy gamma rays can Compton scatter in the detector, producing electrons with enough energy to mimic the prompt signal from IBD. In addition, gamma rays can produce electron-positron pairs in the detector, which can mimic both the prompt and delayed signals from IBD.
+	
+	\item \textbf{Neutrons}: Some decays in the $^{238}\mathrm{U}$ and $^{232}\mathrm{Th}$ chains emit neutrons, which can be captured on protons in the detector, mimicking the delayed signal from IBD.
+
+\end{enumerate}
+
+\subsubsection*{Cosmogenic Backgrounds}
+
+Cosmogenic backgrounds in JUNO primarily result from the interaction of cosmic rays, particularly high-energy muons ~GeV, with the detector materials. These interactions lead to the production of fast neutrons and unstable isotopes through the process of spallation in which a high-energy particle strikes a target atom, causing it to emit smaller particles such as neutrons and unstable isotopes. 
+In JUNO, the target atoms are predominantly carbon atoms found in the liquid scintillator.
+
+These fast neutrons and unstable isotopes can interact within the detector, generating signals that may resemble an inverse beta decay (IBD) event. For example, a fast neutron can scatter off a proton in the liquid scintillator, mimicking the recoil proton signal in an IBD event. Similarly, an unstable isotope can decay, emitting a positron that mimics the positron signal in an IBD event.
+
+Cosmogenic backgrounds also arise from cosmic ray interactions with materials surrounding the JUNO detector, such as the atmosphere and the Earth's crust. Muons produced in these interactions can penetrate the detector and generate background events. Specifically, these muons interact with the detector materials, resulting in the production of isotopes like $^{11}\mathrm{C}$, $^{9}\mathrm{Li}$, and $^{8}\mathrm{He}$, which are unstable and subsequently decay, contributing to additional background events.
+
+
+
+\subsubsection*{Other source of antineutrinos}
 
 Atmospheric neutrino backgrounds arise from interactions of cosmic ray protons and nuclei with the Earth's atmosphere, which produce a flux of neutrinos that can interact with the detector. These interactions can produce both charged and neutral current events, which can mimic the signal from reactor neutrinos.
 
-\paragraph{Reactor Antineutrino Backgrounds}
+Also Reactor Antineutrino emitted by distant reactors or created in the U and Th decay chains in Earth, i.e.
+geoneutrinos.
 
-Reactor antineutrino backgrounds arise from the neutrinos produced in the nuclear reactors that power the JUNO experiment. These antineutrinos are the main signal for JUNO, but a small fraction of them can interact with the detector in ways that mimic background events. These interactions can produce both charged and neutral current events, which can be difficult to distinguish from the signal.
 
+
+\subsection*{Accidentals}
+The "Accidentals" background in the JUNO experiment primarily arises from random interactions within the detector that can be mistakenly identified as IBD signals. It encompasses various sources, including cosmic neutrino scattering with atomic nuclei in the detector, photons from external radiation sources interacting with the detector material, and radioactive signals. These accidental events can resemble the characteristics of inverse beta decay (IBD) events. However, the accidental events can produce similar energy and temporal profiles, leading to potential confusion. 
 
 Here a viasualization sumary of all the bacgrounds contributions:
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Images/backgrounds_spectrum}
-	\caption{Visible energy spectrum as measured by the LPMT system with (grey) and without (black) backgrounds is that which is anticipated for JUNO. The energy resolution is one of the assumptions listed in the text. The predicted backgrounds, which make up around 7$\%$ of the whole sample of IBD candidates and are primarily confined below, are shown in the inset as spectra. $\approx$ 3 MeV}
+	\caption{Visible energy spectrum as measured by the LPMT system with (grey) and without (black) backgrounds is that which is anticipated for JUNO. The predicted backgrounds, which make up around 7$\%$ of the whole sample of IBD candidates and are primarily confined below, are shown in the inset as spectra. $\approx$ 3 MeV}
 	\label{fig:backgroundsspectrum}
 \end{figure}
+
+
+Analizzaimoli uno per volta:
+- Geoneutrinos: sono veri antineutrini e quindi si manifestano come veri eventi IBD —> irriducibili
+- World reactors: sono veri antineutrini e quindi si manifestano come veri eventi IBD —> irriducibili
+- Accidentals: sono coincidenze accidentali dovute alla radioattività naturale, non soni IBD —> riducibili
+- 9Li/8He: sono coincidenze correlate dovute al decadimento di isotopi radioattivi creati al passaggio di muoni. Pur non essendo IBD, il segnale è costituito da un elettrone nel segnale prompt e da un neutrone identico a quello IBD come delayed —> difficilmente riducibili (se non attraverso cut del volume fiduciale)
+- Atmospheric neutrinos: veri neutrini/antineutrini che possono manifestarsi come eventi IBD —> irriducibili
+- Fast neutrons: neutroni veloci provenienti dall'esterno del detector che collidono con un protone per poi venire assorbiti. Generano un segnale prompt dovuto al rinculo del protone e un segnale delayed identico a quello di IBD —> dificilmente riducibili (se non schermando il detector usando una piscina d'acqua)
+- 13C16O: decadimento che produce una particella alfa (segnale prompt) e un neutrone che viene catturato come delayed esattamente come un IBD —> difficilmente riducibile (se non eliminando possibili emettitori alfa tra i contaminanti dei materiali del detector)
+
