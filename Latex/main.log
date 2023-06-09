@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  9 JUN 2023 00:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  9 JUN 2023 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,53 +1316,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
 <Images/juno_scheme_experiment.png, id=134, 616.55344pt x 550.30594pt>
 File: Images/juno_scheme_experiment.png Graphic file (type png)
 <use Images/juno_scheme_experiment.png>
 Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line 
-94.
-(pdftex.def)             Requested size: 338.09853pt x 301.77911pt.
+86.
+(pdftex.def)             Requested size: 241.5pt x 215.5505pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+[3 <./Images/juno_scheme_experiment.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-20.
+21.
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4 <./Images/juno_scheme_experiment.png>] [5]
+) [4]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+52.
+
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [5]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
 <Images/backgrounds_spectrum.png, id=158, 1110.39844pt x 606.76688pt>
 File: Images/backgrounds_spectrum.png Graphic file (type png)
 <use Images/backgrounds_spectrum.png>
-Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 17
-4.
+Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 18
+8.
 (pdftex.def)             Requested size: 338.09853pt x 184.75346pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]) (Chapters/chapter_2.tex [7 <./Images/backgrounds_spectrum.png>] [8
-
-]
+[6]) (Chapters/chapter_2.tex [7 <./Images/backgrounds_spectrum.png>] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[9]
+[9
+
+]
 Overfull \hbox (28.26588pt too wide) in paragraph at lines 36--37
 []\T1/lmr/m/n/12 The ob-jec-tive of lin-ear re-gres-sion is to de-ter-mine the 
 op-ti-mal val-ues of co-ef-fi-cients $\OML/lmm/m/it/12 w[]; w[]; w[]; :::; w[]$
@@ -1390,51 +1406,44 @@ Package pdftex.def Info: Images/XGBoost.png  used on input line 91.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (Chapters/chapter_3.tex [11] [12 <./Images/XGBoost.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1147) has occurred while \output is active []
 
  [13
 
 ]
-[14]
-<Images/hist_features.png, id=212, 1073.9322pt x 715.473pt>
+[14] [15]
+<Images/hist_features.png, id=219, 1073.9322pt x 715.473pt>
 File: Images/hist_features.png Graphic file (type png)
 <use Images/hist_features.png>
-Package pdftex.def Info: Images/hist_features.png  used on input line 88.
+Package pdftex.def Info: Images/hist_features.png  used on input line 118.
 (pdftex.def)             Requested size: 483.0pt x 321.7852pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [16 <./Images/hist_features.png>]) [17] [18
 
-[15]) [16 <./Images/hist_features.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-40.
-
-(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [17
-
+] [19
 
 ]
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
-
-(main.aux)
+ (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2EB260C0127990FA715DF8259D278619;962.
+(rerunfilecheck)             Checksum: E42B2DCCB7EDE36BD3D6D02634D308E9;962.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30731 strings out of 475385
- 569793 string characters out of 2776907
- 1097260 words of memory out of 3000000
- 51655 multiletter control sequences out of 15000+600000
- 536454 words of font info for 70 fonts, out of 8000000 for 9000
+ 30735 strings out of 475385
+ 569830 string characters out of 2776907
+ 1097259 words of memory out of 3000000
+ 51657 multiletter control sequences out of 15000+600000
+ 537096 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,22n,93p,1886b,2568s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
@@ -1460,9 +1469,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (21 pages, 1331928 bytes).
+Output written on main.pdf (23 pages, 1337146 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -30,6 +30,36 @@ Questo approccio ha però il drawback che ogni simulazione parallela sarà indip
 
 %TODO-> Spiega cosa c'è nei datasets -- ['EventID', 'SimID', 'timestamp', 't_sec', 't_nanosec', 'recx', 'recy', 'recz', 'm_QEn', 'm_pe']
 %TODO-> Mention unbalanced datasets problem
+
+
+Ciao Fabio, la radioattività con cui hai lavorato rappresenta tutto il contributo da decadimenti radioattivi (alfa, beta, gamma) interno ed esterno a detector, ma che hanno depositato energia all'interno del detector.
+Ti lascio la tabella degli isotopi e delle rate di decadimento generate qui di seguito:
+
+
+| **Dataset Name**  | **Number of Events**  | **Rates (used in elecsim)**  |
+|:----------------: |:--------------------: |:---------------------------: |
+|      U238@LS      |   1,000,000 events    |           3.234 Hz           |
+|     Th232@LS      |   1,000,000 events    |           0.733 Hz           |
+|      K40@LS       |   1,000,000 events    |           0.53 Hz            |
+|     Pb210@LS      |   1,000,000 events    |           17.04 Hz           |
+|      C14@LS       | 1,000,000,000 events  |           3.3e4 Hz           |
+|      Kr85@LS      |   1,000,000 events    |           1.163 Hz           |
+|   U238@Acrylic    |   10,000,000 events   |           98.41 Hz           |
+|   Th232@Acrylic   |   10,000,000 events   |           22.29 Hz           |
+|    K40@Acrylic    |   10,000,000 events   |          161.25 Hz           |
+|   U238@node/bar   |  100,000,000 events   |          2102.36 Hz          |
+|  Th232@node/bar   |  100,000,000 events   |          1428.57 Hz          |
+|   K40@node/bar    |  100,000,000 events   |           344.5 Hz           |
+|   Co60@node/bar   |  100,000,000 events   |           97.5 Hz            |
+|   U238@PMTGlass   | 1,000,000,000 events  |          4.90e6 Hz           |
+|  Th232@PMTGlass   | 1,000,000,000 events  |          8.64e5 Hz           |
+|   K40@PMTGlass    | 1,000,000,000 events  |          4.44e5 Hz           |
+|  Tl208@PMTGlass   | 1,000,000,000 events  |          1.39e5 Hz           |
+|    Co60@Truss     |           0           |             ? Hz             |
+|    Tl208@Truss    |           0           |             ? Hz             |
+| Rn222@WaterRadon  |  100,000,000 events   |            90 Hz             |
+
+
 \section{Feature creation}
 The development of machine learning models for the detection of Inverse Beta Decay (IBD) events necessitates a systematic and efficient approach to feature engineering. This process begins with the loading of two separate datasets, one for IBDs and one for radioactivity background, each containing a multitude of potential IBD events. The primary objective is to construct a feature table that encapsulates the unique characteristics of these events, providing a robust foundation for subsequent model training.
 
