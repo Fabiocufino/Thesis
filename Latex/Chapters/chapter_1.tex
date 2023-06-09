@@ -65,7 +65,7 @@ Past experiments have already given estimates for  $\Delta m_{21}^2,\left|\Delta
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Images/antineutino_to_antineutrino_probability_plot}
+	\includegraphics[width=0.4\linewidth]{Images/antineutino_to_antineutrino_probability_plot}
 	\caption{JUNO's reactor antineutrino energy spectrum is shown with and without the effect of neutrino oscillation. The gray dashed curve includes only the term in the disappearance probability modulated by $sin^2(2\theta_{12})$, while the blue and red curves use the full oscillation probability for normal and inverted mass orderings. Spectral features driven by oscillation parameters are illustrated, highlighting the rich information available in JUNO's high-resolution measurement of the oscillated spectrum.}
 	\label{fig:antineutinotoantineutrinoprobabilityplot}
 \end{figure}
@@ -78,7 +78,7 @@ JUNO's primary objective is to refine these results, particularly to ascertain t
 
 Nestled beneath the Dashi hill in Jinji town, Southern China, the Jiangmen Underground Neutrino Observatory (JUNO) is an ongoing experiment. Its placement 43 km southwest of Kaiping city was strategically chosen to significantly reduce background noise from cosmic rays due to its underground location. JUNO is anticipated to detect a plethora of antineutrinos, predominantly originating from the Taishan and Yangjiang nuclear power plants (NPPs). These power plants are approximately 52.5 km away from the JUNO detector and together, they have a combined nominal thermal power of 26.6 $GW_{th}$. The detector's design has been meticulously optimized for the highest sensitivity to the ordering of neutrino masses.\\
 
-A schematic illustration of both JUNO and TAO's location is presented in Fig.\ref{fig:junoschemeexperiment}.
+A schematic illustration of both JUNO is presented in Fig.\ref{fig:junoschemeexperiment}.
 
 
 \begin{figure}[h]
@@ -102,10 +102,26 @@ Above the water pool resides the Top Tracker, an assembly of a plastic scintilla
 
 \subsection{Signal}
 %TODO: Aggiungere REACTOR FLUX sul unoscill file
-%TODO: Aggiungere la formula con i parametri per la risoluione energetica di JUNO, unoscill file
 %LIQUID SCINTILLATOR
 
-The Jiangmen Underground Neutrino Observatory (JUNO) employs a Liquid Scintillator (LS) primarily composed of Linear Alkyl-Benzene (LAB), known for its transparency, high flash points, robust light yield, and low chemical reactivity. The LS, with a density of 0.859 $g/mL$, is further enhanced with 3 $g/L$ of 2,5-diphenyloxazole (PPO) as the fluor, and 15 $mg/L$ of p-bis-(o-methylstyryl)-benzene (bis-MSB) as the wavelength shifter. The scintillator is doped with a small amount of gadolinium, increasing its sensitivity to antineutrinos via the inverse beta decay (IBD) process.\\
+The JUNO experiment primarily draws its sources from the Taishan and Yangjiang Nuclear Power Plants (NPPs), which house two and six cores respectively. In addition to these, the Daya Bay reactor complex contributes to the antineutrino flux. The reactor power, baselines, and anticipated Inverse Beta Decay (IBD) rates from the Taishan, Yangjiang, and Daya Bay reactor cores are detailed in Table \ref{tab:IBD_reactor_source}.
+
+
+\begin{table}[htp]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Reactor & Power [$GW_{th}$] & Baseline [Km]  & IBD Rate [$day^{-1}$] \\\hline\hline
+		Taishan & 9.2 & 52.71 &	15.1	\\\hline
+		Yangjiang & 17.4 & 52.46 & 29.0	\\\hline
+		Daya Bay & 17.4 & 215 &	3\\\hline
+	\end{tabular}
+	\caption{Information on nuclear reactors}
+	\label{tab:IBD_reactor_source}
+\end{table}
+
+
+JUNO employs a Liquid Scintillator (LS) primarily composed of Linear Alkyl-Benzene (LAB), known for its transparency, high flash points, robust light yield, and low chemical reactivity. The LS, with a density of 0.859 $g/mL$, is further enhanced with 3 $g/L$ of 2,5-diphenyloxazole (PPO) as the fluor, and 15 $mg/L$ of p-bis-(o-methylstyryl)-benzene (bis-MSB) as the wavelength shifter. The scintillator is doped with a small amount of gadolinium, increasing its sensitivity to antineutrinos via the inverse beta decay (IBD) process.\\
 
 This process is initiated when an antineutrino interacts with a proton in the liquid scintillator, producing a positron and a neutron. It can be described by the following reaction:
 
@@ -138,7 +154,7 @@ Radiogenic backgrounds in the JUNO experiment primarily originate from the radio
 These radiogenic backgrounds can potentially mimic the signal from inverse beta decay (IBD) in several ways:
 
 \begin{enumerate}
-
+%TODO: Aggiungii range energetici, così puoi spiegare più o meno l'andamento delle energie 
 	\item \textbf{Beta decays and electron captures}: These processes result in the emission of electrons or positrons, which can produce a scintillation signal similar to the prompt signal from IBD.
 
 	\item \textbf{Gamma rays}: High-energy gamma rays can Compton scatter in the detector, producing electrons with enough energy to mimic the prompt signal from IBD. In addition, gamma rays can produce electron-positron pairs in the detector, which can mimic both the prompt and delayed signals from IBD.
@@ -149,36 +165,40 @@ These radiogenic backgrounds can potentially mimic the signal from inverse beta 
 
 \subsubsection*{Cosmogenic Backgrounds}
 
-Cosmogenic backgrounds in JUNO primarily result from the interaction of cosmic rays, particularly high-energy muons ($\texttt{\string~}  $ GeV), with the detector materials. These interactions lead to the production of fast neutrons and unstable isotopes through the process of spallation in which a high-energy particle strikes a target atom, causing it to emit smaller particles such as neutrons and unstable isotopes. 
+Cosmogenic backgrounds in JUNO primarily result from the interaction of cosmic rays, particularly high-energy muons ($\texttt{\string~}  $ GeV), with the detector materials. These interactions lead to the production of fast neutrons and unstable isotopes through the process of spallation in which a high-energy particle strikes a target atom, causing it to emit smaller particles such as neutrons and unstable isotopes. Specifically, these muons interact with the detector materials, resulting in the production of isotopes like  $^{9}\mathrm{Li}$, $^{8}\mathrm{He}$ and $^{11}\mathrm{C}$, which are unstable and subsequently decay, contributing to additional background events.
 
-Specifically, these muons interact with the detector materials, resulting in the production of isotopes like  $^{9}\mathrm{Li}$, $^{8}\mathrm{He}$ and $^{11}\mathrm{C}$, which are unstable and subsequently decay, contributing to additional background events.
+These fast neutrons and unstable isotopes, produced from the interactions of muons with the detector materials, can generate signals that mimic an inverse beta decay (IBD) event. Specifically, there are two distinct signals to consider.
 
-These fast neutrons and unstable isotopes can interact within the detector, generating signals that may resemble an inverse beta decay (IBD) event. For example, a fast neutron can scatter off a proton in the liquid scintillator, mimicking the recoil proton signal in an IBD event. Similarly, an unstable isotope can decay, emitting a positron that mimics the positron signal in an IBD event.
+The first, known as the prompt signal, is generated by an electron. The energy and momentum of this electron can make it appear like a positron, the particle that would be expected in an IBD event. The second, known as the delayed signal, is generated by a neutron. This neutron can be captured by a proton in the detector, producing a signal identical to what would be expected from the neutron in an IBD event.\\
+
+Therefore, even though they are not IBD events, these signals mimic an IBD event as they consist of an electron being mistaken for a positron in the prompt signal and a true neutron in the delayed signal.
 
 
 
-\subsubsection*{Other source of antineutrinos}
+\subsubsection*{Other source of  $\overline{\nu}_e$}
 
-The other sources of antineutrinos include geoneutrinos, atmospheric neutrinos, and reactor antineutrinos:\\
+Other sources of antineutrinos also contribute to the background. Those are geoneutrinos, atmospheric neutrinos, and reactor antineutrinos:\\
 
-\textbf{Geoneutrinos} are antineutrinos produced by natural radioactivity within the Earth. Natural radioactivity exists in radioactive materials present in the Earth's crust and mantle, such as $\mathrm{U}$, $\mathrm{Th}$,and $^{40}\mathrm{K}$. These materials undergo radioactive decays, generating antineutrinos as decay products.\\
+\textbf{Geoneutrinos} are antineutrinos produced by natural radioactivity within the Earth, primarily below 2.5 MeV in antineutrino energy. Natural radioactivity exists in materials present in the Earth's crust and mantle, such as $\mathrm{U}$, $\mathrm{Th}$,and $^{40}\mathrm{K}$. These materials undergo radioactive decays, generating antineutrinos as decay products, that produce IBD signals.\\
 
 \textbf{Atmospheric neutrinos} are generated by interactions of cosmic rays with the Earth's atmosphere. When high-energy cosmic rays collide with the atmosphere, they produce a cascade of particles, including muons and neutrinos. The muons generated in these interactions can decay, producing antineutrinos.\\
 
-\textbf{Reactor antineutrinos} are an artificial source of antineutrinos. During the nuclear fission process in reactors, neutrons are produced.Given the vast number of nuclear reactors worldwide, the collective signal from these reactors becomes significant.
+\textbf{Reactor antineutrinos} are an artificial source of antineutrinos. Besides the reactors that are used to generate the signal to be analyzed, there are various other reactors that contribute to the total event count. Given the vast number of nuclear reactors worldwide, the collective signal from these reactors becomes significant.\\
+
+
+%TODO: aggiungi perchè i neutrini solari non sono sorgente di BKG (?)
+
+
+It's beneficial to categorize the aforementioned background sources into two distinct groups:
+
+\begin{itemize}
+	\item \textit{Accidental Background}: This category includes background events that result from the coincidence of two independent events, typically of radiogenic origin. These events primarily influence the low-energy region of the spectrum. A portion of the cosmogenic background also falls into this category. The goal of this thesis work is to significantly reduce these accidental background events, a topic that will be discussed in detail in the following sections
+	\item \textit{Correlated Backgrounds}: These backgrounds originate from a single physics process and produce both a prompt and a delayed signal. Significant correlated backgrounds include cosmogenic Li/He and fast neutrons. Among all the radiogenic processes, only one correlated background requires consideration: the $\mathrm{C}$($\alpha$,n)$^{16}\mathrm{O}$, Decay that produces an alpha particle (prompt signal) and a neutron that is captured as delayed, exactly like an IBD, occurring within the liquid scintillator.
+\end{itemize}
+ 
 
 
 
-
-
-
-The accidental background, which arises from the coincidence of two independent events, typically of radiogenic origin, plays a dominant role in the low-energy region of the spectrum.
-
-Correlated backgrounds, on the other hand, originate from a single physics process and produce both a prompt and a delayed signal. Among the significant correlated backgrounds are cosmogenic Li/He and fast neutrons, which can be suppressed to a greater extent by increasing the overburden.
-
-Additional sources of background include geoneutrinos, primarily below 2.5 MeV in antineutrino energy, and atmospheric neutrinos. The latter can generate neutrons, protons, alpha particles, and excited light nuclei that promptly or shortly deposit their energy, thereby mimicking the inverse beta decay (IBD) signature if followed by a neutron capture.
-
-Of all the radiogenic processes, only one correlated background necessitates consideration: the C(a,n)O reaction occurring within the liquid scintillator.
 
 
 Here a viasualization sumary of all the bacgrounds contributions:
@@ -190,22 +210,7 @@ Here a viasualization sumary of all the bacgrounds contributions:
 	\label{fig:backgroundsspectrum}
 \end{figure}
 
-----------------------------------------------------------\\
-Analizzaimoli uno per volta:
-- Geoneutrinos: sono veri antineutrini e quindi si manifestano come veri eventi IBD —> irriducibili
-- World reactors: sono veri antineutrini e quindi si manifestano come veri eventi IBD —> irriducibili
-- Accidentals: sono coincidenze accidentali dovute alla radioattività naturale, non soni IBD —> riducibili
-- 9Li/8He: sono coincidenze correlate dovute al decadimento di isotopi radioattivi creati al passaggio di muoni. Pur non essendo IBD, il segnale è costituito da un elettrone nel segnale prompt e da un neutrone identico a quello IBD come delayed —> difficilmente riducibili (se non attraverso cut del volume fiduciale)
-- Atmospheric neutrinos: veri neutrini/antineutrini che possono manifestarsi come eventi IBD —> irriducibili
-- Fast neutrons: neutroni veloci provenienti dall'esterno del detector che collidono con un protone per poi venire assorbiti. Generano un segnale prompt dovuto al rinculo del protone e un segnale delayed identico a quello di IBD —> dificilmente riducibili (se non schermando il detector usando una piscina d'acqua)
-- 13C16O: decadimento che produce una particella alfa (segnale prompt) e un neutrone che viene catturato come delayed esattamente come un IBD —> difficilmente riducibile (se non eliminando possibili emettitori alfa tra i contaminanti dei materiali del detector)
 
+Following the comprehensive discussion of all background events in the JUNO experiment, it becomes clear that due to the significant presence of various types of background events, efforts are being made to reduce their contribution in every possible way. Several strategies have been employed to mitigate these background signals. Methods include the use of shielding materials to block external radiation, careful selection and treatment of detector materials to minimize internal radioactivity, and sophisticated data analysis techniques to identify and reject background events.
 
-Come vedi, gli accidentali sono (i) uno dei fondi principali (cioè con rate più alta) e (ii) uno dei pochi fondi che possimo ridurre migliorando la selezione
-
-La seconda colonna -> Si, sono il numero di eventi generati. Non tutti gli eventi generati interagiscono con il detector: un evento generato nella struttura metallica può venire fermato nella struttura stessa e non interagire con il detector, o ancora un evento generato nell'acrilico può venire emesso verso l'esterno e quindi non entrare mai in contatto con il detector e così via.
-Se consideri ora solo gli eventi che davvero sono entrati in contatto con il detector, non tutti gli eventi vengono ricostruiti: alcuni eventi sono così poco energetici che non sono sufficienti ad illuminare i PMT e quindi ad azionare il trigger per l'acquisizione dell'evento.
-
-Per darti un'idea, la rate di decadimenti radioattivi è circa 6.6 MHz, ne vengono effettivamente registrati dal detector appena 100 Hz (o poco meno)
-
-Questa è una delle sfide più grandi, perchè devi portare un segnale di circa 100 Hz (8.6 x 10e6 eventi/giorno) a rappresentare meno di 1 evento/giorno di background	 
+However, it's important to note that a large portion of the accidental background events are the only ones where significant reduction can be achieved. These are the events that occur randomly and independently, and their reduction requires a different approach compared to correlated backgrounds. The focus of this thesis is precisely on these accidental background events, exploring strategies and techniques to further minimize their impact on the experiment. This is a crucial aspect of the experiment's success, as reducing these events can significantly improve the sensitivity and accuracy of the neutrino measurements.	 

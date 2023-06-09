@@ -15,6 +15,13 @@ Per affrontare il problema, si parallelizza la simulazione su una infrastruttura
 In questo modo si può ad esempio dividere i 1500000 eventi in 1500 jobs (simulati quindi da 1500 CPU diverse) da 1000 event ciascuno, completando la produzione in poche ore invece che in mesi.
 Questo approccio ha però il drawback che ogni simulazione parallela sarà indipendente dalle altre e quindi per ciascuna di queste il tempo, i SimID e tutte le altre quantità partirano da 0"" 
 
+%La seconda colonna -> Si, sono il numero di eventi generati. Non tutti gli eventi generati interagiscono con il detector: un evento generato nella struttura metallica può venire fermato nella struttura stessa e non interagire con il detector, o ancora un evento generato nell'acrilico può venire emesso verso l'esterno e quindi non entrare mai in contatto con il detector e così via.
+%Se consideri ora solo gli eventi che davvero sono entrati in contatto con il detector, non tutti gli eventi vengono ricostruiti: alcuni eventi sono così poco energetici che non sono sufficienti ad illuminare i PMT e quindi ad azionare il trigger per l'acquisizione dell'evento.
+
+%Per darti un'idea, la rate di decadimenti radioattivi è circa 6.6 MHz, ne vengono effettivamente registrati dal detector appena 100 Hz (o poco meno)
+
+%Questa è una delle sfide più grandi, perchè devi portare un segnale di circa 100 Hz (8.6 x 10e6 eventi/giorno) a rappresentare meno di 1 evento/giorno di background
+%-------------------
 
 %Nel MonteCarlo sono inclusi tutti gli effetti che ci aspettiamo nella realtà. E purtroppo, nella realtà, l'elettronica ha un rumore intrinseco (ad esempio puoi cercare in letteratura il Dark Count Rate per i PMTs).
 %Ora, nel MonteCarlo vengono iniettati degli eventi (ad esempio una coppia prompt-delayed da IBD). A questo evento iniettato viene associato un SimID (simulation identifier) incrementale. Siccome prompt e delayed sono stati iniettati assieme, avranno lo stesso SimID.
