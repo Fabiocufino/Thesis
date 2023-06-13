@@ -12,16 +12,16 @@
 \contentsline {subsection}{\numberline {2.1.2}Linear Regression}{9}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Binary Classification}{11}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Decision Tree}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Boosted Decision Trees}{11}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Neural Networks}{11}{section.2.4}%
-\contentsline {chapter}{\chapternumberline {3}Analysis}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Datasets}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Feature creation}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}IBD dataset}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Radioactivity dataset}{16}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Models}{17}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Manual Cut}{17}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}XGBoost}{17}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}PyThorch}{17}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Results}{17}{section.3.4}%
-\contentsline {chapter}{References}{19}{section*.16}%
+\contentsline {subsection}{\numberline {2.3.1}Gradient Boosting Decision Trees}{12}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Neural Networks}{13}{section.2.4}%
+\contentsline {chapter}{\chapternumberline {3}Analysis}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Datasets}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Feature creation}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}IBD dataset}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Radioactivity dataset}{18}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Models}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Manual Cut}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}XGBoost}{19}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}PyThorch}{19}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusion}{19}{section.3.4}%
+\contentsline {chapter}{References}{21}{section*.16}%

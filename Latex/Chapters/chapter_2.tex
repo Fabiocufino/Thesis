@@ -57,39 +57,69 @@ However, it is important to note that linear regression, and also other machine 
 \section{Binary Classification}
 
 \section{Decision Tree}
-Decision trees are a cornerstone of machine learning algorithms, providing a robust model that segments the feature space into various non-overlapping regions. The model is capable of conducting both regression and classification tasks, creating rules from the available features to predict the value of a target variable.
+A Decision Tree algorithm, used in supervised machine learning for classification and regression tasks, models the predictive outcome of a target variable based on decision rules inferred from input features. The process involves dissecting the overall dataset into distinct regions, where each region contains data points that are as similar as possible to each other in terms of their target class. Formally, each internal node of the tree represents a decision rule based on an input feature, which bifurcates the data into two child nodes. The decision for splitting the data at each node is determined using a metric known as Information Gain, which in turn is based on the concept of Entropy.
 
-Mathematically, we can represent the decision tree model as follows. Given a dataset $D$ containing $n$ instances, where each instance $i$ is an input-output pair $(x_i, y_i)$ with $x_i$ belonging to the input space $X$ and $y_i$ to the output space $Y$. The decision tree maps an instance $x_i$ to an output $y_i$ through a series of binary tests:
+In the context of a binary classification, entropy (H) is a measure of the impurity or disorder within a set (S) of instances. It quantifies the uncertainty involved in predicting the class of a random instance from the set (S). It is mathematically formulated as:
 
- \begin{equation}
-	y_i = f(x_i) = \sum_{j=1}^{J} c_j I(x_i \in R_j)
+\begin{equation}
+	H(S) = - p_{+} \log_{2}(p_{+}) - p_{-} \log_{2}(p_{-})
 \end{equation}
 
+Here, $p_+$ and $p_-$ denote the proportions of positive and negative instances in the set S, respectively. Entropy attains a maximum value when the set S contains an equal number of positive and negative instances, reflecting the highest uncertainty.
 
-where $f(x_i)$ is the decision tree, $R_j$ are the disjoint regions of the feature space, $I()$ is the indicator function, and $c_j$ is the predicted value in region $j$.
+Information Gain (IG) measures the reduction in entropy achieved by partitioning the instances based on a feature (A). It is the difference between the entropy of the set before the split (H(S)) and the weighted sum of the entropies of each subset resulting from the split. It can be formulated as:
 
-To grow a decision tree, we start at the root and recursively split the data based on the feature that maximizes the reduction of a chosen impurity measure. Common measures include entropy and the Gini index, calculated as follows:
+\begin{equation}
+	IG(S, A) = H(S) - \sum_{v \in V(A)} \left(\frac{|S_v|}{|S|}\right) H(S_v)
+\end{equation}
 
-Entropy: $Entropy(S) = - \sum_{i=1}^{c} p_i \log_2(p_i)$
+where $V(A)$ indicates the set of all possible values of feature A.\\
+In this equation, $S_v$ denotes the subset of instances in S for which the feature A takes on the value v. $|S_v|$ and $|S|$ are the cardinalities of the sets $S_v$ and $S$, respectively.\\
 
-Gini Impurity: $Gini(S) = 1 - \sum_{i=1}^{c} (p_i)^2$
+The algorithm constructs the tree by recursively applying these splits, each time selecting the feature that results in the maximum information gain. This process continues until a stopping criterion is met, such as reaching a pre-specified maximum depth of the tree or a minimum number of samples per leaf.\\
 
-\subsection{Boosted Decision Trees}
- 
-Boosting is a meta-algorithm in machine learning, developed to convert weak learners into a strong predictive model. Boosted decision trees are an implementation of this concept, often leading to significantly improved model performance.
 
-Boosted decision trees work on the principle of fitting the boosting model $F(x)$ by minimizing the loss function $L(y, F(x))$ over the training data. This is typically done in a stage-wise fashion. Given the current model $F_m(x)$, we fit a weak learner (a small decision tree, $h(x)$) to the negative gradient of the loss function, evaluated with the current model and updated as:
+While Decision Trees are straightforward and practical models, their ability to decipher complex patterns in data can be limited. This limitation paves the way for a more advanced technique known as Gradient Boosting Decision Trees. This innovative method combines several simple trees into a robust model that can effectively interpret intricate patterns in complex datasets. The following sections will delve into the mechanics of Gradient Boosting Decision Trees and their enhanced ability to handle complex data structures.
 
-$F_{m+1}(x) = F_{m}(x) + \alpha h(x)$
+\subsection{Gradient Boosting Decision Trees}
 
-where $\alpha$ is a constant, often set via line search to minimize the loss function.
+ %[] https://www.youtube.com/watch?v=PxgVFp5a0E4&ab_channel=Prof.RyanAhmed
+Gradient Boosting is a machine learning algorithm that stems from the concept of boosting, with the application of gradient descent methodology. Its goal is to produce a robust predictive model through the combination of multiple weak learners, typically decision trees.
 
-Gradient Boosting and AdaBoost are two common methods. XGBoost, or eXtreme Gradient Boosting, stands as a notable Gradient Boosting variant. It introduces regularization parameters to prevent overfitting, handles missing values, and utilizes both parallelized and distributed computing, making it suitable for large-scale problems.
+The primary innovation in Gradient Boosting over classical boosting techniques is its approach to error correction. Instead of modifying the weights of misclassified instances, Gradient Boosting fits each new tree to the residuals (or the negative gradient) of the loss function with respect to the prediction of the existing ensemble of trees. This means each new tree is trained to predict the error of the existing model, thereby iteratively reducing the overall error.
+
+Let's formalize this process:
+
+\begin{enumerate}
+	\item \textbf{Initialization}: We begin by initializing our model with a constant value. This is denoted as $F_0(x) = \arg\min_{\gamma} \sum_{i=1}^{N} L(y_i, \gamma)$, where $L(y, F(x))$ represents the loss function, $y$ represents the true target value, and $F(x)$ is the model's prediction for the input features $x$. This constant prediction, $\gamma$, is chosen to minimize the total loss over all $N$ instances. Thus, our initial model starts with a prediction that globally minimizes the loss.
+	\item \textbf{Computation of Residuals}: Next, we iteratively construct an ensemble of $M$ trees. For each iteration $m=1$ to $M$, we calculate the residuals as
+	\begin{equation}
+		r_{im} = - \left[\frac{\partial L(y_i, F(x_i))}{\partial F(x_i)}\right]_{F(x)=F_{m-1}(x)}
+	\end{equation} 
+ 	for each instance $i=1,2,...,N$. These residuals are essentially the negative gradients (or first derivatives) of the loss function with respect to the model's predictions. They provide a measure of the direction that would decrease the loss function fastest.
+	\item \textbf{Fitting a Decision Tree}: After computing the residuals, we fit a new decision tree, $h_m(x)$, to these residuals. This tree is thus trained to predict the negative gradient of the loss function, using train it using the training set 
+	${(x_i, r_{im})}_{i=1}^n$. By doing so, it attempts to correct the errors made by the current ensemble model.
+	\item \textbf{Model Update}: The model is then updated by applying the rule
+	\begin{equation}
+		F_m(x) = F_{m-1}(x) + \nu \cdot h_m(x)
+	\end{equation}
+ 	Here, $\nu$ represents the learning rate, a parameter typically less than 1, which controls the contribution of each tree to the final prediction. This essentially adjusts the previous model's prediction in the direction that most decreases the loss.
+	\item \textbf{Final Model}: The final model's prediction is given by $F_M(x) = F_0(x) + \sum_{m=1}^{M} \nu \cdot h_m(x)$. In the final ensemble model, each decision tree provides a small correction to the predictions of the previous trees, collaboratively reducing the loss function's value and improving the overall model's performance.
+\end{enumerate}
+
+
+In XGBoost, an advanced implementation of Gradient Boosting, additional improvements such as the introduction of regularization terms to prevent overfitting, computation of the second-order gradient for faster convergence, and mechanisms to handle missing values and enable parallel processing, are present. 
+
+
+An advanced and highly efficient implementation of this method is XGBoost, which introduces several improvements such as regularization terms in the objective function to prevent overfitting, the computation of the second-order gradient for faster convergence, and built-in mechanisms to handle missing values and enable parallel processing.
+
+Here a grafic representation of the process discussed above:
+
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{Images/XGBoost}
-	\caption{}%https://docs.aws.amazon.com/it_it/sagemaker/latest/dg/xgboost-HowItWorks.html}
+	\includegraphics[width=0.9\linewidth]{Images/XGBoost}
+	\caption{A concise illustration of how Gradient Boosted Trees work.}
 	\label{fig:xgboost}
 \end{figure}
 
