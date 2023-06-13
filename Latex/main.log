@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  13 JUN 2023 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  13 JUN 2023 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1411,33 +1411,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-
-Underfull \vbox (badness 1430) has occurred while \output is active []
-
- [11]
-[12]
+[11] [12]
 <Images/XGBoost.png, id=212, 724.20563pt x 406.51875pt>
 File: Images/XGBoost.png Graphic file (type png)
 <use Images/XGBoost.png>
-Package pdftex.def Info: Images/XGBoost.png  used on input line 121.
+Package pdftex.def Info: Images/XGBoost.png  used on input line 124.
 (pdftex.def)             Requested size: 434.69705pt x 244.01237pt.
-) (Chapters/chapter_3.tex [13 <./Images/XGBoost.png>] [14
+ [13 <./Images/XGBoost.png>]
+<Images/nn_neuron.jpg, id=219, 803.0pt x 249.93375pt>
+File: Images/nn_neuron.jpg Graphic file (type jpg)
+<use Images/nn_neuron.jpg>
+Package pdftex.def Info: Images/nn_neuron.jpg  used on input line 150.
+(pdftex.def)             Requested size: 386.40147pt x 120.26811pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+<Images/fig_neural_network.png, id=220, 651.43375pt x 454.69875pt>
+File: Images/fig_neural_network.png Graphic file (type png)
+<use Images/fig_neural_network.png>
+Package pdftex.def Info: Images/fig_neural_network.png  used on input line 162.
+
+(pdftex.def)             Requested size: 338.09853pt x 236.00066pt.
+[14 <./Images/nn_neuron.jpg (PNG copy)> <./Images/fig_neural_network.png>])
+(Chapters/chapter_3.tex [15] [16
 
 ]
 Underfull \vbox (badness 1147) has occurred while \output is active []
 
- [15]
-[16] [17]
-<Images/hist_features.png, id=239, 1073.9322pt x 715.473pt>
+ [17]
+[18] [19]
+<Images/hist_features.png, id=251, 1073.9322pt x 715.473pt>
 File: Images/hist_features.png Graphic file (type png)
 <use Images/hist_features.png>
 Package pdftex.def Info: Images/hist_features.png  used on input line 125.
@@ -1445,9 +1459,9 @@ Package pdftex.def Info: Images/hist_features.png  used on input line 125.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./Images/hist_features.png>]) [19] [20
+ [20 <./Images/hist_features.png>]) [21] [22
 
-] [21
+] [23
 
 ]
 \tf@toc=\write7
@@ -1458,16 +1472,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 91DB7F9B456B93F06A50F316E4293B38;965.
+(rerunfilecheck)             Checksum: 1C27FE0DC039735552A3DF322B2A5133;965.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30816 strings out of 475385
- 571316 string characters out of 2776907
- 1098034 words of memory out of 3000000
- 51723 multiletter control sequences out of 15000+600000
+ 30847 strings out of 475385
+ 572066 string characters out of 2776907
+ 1098116 words of memory out of 3000000
+ 51747 multiletter control sequences out of 15000+600000
  537096 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,22n,93p,1886b,2568s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1495,9 +1509,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Fabio/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (25 pages, 1331065 bytes).
+Output written on main.pdf (27 pages, 1442053 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

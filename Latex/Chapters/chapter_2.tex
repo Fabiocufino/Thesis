@@ -55,6 +55,9 @@ However, it is important to note that linear regression, and also other machine 
 \newpage
 
 \section{Binary Classification}
+The binary classification problem is a fundamental task in supervised learning, a branch of machine learning. It involves classifying elements of a dataset into one of two possible groups based on a set of features. For instance, a binary classification problem could involve determining whether an email is spam or not spam, whether a transaction is fraudulent or legitimate, or whether a tumor is malignant or benign.
+
+To tackle the binary classification problem, various machine learning algorithms can be employed. Two common approaches are \textit{Decision Trees} and \textit{Neural Networks}. 
 
 \section{Decision Tree}
 A Decision Tree algorithm, used in supervised machine learning for classification and regression tasks, models the predictive outcome of a target variable based on decision rules inferred from input features. The process involves dissecting the overall dataset into distinct regions, where each region contains data points that are as similar as possible to each other in terms of their target class. Formally, each internal node of the tree represents a decision rule based on an input feature, which bifurcates the data into two child nodes. The decision for splitting the data at each node is determined using a metric known as Information Gain, which in turn is based on the concept of Entropy.
@@ -125,3 +128,65 @@ Here a grafic representation of the process discussed above:
 
 
 \section{Neural Networks}
+Artificial Neural Networks (ANNs) are computational models that draw inspiration from the interconnected structure of the human brain. Each individual computational unit, often referred to as an "artificial neuron" or simply "neuron", is designed to mimic the fundamental working mechanism of a biological neuron.
+
+Let's denote the inputs to an artificial neuron as $ x = [x_1, x_2, ..., x_n] $, a representation analogous to dendrites in a biological neuron. These inputs are linearly transformed by a set of weights, $ w = [w_1, w_2, ..., w_n] $, summed together, and a bias term, $ b $, is added to the result. This operation can be expressed mathematically as:
+
+\[
+z = \sum_{i=1}^{n} w_i x_i + b 
+\]
+
+The calculated value, $ z $, is then passed through an activation function, $ f $, to generate the neuron's output, $ a $. This process can be viewed as the equivalent of the activation potential and the subsequent firing (or not firing) in a biological neuron. The mathematical representation is as follows:
+
+\[
+a = f(z)
+\]
+
+
+
+%TODO: Migliorare la qualità dell imagine, eliminare la parte scritta
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Images/nn_neuron}
+	\caption{}
+	\label{fig:nn_neuron}
+\end{figure}
+
+The activation function introduces non-linearity into the model, which is crucial for the network's ability to learn complex patterns. Common choices for $ f $ include the sigmoid, hyperbolic tangent, and ReLU (Rectified Linear Unit) functions.\\
+
+An Artificial Neural Network builds upon the concept of the artificial neuron to form an interconnected assembly of these neurons, structured in layers. An ANN typically comprises an input layer, one or more hidden layers, and an output layer. Each layer may contain one or more neurons, and the layers are fully connected, meaning every neuron in one layer connects with all neurons in the following layer.
+
+Follows a grafic rapresentation of a ANN:
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/fig_neural_network}
+	\caption{}
+	\label{fig:Fig_nn}
+\end{figure}
+
+
+For classification problems, the output layer typically uses a softmax function for multi-class problems to output a probability distribution over the classes, or a sigmoid function for binary classification problems to provide the probability of the positive class.
+
+Training a neural network involves a two-step process: forward propagation and backpropagation. In forward propagation, the input is passed through the network to generate an output. This output is then compared with the actual target to compute the loss function $ L $.
+
+Backpropagation uses the chain rule of calculus to compute the gradient of $ L $ with respect to the network's parameters, which are then used to update the weights and biases:
+
+\[
+\frac{\partial L}{\partial w} = \frac{\partial L}{\partial a} \frac{\partial a}{\partial z} \frac{\partial z}{\partial w}
+\]
+
+Here, $ \frac{\partial L}{\partial a} $ is the derivative of the loss function with respect to the activation output, $ \frac{\partial a}{\partial z} $ is the derivative of the activation function, and $ \frac{\partial z}{\partial w} $ is the derivative of the weighted sum with respect to the weights.
+
+Once these gradients are calculated, they are used to update the weights and biases via gradient descent, a process that iteratively adjusts the parameters to minimize the loss function:
+
+\[
+w_{\text{new}} = w_{\text{old}} - \alpha \frac{\partial L}{\partial w}
+\]
+
+\[
+b_{\text{new}} = b_{\text{old}} - \alpha \frac{\partial L}{\partial b}
+\]
+
+In these equations, $ \alpha $ is the learning rate, a hyperparameter that determines the size of the steps the algorithm takes down the gradient towards the minimum.
+
+The interconnected structure of ANNs, combined with the ability of backpropagation and gradient descent to effectively adjust the model parameters, allows these networks to learn and represent complex, non-linear relationships in the data.
