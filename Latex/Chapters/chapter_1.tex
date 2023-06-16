@@ -8,7 +8,7 @@ This leads us to the theory of neutrino oscillation, a quantum mechanical phenom
 
 
 \section{Neutrinos Oscillation}
-The Standard Model of elementary particle interactions provides an accurate description of strong, weak, and electromagnetic interactions, but it treats these interactions as distinct and unrelated. Within this framework, neutrinos are assumed to be massless, but this assumption has been called into question by physicists. Neutrino oscillations, which occur when neutrinos change from one flavor to another, are a potential indication of neutrino mass.\\
+The Standard Model of elementary particle interactions provides an accurate description of strong, weak, and electromagnetic interactions, but it treats these interactions as distinct and unrelated. Within this framework, neutrinos are assumed to be massless, but this assumption has been called into question by physicists. Neutrino oscillations, are a potential indication of neutrino mass.\\
 The term "neutrino oscillations" refers to this phenomena and it involve the conversion of a neutrino of a particular flavor to another as it propagates through space.
 
 Each known flavor eigenstate, $(\nu_e,\nu_{\mu},\nu_{\tau})$, linked to three respective charged leptons $(e,\mu,\tau)$  via the charged current interactions can be considered a complex combination of neutrino mass eigenstates as follow:
@@ -71,7 +71,12 @@ Past experiments have already given estimates for  $\Delta m_{21}^2,\left|\Delta
 \end{figure}
 
 
-JUNO's primary objective is to refine these results, particularly to ascertain the sign of $\Delta m_{31}^2$, which will distinguish between two potential scenarios: Normal Ordering (NO), where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|+\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_1<m_2<m_3$, and Inverted Ordering (IO), where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|-\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_3<m_1<m_2$. The sign of $\Delta m_{31}^2$ subtly alters the plot of \ref{fig:antineutinotoantineutrinoprobabilityplot}. However, it remains uncertain whether the $\nu_3$ neutrino mass eigenstate is heavier or lighter than the $\nu_1$ and $\nu_2$ mass eigenstates.
+JUNO's primary objective is to refine these results, particularly to ascertain the sign of $\Delta m_{31}^2$, which will distinguish between two potential scenarios:
+\begin{itemize}
+	\item \textit{Normal Ordering (NO)}, where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|+\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_1<m_2<m_3$,
+	\item \textit{Inverted Ordering (IO)}, where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|-\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_3<m_1<m_2$.
+\end{itemize}
+The sign of $\Delta m_{31}^2$ subtly alters the plot of \ref{fig:antineutinotoantineutrinoprobabilityplot}. However, it remains uncertain whether the $\nu_3$ neutrino mass eigenstate is heavier or lighter than the $\nu_1$ and $\nu_2$ mass eigenstates.
 
 
 \section{The JUNO detector}
@@ -83,13 +88,14 @@ A schematic illustration of JUNO is presented in Fig.\ref{fig:junoschemeexperime
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Images/juno_scheme_experiment}
+	\includegraphics[width=0.6\linewidth]{Images/juno_scheme_experiment}
 	\caption[JUNO scheme experiment]{Schematic view of the JUNO experiment}
 	\label{fig:junoschemeexperiment}
 \end{figure}
 
 
-Furthermore, the JUNO experiment deploys a specialized compact detector named TAO. Situated approximately 30 meters from one of the Taishan reactors, TAO serves to measure the unoscillated reactor antineutrino spectrum shape precisely. The data collected by TAO is intended to provide a crucial data-driven input to refine the spectra from the other reactor cores. The core of the JUNO detector, the \textbf{Central Detector (CD)}, is complemented by a water \textbf{Cherenkov detector} and a \textbf{Top Tracker (TT)}. Notably, the CD, designed as a compact, non-segmented detector, boasts an effective energy resolution of $\sigma_E/E =3\% / \sqrt{E (MeV)}$, a testament to the advantage of opting for a compact design over a segmented one.\\
+Furthermore, the JUNO experiment deploys a specialized compact detector named TAO. Situated approximately 30 meters from one of the Taishan reactors, TAO serves to measure the unoscillated reactor antineutrino spectrum shape precisely. The data collected by TAO is intended to provide a crucial data-driven input to refine the spectra from the other reactor cores. \\
+The core of the JUNO detector, the \textbf{Central Detector (CD)}, is complemented by a water \textbf{Cherenkov detector} and a \textbf{Top Tracker (TT)}. Notably, the CD, designed as a compact, non-segmented detector, boasts an effective energy resolution of $\sigma_E/E =3\% / \sqrt{E (MeV)}$, a testament to the advantage of opting for a compact design over a segmented one.\\
 
 The CD contains a 20 kton liquid scintillator (LS), safely housed within a spherical acrylic vessel and submerged in a water pool. The pool, with a diameter of 43.5 m and a height of 44 m, provides an adequate buffer to shield the LS from the radioactive influence of the surrounding rock.
 
@@ -97,8 +103,9 @@ The vessel is supported by a stainless steel (SS) structure through connecting b
 
 Above the water pool resides the Top Tracker, an assembly of a plastic scintillator array, meticulously arranged to measure muon tracks accurately. The CD is connected to the external environment through a chimney, which facilitates calibration operations. Located above this chimney is the Calibration House, equipped with special radioactivity shielding and a muon detector, playing a crucial role in the overall experimental setup.
 
+\newpage
 
-\section{JUNO signals and backgrounds}
+\section{JUNO signal and background}
 
 \subsection{Signal}
 %TODO: Aggiungere REACTOR FLUX sul unoscill file
@@ -130,18 +137,24 @@ This process is initiated when an antineutrino interacts with a proton in the li
 		\overline{\nu}_e + p &\rightarrow e^+ + n \\
 	\end{aligned}
 \end{equation} 
+IBD is characterized by a comparatively low threshold of 1.8 MeV, a substantial cross section, and it can be readily differentiated from the background due to its delayed $\gamma$ signature.\\
 
 The positron, carrying the majority of the antineutrino's initial energy, deposits this energy in the scintillator through ionization. This energy deposition, coupled with the positron's subsequent annihilation typically into two 0.511 MeV photons, forms the prompt signal, characterized as follow: $e^{+} + e^{-} \rightarrow 2\gamma$.
 The energy deposited by the positron directly correlates with the antineutrino energy, providing a precise measure critical for neutrino oscillation studies.\\
 
-Following the prompt signal, the neutron is captured primarily on hydrogen (approximately 99$\%$ of the time) after an average delay of about 220 µs. This capture event releases a single 2.2 MeV photon, creating the delayed signal. Occasionally, the neutron is captured on carbon (around 1$\%$ of the time), resulting in a gamma-ray signal with a total energy of 4.9 MeV. Despite carrying only a small fraction of the initial antineutrino energy, typically from zero to a few tens of keV, neutron recoils are considered in the calculations due to JUNO's exceptional energy resolution.
+Following the prompt signal, the neutron is captured primarily on hydrogen (approximately 99$\%$ of the time) after an average delay of about 220 µs. This capture event releases a single 2.2 MeV photon, creating the delayed signal. Occasionally, the neutron is captured on carbon (around 1$\%$ of the time), resulting in a gamma-ray signal with a total energy of 4.9 MeV. The process is described as follows:
 
-The light output from these events is detected by the photomultiplier tubes (PMTs). PMTs are sensitive detectors that convert light into an electrical signal. They operate based on the photoelectric effect and subsequent electron multiplication. When a photon hits the photocathode (the light-sensitive surface inside the PMT), it can eject an electron through the photoelectric effect. This electron is then accelerated by an electric field towards a series of electrodes called dynodes. Each time an electron hits a dynode, more electrons are released. This process is repeated multiple times, resulting in a cascade of electrons and a significant amplification of the original signal. The final electrical signal, which can be easily measured, is proportional to the number of photons that hit the photocathode.
+\begin{equation}
+	 n + ^{1}\text{H} \rightarrow ^{2}\text{H}^{*} \rightarrow ^2\text{H} + \gamma
+\end{equation}
+ 
+Despite carrying only a small fraction of the initial antineutrino energy, typically from zero to a few tens of keV, neutron recoils are considered in the calculations due to JUNO's exceptional energy resolution.
 
+The light output from these events is detected by the photomultiplier tubes (PMTs), sensitive detectors that convert light into an electrical signal. They operate based on the photoelectric effect and subsequent electron multiplication. The signals from all the PMTs are then combined to reconstruct the position and energy of the original neutrino interaction. This technique allows JUNO to measure the energy of the incoming neutrino to high precision, which is crucial for studying neutrino oscillation. %When a photon hits the photocathode (the light-sensitive surface inside the PMT), it can eject an electron through the photoelectric effect. This electron is then accelerated by an electric field towards a series of electrodes called dynodes. Each time an electron hits a dynode, more electrons are released. This process is repeated multiple times, resulting in a cascade of electrons and a significant amplification of the original signal. The final electrical signal, which can be easily measured, is proportional to the number of photons that hit the photocathode. 
 
-The PMTs detect the light and convert it into an electrical signal. The signals from all the PMTs are then combined to reconstruct the position and energy of the original neutrino interaction. This technique allows JUNO to measure the energy of the incoming neutrino to high precision, which is crucial for studying neutrino oscillation.
+\newpage 
 
-\subsection{Backgrounds}
+\subsection{Background}
 The design and composition of the scintillator in the JUNO experiment are meticulously optimized to minimize background noise from various radiation sources, such as cosmic rays and natural radioactivity. Despite these efforts, several types of background signals are inevitably produced in the detector. For the purpose of analysis, we focus primarily on the three most significant contributors:
 
 
@@ -163,9 +176,9 @@ These radiogenic backgrounds can potentially mimic the signal from inverse beta 
 
 \end{enumerate}
 
-\subsubsection*{Cosmogenic Backgrounds}
+\subsection*{Cosmogenic Backgrounds}
 
-Cosmogenic backgrounds in JUNO primarily result from the interaction of cosmic rays, particularly high-energy muons ($\texttt{\string~}  $ GeV), with the detector materials. These interactions lead to the production of fast neutrons and unstable isotopes through the process of spallation in which a high-energy particle strikes a target atom, causing it to emit smaller particles such as neutrons and unstable isotopes. Specifically, these muons interact with the detector materials, resulting in the production of isotopes like  $^{9}\mathrm{Li}$, $^{8}\mathrm{He}$ and $^{11}\mathrm{C}$, which are unstable and subsequently decay, contributing to additional background events.
+Cosmogenic backgrounds in JUNO primarily result from the interaction of cosmic rays, particularly high-energy muons ($\mathcal{O}(\text{GeV})$), with the detector materials. These interactions lead to the production of fast neutrons and unstable isotopes through the process of spallation in which a high-energy particle strikes a target atom, causing it to emit smaller particles such as neutrons and unstable isotopes. Specifically, these muons interact with the detector materials, resulting in the production of isotopes like  $^{9}\mathrm{Li}$, $^{8}\mathrm{He}$ and $^{11}\mathrm{C}$, which are unstable and subsequently decay, contributing to additional background events.
 
 These fast neutrons and unstable isotopes, produced from the interactions of muons with the detector materials, can generate signals that mimic an inverse beta decay (IBD) event. Specifically, there are two distinct signals to consider.
 
@@ -206,11 +219,12 @@ Here a viasualization sumary of all the bacgrounds contributions:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Images/backgrounds_spectrum}
-	\caption{Visible energy spectrum as measured by the LPMT system with (grey) and without (black) backgrounds is that which is anticipated for JUNO. The predicted backgrounds, which make up around 7$\%$ of the whole sample of IBD candidates and are primarily confined below, are shown in the inset as spectra. $\approx$ 3 MeV}
+	\caption{Visible energy spectrum with (grey) and without (black) backgrounds is that which is anticipated for JUNO. The predicted backgrounds, which make up around 7$\%$ of the whole sample of IBD candidates and are primarily confined below, are shown in the inset as spectra. $\approx$ 3 MeV}
 	\label{fig:backgroundsspectrum}
 \end{figure}
 
 
 Following the comprehensive discussion of all background events in the JUNO experiment, it becomes clear that due to the significant presence of various types of background events, efforts are being made to reduce their contribution in every possible way. Several strategies have been employed to mitigate these background signals. Methods include the use of shielding materials to block external radiation, careful selection and treatment of detector materials to minimize internal radioactivity, and sophisticated data analysis techniques to identify and reject background events.
 
-However, it's important to note that a large portion of the accidental background events are the only ones where significant reduction can be achieved. These are the events that occur randomly and independently, and their reduction requires a different approach compared to correlated backgrounds. The focus of this thesis is precisely on these accidental background events, exploring strategies and techniques to further minimize their impact on the experiment. This is a crucial aspect of the experiment's success, as reducing these events can significantly improve the sensitivity and accuracy of the neutrino measurements.	 
+However, it's important to note that a large portion of the accidental background events are the only ones where significant reduction can be achieved. These are the events that occur randomly and independently, and their reduction requires a different approach compared to correlated backgrounds. The focus of this thesis is precisely on these accidental background events, exploring strategies and techniques to further minimize their impact on the experiment.\\
+This is a crucial aspect of the experiment's success, as reducing these events can significantly improve the sensitivity and accuracy of the neutrino measurements.	 

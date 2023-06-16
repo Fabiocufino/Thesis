@@ -6,14 +6,14 @@ In the context of this research, I have been granted access to two distinct gene
 The first of the datasets provided is specifically tailored for the study of Inverse Beta Decay (IBD) events. Each event within this dataset, simulated and injected into the system, is tagged with a unique Simulation Identifier, or SimID. Furthermore, events which trigger a sufficient number of PMTs to be captured by the electronic system are assigned an EventID. This intricate labeling system allows for a clear differentiation between correlated IBD events, which represent actual IBD occurrences, and uncorrelated IBD events.
 
 
-
 The second dataset focuses primarily on radioactivity events. Similar to the IBD dataset, it encompasses a large number of simulated events, each reflecting the complex reality of real-world physics phenomena. Additionally, the inherent electronic noise prevalent in actual physical environments is accurately accounted for, ensuring a realistic representation within the simulated context.
 
 In this research undertaking, my central task will focus on a detailed examination and evaluation of the provided datasets. My work will primarily involve not just interpreting the inherent characteristics and peculiarities of the recorded events, but also harnessing these insights to construct comprehensive feature tables. These feature tables, generated from the datasets, will serve as the basis for my subsequent analysis and interpretation, a process which will be elaborated upon in the following sections of this study. The aim is to provide a meaningful understanding of the correlations and implications of these events within the broader context of the JUNO experiment.
+
 %TODO-> Inserire il fatto che i dataset sono stati creati in ordine temporale in parallelo con SimID Per simulare 1500000 eventi nel MonteCarlo ci vorrebbero mesi e mesi di tempo macchina.
-Per affrontare il problema, si parallelizza la simulazione su una infrastruttura chiamata DCI (Distributed Computing Infrastructure).
-In questo modo si può ad esempio dividere i 1500000 eventi in 1500 jobs (simulati quindi da 1500 CPU diverse) da 1000 event ciascuno, completando la produzione in poche ore invece che in mesi.
-Questo approccio ha però il drawback che ogni simulazione parallela sarà indipendente dalle altre e quindi per ciascuna di queste il tempo, i SimID e tutte le altre quantità partirano da 0"" 
+%Per affrontare il problema, si parallelizza la simulazione su una infrastruttura chiamata DCI (Distributed Computing Infrastructure).
+%In questo modo si può ad esempio dividere i 1500000 eventi in 1500 jobs (simulati quindi da 1500 CPU diverse) da 1000 event ciascuno, completando la produzione in poche ore invece che in mesi.
+%Questo approccio ha però il drawback che ogni simulazione parallela sarà indipendente dalle altre e quindi per ciascuna di queste il tempo, i SimID e tutte le altre quantità partirano da 0"" 
 
 %La seconda colonna -> Si, sono il numero di eventi generati. Non tutti gli eventi generati interagiscono con il detector: un evento generato nella struttura metallica può venire fermato nella struttura stessa e non interagire con il detector, o ancora un evento generato nell'acrilico può venire emesso verso l'esterno e quindi non entrare mai in contatto con il detector e così via.
 %Se consideri ora solo gli eventi che davvero sono entrati in contatto con il detector, non tutti gli eventi vengono ricostruiti: alcuni eventi sono così poco energetici che non sono sufficienti ad illuminare i PMT e quindi ad azionare il trigger per l'acquisizione dell'evento.
@@ -39,33 +39,41 @@ Questo approccio ha però il drawback che ogni simulazione parallela sarà indip
 %TODO-> Mention unbalanced datasets problem
 
 
-Ciao Fabio, la radioattività con cui hai lavorato rappresenta tutto il contributo da decadimenti radioattivi (alfa, beta, gamma) interno ed esterno a detector, ma che hanno depositato energia all'interno del detector.
-Ti lascio la tabella degli isotopi e delle rate di decadimento generate qui di seguito:
+%Ciao Fabio, la radioattività con cui hai lavorato rappresenta tutto il contributo da decadimenti radioattivi (alfa, beta, gamma) interno ed esterno a detector, ma che hanno depositato energia all'interno del detector.Ti lascio la tabella degli isotopi e delle rate di decadimento generate qui di seguito:
 
+ 
 
-| **Dataset Name**  | **Number of Events**  | **Rates (used in elecsim)**  |
-|:----------------: |:--------------------: |:---------------------------: |
-|      U238@LS      |   1,000,000 events    |           3.234 Hz           |
-|     Th232@LS      |   1,000,000 events    |           0.733 Hz           |
-|      K40@LS       |   1,000,000 events    |           0.53 Hz            |
-|     Pb210@LS      |   1,000,000 events    |           17.04 Hz           |
-|      C14@LS       | 1,000,000,000 events  |           3.3e4 Hz           |
-|      Kr85@LS      |   1,000,000 events    |           1.163 Hz           |
-|   U238@Acrylic    |   10,000,000 events   |           98.41 Hz           |
-|   Th232@Acrylic   |   10,000,000 events   |           22.29 Hz           |
-|    K40@Acrylic    |   10,000,000 events   |          161.25 Hz           |
-|   U238@node/bar   |  100,000,000 events   |          2102.36 Hz          |
-|  Th232@node/bar   |  100,000,000 events   |          1428.57 Hz          |
-|   K40@node/bar    |  100,000,000 events   |           344.5 Hz           |
-|   Co60@node/bar   |  100,000,000 events   |           97.5 Hz            |
-|   U238@PMTGlass   | 1,000,000,000 events  |          4.90e6 Hz           |
-|  Th232@PMTGlass   | 1,000,000,000 events  |          8.64e5 Hz           |
-|   K40@PMTGlass    | 1,000,000,000 events  |          4.44e5 Hz           |
-|  Tl208@PMTGlass   | 1,000,000,000 events  |          1.39e5 Hz           |
-|    Co60@Truss     |           0           |             ? Hz             |
-|    Tl208@Truss    |           0           |             ? Hz             |
-| Rn222@WaterRadon  |  100,000,000 events   |            90 Hz             |
+\begin{table}[htp]
+\centering
+\begin{tabular}{|c|c|c|}
+	\hline
+ \textbf{Dataset Name}  & \textbf{Number of Events}  & \textbf{Rates (used in elecsim)}   \\\hline\hline
+      U238@LS      &   1,000,000 events    &           3.234 Hz            \\\hline
+     Th232@LS      &   1,000,000 events    &           0.733 Hz            \\\hline
+      K40@LS       &   1,000,000 events    &           0.53 Hz             \\\hline
+     Pb210@LS      &   1,000,000 events    &           17.04 Hz            \\\hline
+      C14@LS       & 1,000,000,000 events  &           3.3e4 Hz            \\\hline
+      Kr85@LS      &   1,000,000 events    &           1.163 Hz            \\\hline
+   U238@Acrylic    &   10,000,000 events   &           98.41 Hz            \\\hline
+   Th232@Acrylic   &   10,000,000 events   &           22.29 Hz            \\\hline
+    K40@Acrylic    &   10,000,000 events   &          161.25 Hz            \\\hline
+   U238@node/bar   &  100,000,000 events   &          2102.36 Hz           \\\hline
+  Th232@node/bar   &  100,000,000 events   &          1428.57 Hz           \\\hline
+   K40@node/bar    &  100,000,000 events   &           344.5 Hz            \\\hline
+   Co60@node/bar   &  100,000,000 events   &           97.5 Hz             \\\hline
+   U238@PMTGlass   & 1,000,000,000 events  &          4.90e6 Hz            \\\hline
+  Th232@PMTGlass   & 1,000,000,000 events  &          8.64e5 Hz            \\\hline
+   K40@PMTGlass    & 1,000,000,000 events  &          4.44e5 Hz            \\\hline
+  Tl208@PMTGlass   & 1,000,000,000 events  &          1.39e5 Hz            \\\hline
+    Co60@Truss     &           0           &             ? Hz              \\\hline
+    Tl208@Truss    &           0           &             ? Hz              \\\hline
+ Rn222@WaterRadon  &  100,000,000 events   &            90 Hz              \\\hline
+\end{tabular}
+\caption{Here Caption}
+\label{tab:BKG_gen}
+\end{table}
 
+\newpage
 
 \section{Feature creation}
 The development of machine learning models for the detection of Inverse Beta Decay (IBD) events necessitates a systematic and efficient approach to feature engineering. This process begins with the loading of two separate datasets, one for IBDs and one for radioactivity background, each containing a multitude of potential IBD events. The primary objective is to construct a feature table that encapsulates the unique characteristics of these events, providing a robust foundation for subsequent model training.

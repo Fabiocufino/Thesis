@@ -9,50 +9,7 @@ Machine learning is a powerful tool that can be used to identify patterns in com
 
 Supervised learning is a machine learning technique in which the algorithm is trained on a labelled dataset, where the input data is accompanied by the correct output. The goal of the algorithm is to learn a function that can map input data to output data. Some examples of supervised learning algorithms include linear regression, logistic regression, decision trees, and support vector machines. Despite the complexity and diversity of these methods, it's more advantageous to illustrate the profound concepts of machine learning through a simple machine learning algorithm, such as linear regression. 
 
-\subsection{Linear Regression}
-Linear regression is a type of supervised learning algorithm used in machine learning for predictive analysis. It is used to model the relationship between a dependent variable, called the target, and one or more independent variables, called the features.
-\\
-The basic idea behind linear regression is to find the best-fitting hyper-plane that describes the relationship between the independent and dependent variables. The equation for the hyper-plane can be written as:
 
-\begin{equation}
-	y = w_0 + w_1 x_1 + w_2 x_2 + ... + w_n x_n 
-\end{equation}
- where 
-\begin{itemize}
-	\item $y$ is the dependent variable
-	\item $x_1, x_2, ..., x_p$ are the independent variables
-	\item $w_0, w_1, w_2, ..., w_n$ are the coefficients or parameters of the model
-\end{itemize}
-
-In order to determine the values of the coefficients $w_0, w_1, w_2, ..., w_n$, a common approach is to minimize a loss function, which measures the difference between the predicted values of the dependent variable and the actual values. The most commonly used loss function in linear regression is the mean squared error (MSE) function, which is defined as:
-
-\begin{equation}
-	L(w_0, w_1, w_2, ..., w_n) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
-\end{equation}
-
-where $n$ is the number of observations, $y_i$ is the actual value of the dependent variable for the $i$-th observation, and $\hat{y_i}$ is the predicted value of the dependent variable for the $i$-th observation.
-
-
-The objective of linear regression is to determine the optimal values of coefficients $w_0, w_1, w_2, ..., w_n$ that minimize a predefined loss function $L(w_0, w_1, w_2, ..., w_n)$. One commonly employed method to accomplish this is the gradient descent algorithm.\\
-
-
-Gradient descent is an iterative optimization technique for finding the local minimum of a function. To apply gradient descent in the context of a linear regression problem, we initialize the coefficients with random values and then iteratively update these values in the direction that decreases the loss function the most.
-
-Mathematically, the update rule for each coefficient is:
-
-\begin{equation}
-	w_j^{(new)} = w_j^{(old)} - \alpha \frac{\partial L}{\partial w_j}
-\end{equation}
-
-
-where $w_j^{(new)}$ and $w_j^{(old)}$ are the new and old values of the j-th coefficient, $\alpha$ is the learning rate, and $\frac{\partial L}{\partial w_j}$ is the partial derivative of the loss function with respect to the j-th coefficient. The learning rate $\alpha$ determines the size of the steps we take towards the minimum.
-
-Once we reach a point where the loss function no longer decreases (or decreases very slowly), we stop the iteration and accept the current values of coefficients as the solution.
-\\
-
-However, it is important to note that linear regression, and also other machine learning alghoritms can suffer from overfitting or underfitting. Overfitting occurs when the model is too complex and captures noise in the data, while underfitting occurs when the model is too simple and fails to capture the underlying patterns in the data. To prevent overfitting or underfitting, regularization techniques can be used.
-
-\newpage
 
 \section{Binary Classification}
 The binary classification problem is a fundamental task in supervised learning, a branch of machine learning. It involves classifying elements of a dataset into one of two possible groups based on a set of features. For instance, a binary classification problem could involve determining whether an email is spam or not spam, whether a transaction is fraudulent or legitimate, or whether a tumor is malignant or benign.
