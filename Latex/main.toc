@@ -9,10 +9,9 @@
 \contentsline {chapter}{\chapternumberline {2}Frameworks}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction to Machine Learning}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Supervised Learning}{11}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Binary Classification}{11}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Decision Tree}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Gradient Boosting Decision Trees}{12}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Neural Networks}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.2}Decision Tree}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Gradient Boosting Decision Trees}{12}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Neural Networks}{14}{section.2.3}%
 \contentsline {chapter}{\chapternumberline {3}Analysis}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Datasets}{17}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Feature creation}{18}{section.3.2}%
@@ -20,7 +19,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Radioactivity dataset}{20}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Models}{21}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Manual Cut}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}XGBoost}{21}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}PyThorch}{21}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusion}{21}{section.3.4}%
-\contentsline {chapter}{References}{23}{section*.19}%
+\contentsline {subsection}{\numberline {3.3.2}XGBoost}{22}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}PyThorch}{22}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusion}{22}{section.3.4}%
+\contentsline {chapter}{References}{25}{section*.20}%

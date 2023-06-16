@@ -1,7 +1,7 @@
 \chapter{Analysis}
 
 \section{Datasets}
-In the context of this research, I have been granted access to two distinct generated datasets, produced utilizing SNIPER, a leading-edge simulation tool deployed within the framework of the JUNO experiment. 
+The labeled datasets employed in the ensuing analysis are all products of Monte Carlo simulation, generated via the SNiPER software.
 
 The first of the datasets provided is specifically tailored for the study of Inverse Beta Decay (IBD) events. Each event within this dataset, simulated and injected into the system, is tagged with a unique Simulation Identifier, or SimID. Furthermore, events which trigger a sufficient number of PMTs to be captured by the electronic system are assigned an EventID. This intricate labeling system allows for a clear differentiation between correlated IBD events, which represent actual IBD occurrences, and uncorrelated IBD events.
 
@@ -140,7 +140,65 @@ For the radioactivity dataset, the feature calculation was performed in a manner
 In summary, the feature engineering process for IBD event detection involves careful consideration of the unique characteristics of these events, systematic feature construction, and efficient computation strategies. This process provides a robust foundation for the development and training of machine learning models for IBD event detection.
 
 \section{Models}
+
+
+In the context of the JUNO experiment, a significant part of the effort involves the implementation and optimization of an event selection algorithm. The primary objective of this algorithm is to identify and select Inverse Beta Decay events induced by reactor antineutrinos, which are of paramount importance in the study of neutrino oscillations.
+
+In this chapter, we will present several algorithms for event selection. The first algorithm is a manual cut-based approach, \textbf{Manual Cut}, where specific cuts are defined to select events of interest. This approach involves setting criteria based on the physical characteristics of the events and known background noise sources in the detector. The manual cut algorithm allows for precise control over the selection process and enhances the signal-to-background ratio.
+
+In addition to the manual cut algorithm, other algorithms discussed in this chapter are based on machine learning models, specificaly based on \textbf{Boosted Decision Trees} and on \textbf{Neural Network}. 
+
+The inclusion of machine learning algorithms in event selection provides an alternative approach that can adapt to complex and evolving data patterns. These algorithms can uncover subtle features in the data that may not be easily captured by manual cuts alone.
+
+By exploring both manual cut and machine learning-based algorithms, we aim to provide a comprehensive understanding of different approaches to event selection, highlighting their strengths and limitations in the context of the JUNO experiment.
+
 \subsection{Manual Cut}
+The algorithm is designed to suppress various types of background noise while maintaining high efficiency for true IBD events. The selection criteria, or "cuts", are implemented using Python Code,and are applied to the Features Tables discussed above. Each cut within the algorithm serves a distinct purpose in the overall event selection process.
+
+The key components of the event selection algorithm are as follows:
+
+\begin{enumerate}
+	\item \textbf{Delta Time ($\Delta t$) and Delta Radius ($\Delta R$) cuts}: The first cut is applied on the time delay and the radial distance between the prompt and delayed signals. The criteria are:
+	\begin{itemize}
+		\item Time separation between the prompt and delayed signals should be less than 1.0 ms.
+		\item Spatial 3D separation should be less than 1.5 m.
+	\end{itemize}
+
+	These cuts are designed to reduce accidental background noise, which is the coincidence of two otherwise uncorrelated events, typically of radiogenic origin. The accidental background can be measured with excellent precision and subtracted by off-time window techniques. By imposing a limit on the time and spatial separation between the prompt and delayed signals, the algorithm can effectively distinguish between true IBD events and accidental coincidences.
+	\item \textbf{Energy of the Prompt Signal ($E_{pro}$) Cut}: The next cut is applied on the energy of the prompt signal, which is the initial signal produced by the antineutrino interaction. The criteria are:
+	\begin{itemize}
+		\item Energy of the prompt signal should be within the [0.7, 12.0] MeV range.
+	\end{itemize}
+	
+	This cut is based on the expectation that IBD events dominate this energy range. The energy of the prompt signal corresponds to the energy of the positron from the IBD reaction, and the specific range is chosen to maximize the signal-to-background ratio.
+	\item \textbf{Energy of the Delayed Signal ($E_{del}$) Cut}: The final cut is applied on the energy of the delayed signal, which is the signal produced by the neutron capture that follows the antineutrino interaction. The criteria are:
+	\begin{itemize}
+		\item Energy of the delayed signal should be within the [1.9, 2.5] MeV or [4.4, 5.5] MeV ranges.
+	\end{itemize}
+	
+	These energy selection windows correspond to neutron capture on hydrogen and carbon, respectively. The energy of the delayed signal is characteristic of the neutron capture process, and the specific ranges are chosen to correspond to the expected energies of neutron capture on hydrogen and carbon in the detector.
+\end{enumerate}
+
+An evaluation was conducted to assess the accuracy of the algorithm. In this evaluation, the feature table of true IBD events was utilized to gauge the algorithm's performance. The results indicated that out of a total of 1,468,385 events, 1,435,115 events were accurately classified as IBD. This achievement translates to an accuracy rate of $97.73\%$, indicating the algorithm's successful identification of the majority of true IBD events.\\
+
+
+Furthermore, the efficiency calculation was performed on the background dataset, yielding the following results: 26.0 out of 993,457 events were mistakenly classified as IBD, resulting in an efficiency rate of $99.997\%$. This indicates that the algorithm has an excellent capability to distinguish and reject background events, achieving a high level of efficiency in identifying true IBD events. The extremely low misclassification rate of background events as IBD further highlights the algorithm's effectiveness in minimizing false positives and maintaining a high level of purity in the selected IBD events.
+
+
+A summary table presents the results obtained from the evaluations:
+
+\begin{table}[ht]
+	\centering
+	\caption{Summary of Algorithm Performance}
+	\label{tab:algorithm-results}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Dataset & Total Events & IBD Events Selected & Accuracy (\%) \\ \hline\hline
+		True IBD Events & 1,468,385 & 1,435,115 & 97.73 \\ \hline
+		Background Events & 993,457 & 26 & 99.997 \\ \hline
+	\end{tabular}
+\end{table}
+
 \subsection{XGBoost}
 \subsection{PyThorch}
 
