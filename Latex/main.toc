@@ -19,7 +19,9 @@
 \contentsline {subsection}{\numberline {3.2.2}Radioactivity dataset}{20}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Models}{21}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Manual Cut}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}XGBoost}{22}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}PyThorch}{22}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusion}{22}{section.3.4}%
-\contentsline {chapter}{References}{25}{section*.20}%
+\contentsline {subsection}{\numberline {3.3.2}XGBoost}{23}{subsection.3.3.2}%
+\contentsline {subsubsection}{Results}{24}{section*.20}%
+\contentsline {subsubsection}{Interpretation of the model}{25}{section*.22}%
+\contentsline {subsection}{\numberline {3.3.3}PyThorch}{27}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusion}{27}{section.3.4}%
+\contentsline {chapter}{References}{29}{section*.27}%
