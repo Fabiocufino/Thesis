@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  18 JUN 2023 23:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  19 JUN 2023 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1431,36 +1431,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+[5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 <Images/backgrounds_spectrum.png, id=166, 1110.39844pt x 606.76688pt>
 File: Images/backgrounds_spectrum.png Graphic file (type png)
 <use Images/backgrounds_spectrum.png>
-Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 22
-1.
+Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 21
+8.
 (pdftex.def)             Requested size: 338.09853pt x 184.75346pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1468,52 +1463,51 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [8]) (Chapters/chapter_2.tex [9 <./Images/backgrounds_spectrum.png>] [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-[12] [13]
-<Images/nn_neuron.jpg, id=207, 602.25pt x 132.495pt>
-File: Images/nn_neuron.jpg Graphic file (type jpg)
-<use Images/nn_neuron.jpg>
-Package pdftex.def Info: Images/nn_neuron.jpg  used on input line 86.
-(pdftex.def)             Requested size: 386.40147pt x 85.01079pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-<Images/fig_neural_network.png, id=208, 651.43375pt x 454.69875pt>
+[13]
+<Images/fig_neural_network.png, id=207, 651.43375pt x 454.69875pt>
 File: Images/fig_neural_network.png Graphic file (type png)
 <use Images/fig_neural_network.png>
-Package pdftex.def Info: Images/fig_neural_network.png  used on input line 98.
+Package pdftex.def Info: Images/fig_neural_network.png  used on input line 92.
 (pdftex.def)             Requested size: 241.5pt x 168.56198pt.
+<Images/nn_neuron.jpg, id=208, 676.77844pt x 413.29407pt>
+File: Images/nn_neuron.jpg Graphic file (type jpg)
+<use Images/nn_neuron.jpg>
+Package pdftex.def Info: Images/nn_neuron.jpg  used on input line 98.
+(pdftex.def)             Requested size: 241.5pt x 147.48033pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (15.66644pt too wide) in paragraph at lines 92--99
+ [][][][] 
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[14 <./Images/nn_neuron.jpg>]) (Chapters/chapter_3.tex [15 <./Images/fig_neural
-_network.png>] [16
+[14 <./Images/fig_neural_network.png> <./Images/nn_neuron.jpg>])
+(Chapters/chapter_3.tex [15] [16
 
 ] [17] [18] [19]
-<Images/hist_features.png, id=239, 1073.9322pt x 714.7503pt>
+<Images/hist_features.png, id=240, 1073.9322pt x 714.7503pt>
 File: Images/hist_features.png Graphic file (type png)
 <use Images/hist_features.png>
 Package pdftex.def Info: Images/hist_features.png  used on input line 136.
@@ -1523,128 +1517,131 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-[21]
-<Images/Cut/delta_radius.png, id=255, 414.8298pt x 294.1389pt>
+<Images/Cut/delta_radius.png, id=249, 414.8298pt x 294.1389pt>
 File: Images/Cut/delta_radius.png Graphic file (type png)
 <use Images/Cut/delta_radius.png>
-Package pdftex.def Info: Images/Cut/delta_radius.png  used on input line 179.
+Package pdftex.def Info: Images/Cut/delta_radius.png  used on input line 177.
 (pdftex.def)             Requested size: 199.16928pt x 141.22096pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 179.
+(Font)              <10> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 179.
+(Font)              <7> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 179.
-<Images/Cut/delta_time.png, id=256, 425.6703pt x 294.1389pt>
+(Font)              <5> on input line 177.
+<Images/Cut/delta_time.png, id=250, 425.6703pt x 294.1389pt>
 File: Images/Cut/delta_time.png Graphic file (type png)
 <use Images/Cut/delta_time.png>
-Package pdftex.def Info: Images/Cut/delta_time.png  used on input line 182.
+Package pdftex.def Info: Images/Cut/delta_time.png  used on input line 180.
 (pdftex.def)             Requested size: 199.16928pt x 137.6304pt.
-<Images/Cut/e_pro.png, id=257, 430.0065pt x 297.7524pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21]
+<Images/Cut/e_pro.png, id=259, 430.0065pt x 297.7524pt>
 File: Images/Cut/e_pro.png Graphic file (type png)
 <use Images/Cut/e_pro.png>
-Package pdftex.def Info: Images/Cut/e_pro.png  used on input line 199.
+Package pdftex.def Info: Images/Cut/e_pro.png  used on input line 197.
 (pdftex.def)             Requested size: 213.39566pt x 147.76271pt.
 
-Underfull \hbox (badness 1540) in paragraph at lines 208--212
+Underfull \hbox (badness 1540) in paragraph at lines 206--210
 [][]\T1/lmr/m/n/12 This cut is based on the ex-pec-ta-tion
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 208--212
+Underfull \hbox (badness 1158) in paragraph at lines 206--210
 \T1/lmr/m/n/12 that IBD events dom-i-nate this en-ergy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
-<Images/Cut/e_del.png, id=258, 414.8298pt x 295.5843pt>
+<Images/Cut/e_del.png, id=260, 414.8298pt x 295.5843pt>
 File: Images/Cut/e_del.png Graphic file (type png)
 <use Images/Cut/e_del.png>
-Package pdftex.def Info: Images/Cut/e_del.png  used on input line 228.
+Package pdftex.def Info: Images/Cut/e_del.png  used on input line 226.
 (pdftex.def)             Requested size: 213.39566pt x 152.04945pt.
 
-Underfull \hbox (badness 1867) in paragraph at lines 237--241
+Underfull \hbox (badness 1867) in paragraph at lines 235--239
 [][]\T1/lmr/m/n/12 These en-ergy se-lec-tion win-dows cor-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 [22 <./Images/Cut/delta_radius.png> <./Images/Cut/delta_time.png> <./Images/Cut
 /e_pro.png> <./Images/Cut/e_del.png>] [23]
-Overfull \hbox (0.73862pt too wide) in paragraph at lines 288--289
+Overfull \hbox (0.73862pt too wide) in paragraph at lines 286--287
 []\T1/lmr/m/n/12 Further eval-u-a-tion of the al-go-rithm's per-for-mance was c
 on-ducted on the back-ground dataset.
  []
 
 
-Overfull \hbox (25.31284pt too wide) in paragraph at lines 298--307
+Overfull \hbox (25.31284pt too wide) in paragraph at lines 296--305
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
-<Images/Shap/summary_plot.png, id=287, 549.9747pt x 274.626pt>
+<Images/Shap/summary_plot.png, id=288, 549.9747pt x 274.626pt>
 File: Images/Shap/summary_plot.png Graphic file (type png)
 <use Images/Shap/summary_plot.png>
-Package pdftex.def Info: Images/Shap/summary_plot.png  used on input line 360.
+Package pdftex.def Info: Images/Shap/summary_plot.png  used on input line 358.
 (pdftex.def)             Requested size: 241.5pt x 120.58856pt.
-<Images/Shap/feature_importance_bar.png, id=288, 551.4201pt x 301.3659pt>
+<Images/Shap/feature_importance_bar.png, id=289, 551.4201pt x 301.3659pt>
 File: Images/Shap/feature_importance_bar.png Graphic file (type png)
 <use Images/Shap/feature_importance_bar.png>
 Package pdftex.def Info: Images/Shap/feature_importance_bar.png  used on input 
-line 363.
+line 361.
 (pdftex.def)             Requested size: 241.5pt x 131.9852pt.
 
-Overfull \hbox (15.66644pt too wide) in paragraph at lines 360--364
+Overfull \hbox (15.66644pt too wide) in paragraph at lines 358--362
  [][][][] 
  []
 
@@ -1652,11 +1649,11 @@ Overfull \hbox (15.66644pt too wide) in paragraph at lines 360--364
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25]
-<Images/Shap/E_del_force_plot.png, id=300, 1440.13031pt x 419.31656pt>
+<Images/Shap/E_del_force_plot.png, id=301, 1440.13031pt x 419.31656pt>
 File: Images/Shap/E_del_force_plot.png Graphic file (type png)
 <use Images/Shap/E_del_force_plot.png>
 Package pdftex.def Info: Images/Shap/E_del_force_plot.png  used on input line 3
-78.
+76.
 (pdftex.def)             Requested size: 483.0pt x 140.62706pt.
  [26 <./Images/Shap/summary_plot.png> <./Images/Shap/feature_importance_bar.png
 > <./Images/Shap/E_del_force_plot.png>]) [27] [28
@@ -1679,19 +1676,19 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 18F36DD1B6435905BC18CE4A4AAC678A;892.
+(rerunfilecheck)             Checksum: 2F9E4F4A754AF7BFDFA0BD9596500008;892.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32298 strings out of 475385
- 599172 string characters out of 2776907
- 1291702 words of memory out of 3000000
+ 32299 strings out of 475385
+ 599192 string characters out of 2776907
+ 1291737 words of memory out of 3000000
  53118 multiletter control sequences out of 15000+600000
  554470 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,22n,93p,1886b,2568s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 89i,22n,93p,1886b,2617s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
 :/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/U
@@ -1716,9 +1713,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Fabio/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (33 pages, 1548039 bytes).
+Output written on main.pdf (33 pages, 1555183 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
  203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

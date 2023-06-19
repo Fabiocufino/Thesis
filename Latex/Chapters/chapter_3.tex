@@ -115,7 +115,7 @@ The SimID is a unique identifier assigned to each simulated event pair during th
 
 Conversely, if a pair of events do not share the same SimID, it means they were generated as part of different simulations. These events are not correlated and thus are considered to represent BKG events. In this case, they are assigned a label of 0.
 
-This labeling strategy based on the SimID ensures a systematic and consistent methodology for event classification. It provides a clear and objective criterion to distinguish between true IBD events and BKG events, which is essential for the training and evaluation of the machine learning model.
+This labeling strategy based on the SimID ensures a systematic and consistent methodology for event classification.
 
 
 \subsubsection*{Efficient Feature Calculation}
@@ -150,8 +150,6 @@ In this chapter, we will present several algorithms for event selection.\\
  The first algorithm is a manual cut-based approach, \textbf{Manual Cut}, where specific cuts are defined to select events of interest. This approach involves setting criteria based on the physical characteristics of the events and known background noise sources in the detector. The manual cut algorithm allows for precise control over the selection process and enhances the signal-to-background ratio.
 
 In addition to the manual cut algorithm, other algorithms discussed in this chapter are based on machine learning models, specificaly based on \textbf{Boosted Decision Trees} and on \textbf{Neural Network}. 
-
-The inclusion of machine learning algorithms in event selection provides an alternative approach that can adapt to complex and evolving data patterns. These algorithms can uncover subtle features in the data that may not be easily captured by manual cuts alone.
 
 By exploring both manual cut and machine learning-based algorithms, we aim to provide a comprehensive understanding of different approaches to event selection, highlighting their strengths and limitations in the context of the JUNO experiment.
 
