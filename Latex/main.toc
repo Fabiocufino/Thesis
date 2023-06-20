@@ -23,5 +23,5 @@
 \contentsline {subsubsection}{Results}{22}{section*.19}%
 \contentsline {subsubsection}{Interpretation of the model}{22}{section*.21}%
 \contentsline {subsection}{\numberline {3.3.3}PyThorch}{24}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusion}{24}{section.3.4}%
-\contentsline {chapter}{References}{25}{section*.26}%
+\contentsline {section}{\numberline {3.4}Conclusion}{25}{section.3.4}%
+\contentsline {chapter}{References}{27}{section*.27}%

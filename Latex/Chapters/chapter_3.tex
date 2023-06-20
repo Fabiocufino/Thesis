@@ -253,6 +253,7 @@ A summary table presents the results obtained from the evaluations:
 
 \begin{figure}[h]
 	\centering
+	\hspace{-4cm}
 	\begin{minipage}{0.3\textwidth}
 		\begin{tabular}{cc}
 			\toprule
@@ -264,8 +265,8 @@ A summary table presents the results obtained from the evaluations:
 		\end{tabular}
 		\captionof{table}{Performance}
 	\end{minipage}
-	\hspace{0.05\textwidth}
-	\begin{minipage}{0.6\textwidth}
+\hspace{2cm}
+	\begin{minipage}{0.5\textwidth}
 		\centering
 		\begin{tabular}{ccc}
 			\toprule
@@ -278,6 +279,7 @@ A summary table presents the results obtained from the evaluations:
 		\caption{Confusion Matrix}
 	\label{tab:confusion_matrix_cut}
 	\end{minipage}
+	\hspace{-2cm}
 \end{figure}
 
 \subsection{XGBoost}
@@ -301,7 +303,7 @@ The chosen hyperparameters strike a balance between computational efficiency and
 \subsubsection{Results}
 In this study, the XGBoost algorithm was employed for the classification of true Inverse Beta Decay events. The algorithm exhibited remarkable efficiency in identifying true IBD events and distinguishing them from background events.
 
-A confusion matrix was constructed to provide a comprehensive understanding of the model's precision and effectiveness. The analysis was performed not on a test dataset, which constituted $20\%$ of the initial dataset, but on the total number of IBD and BKG, separately.
+A confusion matrix was constructed to provide a comprehensive understanding of the model's precision and effectiveness. The analysis was performed on the total number of IBD and BKG, separately.
 
 The confusion matrix, presented in Table \ref{tab:conf_matrix_xgb}, reveals the number of true positives, false positives, true negatives, and false negatives. The exceptionally low number of false positives and false negatives underscores the algorithm's effectiveness in minimizing misclassifications.
 
@@ -369,11 +371,11 @@ Based on the calculation of SHAP values, we can construct visualizations that ai
 \end{figure}
 
 
-The presented graphs depict the importance of each feature used by the algorithm for learning, measured by calculating the mean of the SHAP values. On the left, we see a histogram where the x-axis represents the mean absolute SHAP value for each feature. The first key characteristic of the model is evident here: the feature with the most importance in classification is $\Delta R$. Moreover, referring back to the graphs \ref{fig:hist_features}, it was already observable that $\Delta R$ is the feature that separates the IBD class most distinctly from the BKG class. A clear separation is evident from $2500 mm$ onwards, where BKG events prevail, while IBD events are more prevalent below $2500 mm$. The importance of this feature is further highlighted in the right-hand graph, where the x-axis represents the mean absolute SHAP value, and the y-axis represents the various features. Here, the prominence of the feature $\Delta R$ is underscored by the fact that it possesses the highest mean absolute SHAP value, which is 0.28.  \\
+The presented graphs depict the importance of each feature used by the algorithm for learning, measured by calculating the mean of the SHAP values. On the left, we see a histogram where the x-axis represents the mean absolute SHAP value for each feature. The first key characteristic of the model is evident here: the feature with the most importance in classification is $\Delta R$. Moreover, referring back to the Graphs \ref{fig:hist_features}, it was already observable that $\Delta R$ is the feature that separates the IBD class most distinctly from the BKG class. A clear separation is evident from $2500 mm$ onwards, where BKG events prevail, while IBD events are more prevalent below $2500 mm$. The importance of this feature is further highlighted in the right-hand graph, where the x-axis represents the mean absolute SHAP value, and the y-axis represents the various features. Here, the prominence of the feature $\Delta R$ is underscored by the fact that it possesses the highest mean absolute SHAP value, which is 0.28.  \\
 
 Two distinct data clusters for the $\Delta R$ feature are clearly visible. For high values of this feature, the algorithm returns a negative SHAP value, which translates into identification as BKG events, as expected. For lower values of the feature, positive SHAP values are returned, corresponding to events correctly identified as IBD. It's also worth noting that the clusters are perfectly separated, indicating that the algorithm is very confident in labelling events based on this feature.
 
-Second in order of importance, with a SHAP value approximately four times smaller than that of $\Delta R$, is "$E_{del}$", the energy of the delayed event, or electronic capture. Comparing with the feature histogram, Graph \ref{fig:hist_features}, it's clear that most BKG data occupy the initial part of the histogram, thus at lower energies, and the algorithm has learned to determine that for lower delayed signal energies, the event is classified as a BKG event. For slightly higher energies, given the presence of characteristic peaks that significantly increase the counts of IBD events, the algorithm learns to correctly determine an IBD event. 
+Second in order of importance, with a SHAP value approximately four times smaller than that of $\Delta R$, is $E_{del}$, the energy of the delayed event, or electronic capture. Comparing with the feature histogram, Graph \ref{fig:hist_features}, it's clear that most BKG data occupy the initial part of the histogram, thus at lower energies, and the algorithm has learned to determine that for lower delayed signal energies, the event is classified as a BKG event. For slightly higher energies, given the presence of characteristic peaks that significantly increase the counts of IBD events, the algorithm learns to correctly determine an IBD event. 
 
 Delving deeper into the analysis of this feature, a plot was created where the x-axis represents individual events, and the y-axis represents the effect that each event had on the $E_{del}$ feature. It is observed that for events in the range $\approx[1.9, 2.3] MeV$ and $\approx[4.8, 5.1] MeV$, the algorithm has learned to perfectly distinguish the characteristic peaks of neutron capture compared to all background events.
 
@@ -385,10 +387,46 @@ Delving deeper into the analysis of this feature, a plot was created where the x
 
 Regarding the $E_{pro}$ feature, for values in the range [0, 1] MeV, the histogram is predominantly occupied by BKG events, and as seen from the summary plot, these are correctly identified by the algorithm. However, for prompt signals with energies within the positron-like spectrum, the algorithm identifies these events as IBDs. The features $R_{pro}$, $R_{del}$, and $\Delta t$ do not contribute significantly to the algorithm's ability to discern between the two classes from their distribution, as there are no clear differences between the feature histograms for IBD and BKG.
 
+
+
+Based on the aforementioned information, two distinct graphs, known as waterfall plots, are presented. These plots visually display the individual contributions of each feature to the model's final prediction, which is 1 if it's an IBD (Inverse Beta Decay) event and 0 if it's a BKG (background) event. The starting point of these plots is the 'base value', which is calculated as the average of the model's predictions across the entire training dataset. The f(x) shown in the graph represents the predicted value, and is mathematically expressed as:
+
+\begin{equation}
+	\text{Final Output} = \text{Base Value} + \sum_{i=1}^{n} \text{SHAP Val}_{i}
+\end{equation}
+
+This equation demonstrates how the model arrives at its final prediction by combining the base value with the contributions of each feature through their SHAP values."
+
+In the SHAP waterfall plot, each feature is represented by a bar, with the length proportional to its SHAP value, indicating its contribution to the prediction. Notably, '\texttt{delta\_radius}' has the longest bar, reflecting its SHAP value of 0.23, indicating that it is the most influential feature in this instance. Conversely, '\texttt{delta\_time}' has the shortest bar due to its SHAP value of 0.011, signifying a lesser contribution. The plot visually showcases the cumulative effect of these features on the prediction, with the final prediction being the endpoint of the last bar. This graphical representation provides an intuitive understanding of how each feature is influencing the model's prediction for this particular event, crucial for the interpretability of complex models in neutrino physics.
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[Waterfall IBD]{
+		\includegraphics[width=0.5\linewidth]{Images/Shap/waterfall_IBD}
+		\label{fig:waterfall_IBD}
+	}
+	\subfloat[Waterfall BKG]{
+		\includegraphics[width=0.5\linewidth]{Images/Shap/waterfall_BKG}
+	}
+	
+\end{figure}
+
+
+
+
 In conclusion, the SHAP values and the corresponding plots provide a valuable tool for understanding the decision-making process of the model, highlighting the importance of different features in the classification task. 
 
 
 \subsection{PyThorch}
+The ANN, implemented using the PyTorch library, is comprised of one input layer, four hidden layers, and one output layer. The number of neurons in the input layer is determined based on the number of features used in the training dataset, they are ---. Each hidden layer contains 64 neurons and utilizes the Rectified Linear Unit (ReLU), $ f(x) = \max(0, x) $, as the activation function. The network eschews an explicit activation function in the output layer and instead produces a direct linear output.
+
+For training the network, it is first instantiated and, if feasible, transferred to a CUDA-enabled Graphics Processing Unit (GPU) to leverage hardware acceleration, thereby enhancing computational efficiency. The Cross-Entropy Loss is chosen as the \textit{loss} function due to its efficacy in classification problems. The network's weights are iteratively adjusted through the use of the Adam optimization algorithm.
+
+The training process consists of up to 2000 epochs; however, an early stopping mechanism is integrated to prevent overfitting and to reduce computational overhead. Early stopping functions as an intelligent termination criterion for the training process of a machine learning model. When the model is being trained on a dataset and ceases to exhibit improvement in its performance on an independent validation set, early stopping intervenes to halt the training. This ensures that the model maintains a robust ability to generalize to unseen data and does not overfit by excessively adapting to the idiosyncrasies of the training dataset. 
+Specifically, the training is terminated if the validation loss does not exhibit improvement for a span of 10 consecutive epochs.
+
+
 
 \section{Conclusion}
 
