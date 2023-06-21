@@ -9,9 +9,9 @@ Supervised learning, a cornerstone of machine learning, operates on the premise 
 Two distinct machine learning algorithms, \textbf{Gradient Boosting Decision Trees} and \textbf{Neural Networks}, are deployed to achieve this.
 
 \section{Decision Tree}
-A Decision Tree algorithm, used in supervised machine learning for classification and regression tasks, models the predictive outcome of a target variable based on decision rules inferred from input features. The process involves dissecting the overall dataset into distinct regions, where each region contains data points that are as similar as possible to each other in terms of their target class. Formally, each internal node of the tree represents a decision rule based on an input feature, which bifurcates the data into two child nodes. The decision for splitting the data at each node is determined using a metric known as Information Gain, which in turn is based on the concept of Entropy.
+A Decision Tree is a supervised machine learning algorithm used for classification and regression. It segments a dataset into subsets by applying decision rules inferred from the data's features. Each internal node represents a rule, dividing the data into two groups. The choice of rule is based on Information Gain, which relies on Entropy.
 
-In the context of a binary classification, entropy (H) is a measure of the impurity or disorder within a set (S) of instances. It quantifies the uncertainty involved in predicting the class of a random instance from the set (S). It is mathematically formulated as:
+Entropy $H$ quantifies the impurity within a set $S$ and is defined as:
 
 \begin{equation}
 	H(S) = - p_{+} \log_{2}(p_{+}) - p_{-} \log_{2}(p_{-})
@@ -60,7 +60,7 @@ Let's formalize this process:
 \end{enumerate}
 
 
-An advanced and highly efficient implementation of this method is XGBoost, which introduces several improvements such as regularization terms in the objective function to prevent overfitting, the computation of the second-order gradient for faster convergence, and built-in mechanisms to handle missing values and enable parallel processing.
+An advanced and highly efficient implementation of this method is XGBoost, which introduces several improvements such as parallel processing.
 
 
 \section{Neural Networks}
@@ -87,12 +87,12 @@ The following is a graphical representation of an ANN and a single neuron:
 	\centering
 	
 	\subfloat[Graphic representation of ANN]{
-		\includegraphics[width = 0.5\textwidth]{Images/fig_neural_network}
+		\includegraphics[width = 0.4\textwidth]{Images/fig_neural_network}
 		\label{fig:nn_neuron}
 	}
 	\centering
 	\subfloat[Single Neuron representation]{
-		\includegraphics[width = 0.5\textwidth]{Images/nn_neuron}
+		\includegraphics[width = 0.4\textwidth]{Images/nn_neuron}
 		
 
 	}
