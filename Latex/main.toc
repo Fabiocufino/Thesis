@@ -26,5 +26,5 @@
 \contentsline {subsection}{\numberline {3.3.3}PyThorch}{24}{subsection.3.3.3}%
 \contentsline {subsubsection}{Results}{24}{section*.29}%
 \contentsline {section}{\numberline {3.4}Model Comparison}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Conclusion}{24}{section.3.5}%
-\contentsline {chapter}{References}{27}{section*.32}%
+\contentsline {section}{\numberline {3.5}Conclusion}{25}{section.3.5}%
+\contentsline {chapter}{References}{27}{section*.33}%

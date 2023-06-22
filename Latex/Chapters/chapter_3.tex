@@ -445,7 +445,22 @@ Specifically, the training is terminated if the validation loss does not exhibit
 
 
 
-
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Images/dr_dt_xgboost}
+		\caption{Waterfall FP}
+		\label{fig:dr_dt_xgboost}
+	\end{minipage}%
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Images/dr_dt_pytorch}
+		\caption{Waterfall FN}
+		\label{fig:dr_dt_pytorch}
+	\end{minipage}
+\end{figure}
+The graphs presented illustrate how the two algorithms, XGBoost and PyTorch, evaluate the determination of BKG Ibd events in comparison to BKG events, based on the values of the features $ùDelta R$ and $ùDelta t$. As expected, by observing the distribution of histograms for IBD events only, it is evident that both algorithms perform accurately for events with \texttt{delta\_radius} < 2000mm, identifying IBD events with a probability of at least 97$\%$. The most significant aspect that allows for a comparison between the models through this plot is the feature $delta_t$. Specifically, for XGBoost, as shown in the graph, $delta_t$ does not seem to be very important for determining IBD or BKG events, which is consistent with the feature importance discussed earlier and presented in plot \ref{}. In contrast, for the PyTorch model, the feature $delta_t$ appears to have notable importance for the accurate identification of events. Observing the distribution of the $delta_t$ feature for IBD events reveals an exponential decay, indicating that many IBD events are expected for very low values of $delta_t$, and gradually decreasing. Combining this trend with the decrease in dt events, a graph similar to the one presented for PyTorch is expected. Therefore, even though the PyTorch model has lower efficiency, it seems to better evaluate the importance of the \texttt{delta\_time} feature, which is not achieved with the XGBoost algorithm.
 
 \section{Conclusion}
 
