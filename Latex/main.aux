@@ -17,7 +17,7 @@
 \providecommand\babel@aux[2]{}
 \@nameuse{bbl@beforestart}
 \bibstyle{biblatex}
-\bibdata{main-blx,Bibliography/bibl}
+\bibdata{main-blx,references,Bibliography/bibl}
 \citation{biblatex-control}
 \abx@aux@refcontext{anyt/global//global/global}
 \providecommand \oddpage@label [2]{}
@@ -58,59 +58,61 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Datasets}{13}{section.3.1}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Table of isotopes and decay rates used in the BKG dataset\relax }}{14}{table.caption.13}\protected@file@percent }
 \newlabel{tab:BKG_gen}{{\M@TitleReference {3.1}{Table of isotopes and decay rates used in the BKG dataset\relax }}{14}{Table of isotopes and decay rates used in the BKG dataset\relax }{table.caption.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Feature creation}{15}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}IBD dataset}{15}{subsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Radioactivity dataset}{16}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Feature creation}{16}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}IBD Features Table}{16}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Radioactivity Features Table}{17}{subsection.3.2.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Features histograms\relax }}{17}{figure.caption.16}\protected@file@percent }
 \newlabel{fig:hist_features}{{\M@TitleReference {3.1}{Features histograms\relax }}{17}{Features histograms\relax }{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Models}{17}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Models}{18}{section.3.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Manual Cut}{18}{subsection.3.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces $\Delta R$ cut\relax }}{18}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:delta_radius_cut}{{\M@TitleReference {3.2}{$\Delta R$ cut\relax }}{18}{$\Delta R$ cut\relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces $\Delta t$ cut\relax }}{18}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:delta_t_cut}{{\M@TitleReference {3.3}{$\Delta t$ cut\relax }}{18}{$\Delta t$ cut\relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces $E_{pro}$ cut\relax }}{19}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:e_pto_cut}{{\M@TitleReference {3.4}{$E_{pro}$ cut\relax }}{19}{$E_{pro}$ cut\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces $E_{del}$ cut\relax }}{19}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:e_del_cut}{{\M@TitleReference {3.5}{$E_{del}$ cut\relax }}{19}{$E_{del}$ cut\relax }{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Results}{19}{section*.20}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}XGBoost}{19}{subsection.3.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Performance\relax }}{20}{figure.caption.21}\protected@file@percent }
-\newlabel{tab:performance_cut}{{\M@TitleReference {3.2}{Performance\relax }}{20}{Performance\relax }{figure.caption.21}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Confusion Matrix\relax }}{20}{figure.caption.21}\protected@file@percent }
-\newlabel{tab:confusion_matrix_cut}{{\M@TitleReference {3.3}{Confusion Matrix\relax }}{20}{Confusion Matrix\relax }{figure.caption.21}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Results}{20}{section*.22}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Performance\relax }}{21}{figure.caption.23}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Confusion Matrix\relax }}{21}{figure.caption.23}\protected@file@percent }
-\newlabel{tab:conf_matrix_xgb}{{\M@TitleReference {3.5}{Confusion Matrix\relax }}{21}{Confusion Matrix\relax }{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Interpretation of the model}{21}{section*.24}\protected@file@percent }
-\newlabel{fig:summary_plot}{{\M@TitleReference {3.6a}{Interpretation of the model}}{21}{Subfigure 3 3.6a}{subfigure.3.6.1}{}}
-\newlabel{sub@fig:summary_plot}{{(a)}{a}{Subfigure 3 3.6a\relax }{subfigure.3.6.1}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {XGBoost Summary Plot}}}{21}{subfigure.6.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {XGBoost feature importance}}}{21}{subfigure.6.2}\protected@file@percent }
-\newlabel{fig:E_del_force_plot}{{\M@TitleReference {\caption@xref {fig:E_del_force_plot}{ on input line 370}}{Interpretation of the model}}{22}{Interpretation of the model}{figure.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Waterfall IBD\relax }}{23}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:waterfall_IBD}{{\M@TitleReference {3.6}{Waterfall IBD\relax }}{23}{Waterfall IBD\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Waterfall BKG\relax }}{23}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:waterfall_BKG}{{\M@TitleReference {3.7}{Waterfall BKG\relax }}{23}{Waterfall BKG\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Waterfall FP\relax }}{23}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:waterfall_FP}{{\M@TitleReference {3.8}{Waterfall FP\relax }}{23}{Waterfall FP\relax }{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Waterfall FN\relax }}{23}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:waterfall_FN}{{\M@TitleReference {3.9}{Waterfall FN\relax }}{23}{Waterfall FN\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces $\Delta R$ cut\relax }}{19}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:delta_radius_cut}{{\M@TitleReference {3.2}{$\Delta R$ cut\relax }}{19}{$\Delta R$ cut\relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces $\Delta t$ cut\relax }}{19}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:delta_t_cut}{{\M@TitleReference {3.3}{$\Delta t$ cut\relax }}{19}{$\Delta t$ cut\relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces $E_{pro}$ cut\relax }}{19}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:e_pto_cut}{{\M@TitleReference {3.4}{$E_{pro}$ cut\relax }}{19}{$E_{pro}$ cut\relax }{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces $E_{del}$ cut\relax }}{20}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:e_del_cut}{{\M@TitleReference {3.5}{$E_{del}$ cut\relax }}{20}{$E_{del}$ cut\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{20}{section*.21}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Performance\relax }}{20}{figure.caption.22}\protected@file@percent }
+\newlabel{tab:performance_cut}{{\M@TitleReference {3.2}{Performance\relax }}{20}{Performance\relax }{figure.caption.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Confusion Matrix\relax }}{20}{figure.caption.22}\protected@file@percent }
+\newlabel{tab:confusion_matrix_cut}{{\M@TitleReference {3.3}{Confusion Matrix\relax }}{20}{Confusion Matrix\relax }{figure.caption.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}XGBoost}{20}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Results}{21}{section*.23}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Performance\relax }}{21}{figure.caption.24}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Confusion Matrix\relax }}{21}{figure.caption.24}\protected@file@percent }
+\newlabel{tab:conf_matrix_xgb}{{\M@TitleReference {3.5}{Confusion Matrix\relax }}{21}{Confusion Matrix\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Interpretation of the model}{21}{section*.25}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces XGBoost Summary Plot\relax }}{22}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:summary_plot}{{\M@TitleReference {3.6}{XGBoost Summary Plot\relax }}{22}{XGBoost Summary Plot\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces XGBoost feature importance\relax }}{22}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:feature_importance}{{\M@TitleReference {3.7}{XGBoost feature importance\relax }}{22}{XGBoost feature importance\relax }{figure.caption.26}{}}
+\newlabel{fig:E_del_force_plot}{{\M@TitleReference {\caption@xref {fig:E_del_force_plot}{ on input line 379}}{Interpretation of the model}}{23}{Interpretation of the model}{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Waterfall IBD\relax }}{23}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:waterfall_IBD}{{\M@TitleReference {3.8}{Waterfall IBD\relax }}{23}{Waterfall IBD\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Waterfall BKG\relax }}{23}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:waterfall_BKG}{{\M@TitleReference {3.9}{Waterfall BKG\relax }}{23}{Waterfall BKG\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Waterfall FP\relax }}{24}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:waterfall_FP}{{\M@TitleReference {3.10}{Waterfall FP\relax }}{24}{Waterfall FP\relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Waterfall FN\relax }}{24}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:waterfall_FN}{{\M@TitleReference {3.11}{Waterfall FN\relax }}{24}{Waterfall FN\relax }{figure.caption.29}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}PyThorch}{24}{subsection.3.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Results}{24}{section*.29}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Model Comparison}{24}{section.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Waterfall FP\relax }}{25}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:dr_dt_xgboost}{{\M@TitleReference {3.10}{Waterfall FP\relax }}{25}{Waterfall FP\relax }{figure.caption.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Waterfall FN\relax }}{25}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:dr_dt_pytorch}{{\M@TitleReference {3.11}{Waterfall FN\relax }}{25}{Waterfall FN\relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusion}{25}{section.3.5}\protected@file@percent }
-\abx@aux@nociteall
-\citation{*}
-\@writefile{toc}{\contentsline {chapter}{References}{27}{section*.33}\protected@file@percent }
-\memsetcounter{lastsheet}{31}
-\memsetcounter{lastpage}{27}
-\abx@aux@read@bbl@mdfivesum{36272508B2F9147A1A280E83873ED786}
-\abx@aux@defaultrefcontext{0}{Kajita2016}{anyt/global//global/global}
-\abx@aux@defaultlabelprefix{0}{Kajita2016}{}
-\gdef \@abspage@last{31}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{25}{section*.30}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Performance Evaluation of the Neural Network\relax }}{25}{figure.caption.31}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Confusion Matrix of the Neural Network\relax }}{25}{figure.caption.31}\protected@file@percent }
+\newlabel{tab:conf_matrix_nn}{{\M@TitleReference {3.7}{Confusion Matrix of the Neural Network\relax }}{25}{Confusion Matrix of the Neural Network\relax }{figure.caption.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Model Comparison}{25}{section.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces ($\Delta t$, $\Delta R$) plot\relax }}{27}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:dr_dt_xgboost}{{\M@TitleReference {3.12}{($\Delta t$, $\Delta R$) plot\relax }}{27}{($\Delta t$, $\Delta R$) plot\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces ($\Delta t$, $\Delta R$) plot\relax }}{27}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:dr_dt_pytorch}{{\M@TitleReference {3.13}{($\Delta t$, $\Delta R$) plot\relax }}{27}{($\Delta t$, $\Delta R$) plot\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces ($R_{pro}$, $\Delta R$) plot\relax }}{27}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:dr_r_xgboost}{{\M@TitleReference {3.14}{($R_{pro}$, $\Delta R$) plot\relax }}{27}{($R_{pro}$, $\Delta R$) plot\relax }{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces ($R_{pro}$, $\Delta R$) plot\relax }}{27}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:dr_r_pytorch}{{\M@TitleReference {3.15}{($R_{pro}$, $\Delta R$) plot\relax }}{27}{($R_{pro}$, $\Delta R$) plot\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusion}{28}{section.3.5}\protected@file@percent }
+\memsetcounter{lastsheet}{32}
+\memsetcounter{lastpage}{28}
+\abx@aux@read@bbl@mdfivesum{45FA7F276733A05E1B66F6A9EA2AD888}
+\gdef \@abspage@last{32}

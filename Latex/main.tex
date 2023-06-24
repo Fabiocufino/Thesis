@@ -7,6 +7,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%PACKAGES%%%%%%%%%%%%%%%%%%
 \usepackage[font=small,labelfont=bf]{caption} %Makes image caption small
+
+
+
 \usepackage[a-1b]{pdfx} % Generate a PDF/A
 
 \pdfpagewidth\paperwidth
@@ -43,6 +46,7 @@
 
 % Useful for bibliography:
 \usepackage[style=alphabetic,natbib=false,doi=true,url=false, backend=bibtex]{biblatex}
+\bibliography{references}
 \addbibresource{Bibliography/bibl}
 
 % If you want to use subsections:
@@ -153,9 +157,9 @@
 
   \backmatter
 
-  \renewcommand{\bibname}{References}
-  \nocite{*}
-  \printbibliography
+  %\renewcommand{\bibname}{References}
+  %\nocite{*}
+  %\printbibliography
 
 
 
