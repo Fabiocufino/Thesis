@@ -15,7 +15,8 @@
 \pdfpagewidth\paperwidth
 \pdfpageheight\paperheight
 
-\usepackage[english]{babel} % [english]
+
+\usepackage[italian, english]{babel} %italian
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -29,8 +30,6 @@
 %inline code
 \usepackage{listings}
 
-%URL
-\usepackage{url}
 \lstset{
 	basicstyle=\ttfamily,
 	columns=flexible,
@@ -39,6 +38,7 @@
 
 %Wrapfigure
 \usepackage{wrapfig}
+\usepackage{float}
 
 %Tables
 \usepackage{multirow}
@@ -47,9 +47,22 @@
 \usepackage[per-mode=fraction,binary-units]{siunitx}
 
 % Useful for bibliography:
-\usepackage[style=alphabetic,natbib=false,doi=true,url=false, backend=bibtex]{biblatex}
+\usepackage[
+%backend=biber, 
+natbib=true,
+style=numeric,
+sorting=none
+]{biblatex}
 \addbibresource{Bibliography/bibl.bib}
 
+%doppio titolo 
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+	\posttitle{%
+		\par\end{center}
+	\begin{center}\large#1\end{center}
+	\vskip0.5em}%
+}
 
 % If you want to use subsections:
 \setsecnumdepth{subsection}
@@ -61,9 +74,9 @@
 \setlrmarginsandblock{2cm}{*}{*}
 \checkandfixthelayout
 
-\title{Inverse Beta Decay events selection in JUNO using Machine Learning algorithms}
+\title{\textbf{Inverse Beta Decay events selection in JUNO using Machine Learning algorithms} \\}
+\subtitle{Selezione di eventi di decadimento beta inverso in JUNO utilizzando algoritmi di apprendimento automatico}
 \author{Fabio Cufino}
-\date{Discussion date}
 
 % METADATA for PDF
 \begin{filecontents*}{\jobname.xmpdata}
@@ -97,44 +110,47 @@
       \vspace{20mm}
       {\textsc{\textbf{Tesi di Laurea}}}\\ % Final Dissertation
       \vspace{25mm}
-      \begin{Spacing}{3}
-        {\Large \textbf{\thetitle}}\\
+      \begin{Spacing}{2}
+        {\Large \thetitle}
       \end{Spacing}
-      \vspace{8mm}
+        \begin{Spacing}{1}{Selezione di eventi di decadimento beta inverso in JUNO utilizzando algoritmi di apprendimento automatico}
+  \end{Spacing}
+      \vspace{7mm}
     \end{center}
 
     \vspace{15mm}
     \begin{Spacing}{1.5}
-      \begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+      \begin{tabular}{p{0.4\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
         Relatore && Laureando\\ % Supervisor && Candidate
-        \textbf{prof. Alberto Garfagnini} && \textbf{\theauthor}\\
+        \textbf{Prof. Alberto Garfagnini} && \textbf{\theauthor}\\
         Correlatore && \textbf{}\\ % Co-supervisors
-        \textbf{dott. Andrea Serafini} && \\ % Dr.
+        \textbf{Dott. Andrea Serafini} && \\ % Dr.
       \end{tabular}
     \end{Spacing}
     \vspace{8 mm}
     \begin{center}
-      \textbf{Anno Accademico YYYY/YYYY} % Academic Year
-          \vspace{5 mm}\\\textbf{\thedate}
+      \textbf{Anno Accademico 2022/2023} % Academic Year
+          \vspace{5 mm}\\\textbf{}
     \end{center}
   \end{titlingpage}
   \clearpage{\pagestyle{empty}\cleardoublepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{abstract}
-   The Jiangmen Underground Neutrino Observatory (JUNO) will be the largest liquid scintillator-based neutrino detectors in the World, for the next decade. Thanks to its large active mass (20 kt) and state of the art performances (3\% effective energy resolution at 1 MeV), it will be able to perform important measurements in neutrino physics. The proposed thesis will study the application of different Machine Learning inspired algorithms for the discrimination of signal events (interactions of anti-neutrinos coming from the nearby nuclear power plants) from background events.
-  \end{abstract}
-  \newpage
-% If abstract is required also in another language:
-% requires: \usepackage[italian, english]{babel}
-%   \begin{otherlanguage}{italian}
-%     \begin{abstract}
-%       Abstract in second language.
-%     \end{abstract}
-%   \end{otherlanguage}
-%   \newpage
+   The Jiangmen Underground Neutrino Observatory (JUNO) will be the largest liquid scintillator-based neutrino detectors in the World, for the next decade. Thanks to its large active mass (20 kt) and state of the art performances (3\% effective energy resolution at 1 MeV), it will be able to perform important measurements in neutrino physics. This study focuses on improving the event selection performance in JUNO by applying a machine learning techniques, specifically Boosted Decision Trees (BDT) and Neural Networks (NN), to discriminate between signal events, that are interactions of anti-neutrinos coming from the nearby nuclear power plants from uncorrelated background events.
+   The BDT model demonstrated exceptional performance in event classification, achieving high precision and accuracy in distinguishing between signal events and background events. It achieved a remarkably low number of misclassifications, by surpassing the number of misclassified events by the Manual Cut, the current state-of-the-art for classification.
+   The Neural Network model also exhibited strong performance, with a slightly higher number of misclassifications compared to BDT. However, it showcased a notable capability to accurately identify signal events while maintaining a relatively low number of misclassifications for background events. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{abstract}
+
+  \begin{abstract}
+   Il Jiangmen Underground Neutrino Observatory (JUNO) sarà il più grande rilevatore a scintillazione liquido di neutrini al mondo, per il prossimo decennio. Grazie alla sua grande massa attiva (20 kt) e alle prestazioni all'avanguardia (3\% di risoluzione energetica a 1 MeV), sarà in grado di effettuare importanti misurazioni nella fisica dei neutrini. Questo studio si concentra sul miglioramento delle prestazioni di selezione degli eventi in JUNO applicando tecniche di apprendimento automatico, nello specifico Boosted Decision Trees (BDT) e Neural Networks (NN), per discriminare tra eventi di segnale, che sono interazioni di anti-neutrini provenienti dalle vicine centrali nucleari, e eventi di fondo non correlati.
+   Il modello BDT ha dimostrato prestazioni eccezionali nella classificazione degli eventi, ottenendo una alta precisione e accuratezza nel distinguere tra eventi di segnale e eventi di fondo. Ha raggiunto un numero notevolmente basso di errori di classificazione, superando il numero di eventi erroneamente classificati dal Manual Cut, l'attuale stato dell'arte per la classificazione.
+   Il modello della NN ha mostrato prestazioni eccellenti, con un numero leggermente maggiore di errori di classificazione rispetto al BDT. Tuttavia, ha dimostrato una notevole capacità di identificare accuratamente gli eventi di segnale mantenendo un numero relativamente basso di errori di classificazione per gli eventi di fondo.
+   \end{abstract}
+   
+  \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \tableofcontents
   \newpage
@@ -148,6 +164,7 @@
   \input{Chapters/chapter_1}
   \input{Chapters/chapter_2}
   \input{Chapters/chapter_3}
+  \input{Chapters/chapter_4}
   
 %	\input{section/intro}
 % 	\input{section/more}
@@ -157,9 +174,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- 
+  \backmatter
 
-  \renewcommand{\bibname}{References}
+
   \printbibliography
 
 
