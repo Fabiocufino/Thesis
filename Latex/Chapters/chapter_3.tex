@@ -4,7 +4,7 @@
 This study employs two distinct datasets to construct a feature table for use in classification algorithms. Both datasets are the result of Monte Carlo simulations conducted via the SNiPER software.
 
 \subsection*{IBD Dataset}
-The primary dataset, known as the IBD dataset, is designed specifically for analyzing potential Inverse Beta Decay events. Notably, it excludes any contributions from background events.
+The primary dataset, known as the IBD dataset, is specifically designed for analyzing potential Inverse Beta Decay events, assuming that the sources of antineutrinos are the reactors (Table \ref{tab:IBD_reactor_source}) providing a combined output of 57.4 ev/day. Importantly, it excludes any contributions from background events.
 
 The IBD dataset comprises the following key features:
 
@@ -17,8 +17,6 @@ The IBD dataset comprises the following key features:
 \end{itemize}
 \end{small}
 
-For the purposes of this analysis, we employed a dataset that simulates data collection over a period of 99999999999 days.
-
 In this dataset, a total of 2,977,856 events have been recorded.
 
 \subsection*{BKG Dataset}
@@ -27,40 +25,52 @@ The second dataset primarily focuses on radioactivity events. Contrary to the IB
 
 It includes events generated from various isotopes and decay rates, as shown in the provided Table \ref{tab:BKG_gen}:
 
-\begin{small}
 \begin{table}[htp]
-	\centering
-	\begin{tabular}{ccc}
-		\toprule
-		\textbf{Dataset Name}  & \textbf{Number of Events}  & \textbf{Rates}   \\\midrule
-		U238@LS      &   1,000,000 events    &           3.234 Hz            \\
-		Th232@LS      &   1,000,000 events    &           0.733 Hz            \\
-		K40@LS       &   1,000,000 events    &           0.53 Hz             \\
-		Pb210@LS      &   1,000,000 events    &           17.04 Hz            \\
-		C14@LS       & 1,000,000,000 events  &           3.3e4 Hz            \\
-		Kr85@LS      &   1,000,000 events    &           1.163 Hz            \\
-		U238@Acrylic    &   10,000,000 events   &           98.41 Hz            \\
-		Th232@Acrylic   &   10,000,000 events   &           22.29 Hz            \\
-		K40@Acrylic    &   10,000,000 events   &          161.25 Hz            \\
-		U238@node/bar   &  100,000,000 events   &          2102.36 Hz           \\
-		Th232@node/bar   &  100,000,000 events   &          1428.57 Hz           \\
-		K40@node/bar    &  100,000,000 events   &           344.5 Hz            \\
-		Co60@node/bar   &  100,000,000 events   &           97.5 Hz             \\
-		U238@PMTGlass   & 1,000,000,000 events  &          4.90e6 Hz            \\
-		Th232@PMTGlass   & 1,000,000,000 events  &          8.64e5 Hz            \\
-		K40@PMTGlass    & 1,000,000,000 events  &          4.44e5 Hz            \\
-		Tl208@PMTGlass   & 1,000,000,000 events  &          1.39e5 Hz            \\
-		Co60@Truss     &           0           &             ? Hz              \\
-		Tl208@Truss    &           0           &             ? Hz              \\
-		Rn222@WaterRadon  &  100,000,000 events   &            90 Hz              \\
-		\bottomrule
-	\end{tabular}
-	\caption{Table of isotopes and decay rates used in the BKG dataset}
+	\hspace{-1.3cm}
+	\begin{minipage}[t]{0.45\linewidth}
+		\centering
+		\small
+		\begin{tabular}{ccc}
+			\toprule
+			\textbf{Dataset Name} & \textbf{Number of Events} & \textbf{Rates} \\
+			\midrule
+			U238@LS & 1,000,000 events & 3.234 Hz \\
+			Th232@LS & 1,000,000 events & 0.733 Hz \\
+			K40@LS & 1,000,000 events & 0.53 Hz \\
+			Pb210@LS & 1,000,000 events & 17.04 Hz \\
+			C14@LS & 1,000,000,000 events & 3.3e4 Hz \\
+			Kr85@LS & 1,000,000 events & 1.163 Hz \\
+			U238@Acrylic & 10,000,000 events & 98.41 Hz \\
+			Th232@Acrylic & 10,000,000 events & 22.29 Hz \\
+			K40@Acrylic & 10,000,000 events & 161.25 Hz \\
+			\bottomrule
+		\end{tabular}
+	\end{minipage}
+\hspace{1.2cm}
+	\begin{minipage}[t]{0.45\linewidth}
+		\centering
+		\small
+		\begin{tabular}{ccc}
+			\toprule
+			\textbf{Dataset Name} & \textbf{Number of Events} & \textbf{Rates}  \\
+			\midrule
+			U238@node/bar & 100,000,000 events & 2102.36 Hz \\
+			Th232@node/bar & 100,000,000 events & 1428.57 Hz \\
+			K40@node/bar & 100,000,000 events & 344.5 Hz \\
+			Co60@node/bar & 100,000,000 events & 97.5 Hz \\
+			U238@PMTGlass & 1,000,000,000 events & 4.90e6 Hz \\
+			Th232@PMTGlass & 1,000,000,000 events & 8.64e5 Hz \\
+			K40@PMTGlass & 1,000,000,000 events & 4.44e5 Hz \\
+			Tl208@PMTGlass & 1,000,000,000 events & 1.39e5 Hz \\
+			Rn222@WaterRadon & 100,000,000 events & 90 Hz \\
+			\bottomrule
+		\end{tabular}
+	\end{minipage}
+	\caption{Table of isotopes, number of events, and rates }
 	\label{tab:BKG_gen}
 \end{table}
-\end{small}
 
-The table provides a comprehensive view of the events generated from various isotopes and their decay rates used in the BKG dataset. This radioactivity represents all the contributions from radioactive decays $(\alpha, \beta, \gamma)$ both internal and external to the detector, but that have deposited energy within the detector.
+The table give a comprehensive view of the events generated from various isotopes and their decay rates used in the BKG dataset. This radioactivity represents all the contributions from radioactive decays $(\alpha, \beta, \gamma)$ both internal and external to the detector, but that have deposited energy within the detector.
 
 It is important to underline the differences in the location of the isotopes in the detector:
 
@@ -76,7 +86,7 @@ However, not all generated - and listed in the table - events interact with the 
 
 It is important to note that U238@PMTGlass has one of the highest decay rates, at approximately 4.90 million Hz. This high rate indicates that Uranium-238 within the PMT Glass is highly active and undergoes decay at a very rapid pace. Such high activity could be significant in the context of the study, as it will contribute substantially to the background noise or signals within the detector.
 
-Similarly, Th232@PMTGlass also exhibits a high decay rate, around 864,000 Hz. Like Uranium-238, Thorium-232 in the PMT Glass is highly active. 
+Similarly, Th232@PMTGlass also exhibits a high decay rate, around 864,000 Hz. Like U-238, Th-232 in the PMT Glass is highly active. 
 
 
 In the dataset provided, a total 8,841,188 events has been recorded.
@@ -85,7 +95,6 @@ In the dataset provided, a total 8,841,188 events has been recorded.
 \newpage
 
 \section{Feature creation}
-%TODO: devi sppiegare che il codice è satao runnato su cloudveneto che mi semvra tu non l'abbia mai specifiato.
 
 The development of models for the detection of IBD events necessitates a systematic and efficient approach to feature engineering. This process begins with the loading of the two separate datasets discussed above, one for IBDs and one for radioactivity background.
 
@@ -123,10 +132,11 @@ Given the large size of the dataset and the computational complexity of feature 
 
 To further optimize the computation, a method was implemented to only consider event pairs where the delayed event occurs within a time window of $5*\tau$ from the prompt event. This approach is based on the fact that the time delay between the prompt and delayed events in Inverse Beta Decay typically follows an exponential distribution, a characteristic of radioactive decay processes. While this method significantly reduces the number of potential event pairs, it might exclude about $0.7\%$ of IBD events that occur outside this time window. 
 
-While this percentage is relatively small, it's important to consider the potential impact on the analysis results.
+However, considering the substantial benefits gained in terms of computation time reduction, this trade-off is deemed acceptable.
 
 \subsection{Radioactivity Features Table}
 For the radioactivity dataset, the feature calculation was performed in a manner analogous to the IBD dataset. The key difference is that event pairs from the radioactivity dataset are labeled as BKG events, hence assigned a label of 0.
+
 
 The distribution of the features are presented in the Graph \ref{fig:hist_features}.
 \begin{figure}[h]
@@ -138,16 +148,16 @@ The distribution of the features are presented in the Graph \ref{fig:hist_featur
 
 
 \subsubsection*{Feature distribution}
-In the presented graph, focusing only on IBD events, it is clearly observable for $E_{del}$, the distinct characteristics of the IBD events,suchthe peaks at 2.2 MeV and 5.9 MeV, and the clearly visible positron spectrum in the $E_{pro}$. The distribution of $R_{del}$ and $R_{prompt}$ is reasonable, considering the detector's spherical shape, making it more likely for an IBD event to occur in the outer part of the detector due to the greater volume of liquid scintillator. Additionally, the plot for \( \Delta R \) clearly shows that IBD events are generally very close to each other, with a peak observed for \( \Delta R < 3000 \) mm. The \( \Delta t \) distribution for IBD events follows a decreasing exponential distribution, which appears as a straight line since the plot is logarithmic on the y-axis.
+In the presented graph, focusing only on IBD events, it is clearly observable for $E_{del}$ feature, the distinct characteristics of the IBD events, such as the peaks at $2.2 MeV$ and $\approx 5.1 MeV$, and the clearly visible positron spectrum in the $E_{pro}$ feature. The distribution of $R_{del}$ and $R_{prompt}$ is reasonable, considering the detector's spherical shape, making it more likely for an IBD event to occur in the outer part of the detector due to the greater volume of liquid scintillator. Additionally, the plot for \( \Delta R \) clearly shows that IBD events are generally very close to each other, with a peak observed for \( \Delta R < 3000 \) mm. The \( \Delta t \) distribution for IBD events follows a decreasing exponential distribution, which appears as a straight line since the plot is logarithmic on the y-axis.
 
 For the BKG events, on the other hand, we can see that they have a fundamentally different distribution for \( \Delta R \) compared to IBD events. There is a higher occurrence of events with \( \Delta R > 3000 \) mm, and even at \( \Delta R \approx 35000 \) mm, which corresponds to events occurring in opposite parts of the detector, are significantly probable. This starkly distinguishes IBD events from BKG events. For the \( \Delta t \) distribution of BKG events, it is observed to be nearly constant across all possible \( \Delta t \) values. The number of \( E_{del} \) events decreases as \( E_{del} \) increases, and no well-defined peaks are observed as in the case of IBD events. \( R_{del} \) and \( R_{prompt} \) for BKG events show a distribution similar to IBD events, with the distinction that there are more counts in the final part of the detector, where there is a higher presence of BKG events. This is due to, as evident from the Table \ref{tab:BKG_gen}, the acrylic, steel bars, PMT glass, and the presence of radon in the water.
 
-Upon inspection, a noticeable decline around the 16500mm range is evident in the distribution of both \(R_{\text{del}}\) and \(R_{\text{pro}}\). This can be largely attributed to C14, a low-energy decay isotope. Its presence leads to more detections at the detector's center than the edge due to its relatively low energy release, which barely meets the threshold for activating the necessary PMTs.
+Upon inspection, a noticeable decline around the $16500mm$ range is evident in the distribution of both \(R_{\text{del}}\) and \(R_{\text{pro}}\). This can be largely attributed to C14, a low-energy decay isotope. Its presence leads to more detections at the detector's center than the edge due to its relatively low energy release, which barely meets the threshold for activating the necessary PMTs.
 
 As C14 events are closer to the detector's edge, fewer PMTs are triggered due to the increased distance the light has to travel. This results in fewer detected events near the boundary.
 
 \section{Models}
-In the JUNO experiment, a crucial aspect is developing and optimizing an event selection algorithm. This chapter introduces several algorithms, starting with a manual cut-based approach, \textbf{Manual Cut}, which sets criteria based on event physics and background noise. Additionally, machine learning-based algorithms, specifically \textbf{Boosted Decision Trees} and \textbf{Neural Networks}, are discussed. We aim to offer an in-depth comparison of these methods, emphasizing their advantages and limitations within the JUNO experiment.
+This chapter introduces several algorithms, starting with a manual cut-based approach, \textbf{Manual Cut}, which sets criteria based on event physics and background noise. Additionally, machine learning-based algorithms, specifically \textbf{Boosted Decision Trees} and \textbf{Neural Networks}, are discussed. We aim to offer an in-depth comparison of these methods, emphasizing their advantages and limitations within the JUNO experiment.
 
 \subsection{Manual Cut}
 The algorithm is designed to suppress various types of background noise while maintaining high efficiency for true IBD events. The selection criteria, or "\textbf{cuts}" are implemented using Python, and are applied to the Features Tables discussed above. Each cut within the algorithm serves a distinct purpose in the overall event selection process. It is essential to emphasize that the selection criteria for the cuts have been diligently employed based on thorough research as outlined in the referenced paper %$\bibname{Abusleme2022}$.
@@ -365,13 +375,13 @@ Based on the calculation of SHAP values, we can construct visualizations that ai
 \end{figure}
 
 
-The presented graphs depict the importance of each feature used by the algorithm for learning, measured by calculating the mean of the SHAP values. On the right, we see a histogram where the x-axis represents the mean absolute SHAP value for each feature. The first key characteristic of the model is evident here: the feature with the most importance in classification is $\Delta R$. Here, the prominence of the feature $\Delta R$ is underscored by the fact that it possesses the highest mean absolute SHAP value, which is 0.28. Moreover, referring back to the Graphs \ref{fig:hist_features}, it was already observable that $\Delta R$ is the feature that separates the IBD class most distinctly from the BKG class. A clear separation is evident from $2500 mm$ onwards, where BKG events prevail, while IBD events are more prevalent below $2500 mm$. \\
+The presented graphs depict the importance of each feature used by the algorithm for learning, measured by calculating the mean of the SHAP values. On the right, we see a histogram where the x-axis represents the mean absolute SHAP value for each feature. The first key characteristic of the model is evident here: the feature with the most importance in classification is $\Delta R$. Here, the prominence of the feature $\Delta R$ is underscored by the fact that it possesses the highest mean absolute SHAP value, which is 0.28. Moreover, referring back to the Graphs \ref{fig:hist_features}, it was already observable that $\Delta R$ is the feature that separates the IBD class most distinctly from the BKG class. A clear separation is evident from $\approx 2500 mm$ onwards, where BKG events prevail, while IBD events are more prevalent below $\approx 2500 mm$. \\
 
-In the left summary plot, where the x-axis represents the SHAP value and the y-axis represents various features, two distinct data clusters for the \(\Delta R\) feature are strikingly evident. For high values of \(\Delta R\), the algorithm yields a negative SHAP value, which corresponds to the expected classification as background (BKG) events. Conversely, for lower values of \(\Delta R\), the algorithm returns positive SHAP values, signifying events accurately identified as inverse beta decay. Notably, there is a clear separation between these clusters, demonstrating the algorithm's high confidence in categorizing events based on this feature.
+In the left summary plot, Figure \ref{fig:summary_plot}, where the x-axis represents the SHAP value and the y-axis represents various features, two distinct data clusters for the \(\Delta R\) feature are strikingly evident. For high values of \(\Delta R\), the algorithm yields a negative SHAP value, which corresponds to the expected classification as background (BKG) events. Conversely, for lower values of \(\Delta R\), the algorithm returns positive SHAP values, signifying events accurately identified as inverse beta decay. Notably, there is a clear separation between these clusters, demonstrating the algorithm's high confidence in categorizing events based on this feature.
 
 Second in order of importance, with a SHAP value approximately four times smaller than that of $\Delta R$, is $E_{del}$, the energy of the delayed event. Comparing with the feature histogram, Figure \ref{fig:hist_features}, it's clear that, focusing on the $E_{del}$ distribution, most BKG data occupy the initial part of the histogram, thus at lower energies, and the algorithm has learned to determine that for lower delayed signal energies, the event is classified as a BKG event, based on the summary plot and the value of the SHAP value. For slightly higher energies, given the presence of characteristic peaks that significantly increase the counts of IBD events, the algorithm learns to correctly determine an IBD event. 
 
-Delving deeper into the analysis of this feature, a plot was created where the x-axis represents individual events, and the y-axis represents the effect that each event had on the $E_{del}$ feature. It is observed that for events in the range $\approx[1.8, 2.3] MeV$ and $\approx[4.5, 5.2] MeV$, the algorithm has learned to perfectly distinguish the characteristic peaks of neutron capture compared to all background events.
+Delving deeper into the analysis of this feature, a plot was created where the x-axis represents individual events, and the y-axis represents the effect that each event had on the $E_{del}$ feature, the $E_{del} eff$, starting from a '\textit{base value}' that is the average of the model's predictions across the entire training dataset. It is observed that for events in the range $\approx[1.8, 2.3] MeV$ and $\approx[4.5, 5.2] MeV$, the algorithm has learned to perfectly distinguish the characteristic peaks of neutron capture compared to all background events. 
 
 \begin{figure}[h!]
 	\centering
@@ -379,11 +389,10 @@ Delving deeper into the analysis of this feature, a plot was created where the x
 	\label{fig:E_del_force_plot}
 \end{figure}
 
-Regarding the $E_{pro}$ feature, for values in the range [0, 1] MeV, the histogram is predominantly occupied by BKG events, and as seen from the summary plot, these are correctly identified by the algorithm. However, for prompt signals with energies within the positron-like spectrum, the algorithm identifies these events as IBD. The features $R_{pro}$, $R_{del}$, and $\Delta t$ do not contribute significantly to the algorithm's ability to discern between the two classes from their distribution, as there are no clear differences between the feature histograms for IBD and BKG.
+Regarding the $E_{pro}$ feature, by referring to Figure \ref{fig:hist_features}, for values in the range $[0, 1] MeV$, the histogram is predominantly occupied by BKG events, and as seen from the summary plot, Figure \ref{fig:summary_plot}, these are correctly identified by the algorithm. However, for prompt signals with energies within the positron-like spectrum, the algorithm identifies these events as IBD. The features $R_{pro}$, $R_{del}$, and $\Delta t$ do not contribute significantly to the algorithm's ability to discern between the two classes from their distribution, as there are no clear differences between the feature histograms for IBD and BKG.
 
 
-
-Based on the aforementioned information, two distinct graphs, known as waterfall plots, are presented, Figure \ref{fig:waterfall_BKG} and Figure \ref{fig:waterfall_IBD}. These plots visually display the individual contributions of each feature to the model's final prediction, which is 1 if it's an Inverse Beta Decay event and 0 if it's a background event. The starting point of these plots is the '\textit{base value}', which is calculated as the average of the model's predictions across the entire training dataset. The $f(x)$ shown in the graph represents the predicted value, and is mathematically expressed as:
+Based on the aforementioned information, two distinct graphs, known as waterfall plots, are presented, Figure \ref{fig:waterfall_BKG} and Figure \ref{fig:waterfall_IBD}. These plots visually display the individual contributions of each feature to the model's final prediction, which is 1 if it's an Inverse Beta Decay event and 0 if it's a background event. The starting point of these plots is the '\textit{base value}', mentioned before. The $f(x)$ shown in the graph represents the predicted value, and is mathematically expressed as:
 
 \begin{equation}
 	\text{Final Output} = \text{Base Value} + \sum_{i=1}^{n} \text{SHAP Val}_{i}
@@ -430,7 +439,7 @@ It is noteworthy to observe how the SHAP values exert influence on the predictio
 \end{figure}
 
 
-For the \textit{False Negative} case, the most significant feature contributing to the misclassification of the event is $E_{del}$, which is approximately 0.6 MeV. This value does not fall within the characteristic peaks of neutron capture but instead lies in a region where background events are much more probable, as can be compared with Figure \ref{fig:hist_features}. It's important to note that for this particular event, $E_{del}$ is the most influential feature, whereas for most other events, $\Delta R$ (\texttt{delta\_radius}) tends to have a greater contribution. The SHAP value for the $\Delta R$ feature is positive, indicating that this feature suggests the event to be a true IBD, but it is not sufficient for correct labeling. Additionally, the (\texttt{delta\_time}) feature contributes to the misclassification because, with a value of approximately 0.8e6 ns, the event falls into a region where background events are more prevalent. The other features are not decisive in the misclassification as they have very small positive and negative SHAP values and do not significantly contribute to correctly identifying the event.
+For the \textit{False Negative} case, the most significant feature contributing to the misclassification of the event is $E_{del}$, which is approximately 0.6 MeV. This value does not fall within the characteristic peaks of neutron capture but instead lies in a region where background events are much more probable, as can be compared with Figure \ref{fig:hist_features}. It's important to note that for this particular event, $E_{del}$ is the most influential feature, whereas for most other events, $\Delta R$ (\texttt{delta\_radius}) tends to have a greater contribution. The SHAP value for the $\Delta R$ feature is positive, indicating that this feature suggests the event to be a true IBD, but it is not sufficient for correct labeling. Additionally, the \texttt{delta\_time} feature contributes to the misclassification because, with a value of approximately $0.8e6 ns$, the event falls into a region where background events are more prevalent. The other features are not decisive in the misclassification as they have very small positive and negative SHAP values and do not significantly contribute to correctly identifying the event.
 
 For the \textit{False Positive} case, the feature that contributes the most to the misclassification is $\Delta R$ (\texttt{delta\_radius}). In this case, a coincidence of background events that are very close to each other spatially is misclassified as IBD primarily for this reason, as seen in Figure \ref{fig:waterfall_FP}. Additionally, contributing to the incorrect classification of this event are $E_{del}$ and $E_{pro}$, which have values in regions that are perfectly compatible with the positron spectrum for $E_{pro}$ and compatible with neutron capture for $E_{del}$. Specifically, $E_{del}$ has a value of approximately 2.2 MeV, which is within the expected range for neutron capture.
 
@@ -441,14 +450,14 @@ In conclusion, the SHAP values and the corresponding plots provide a valuable to
 \subsection{PyThorch}
 The ANN, implemented using the PyTorch library, is comprised of one input layer, four hidden layers, and one output layer. The number of neurons in the input layer is determined based on the number of features used in the training dataset, so the input layer has 6 input neurons. Each hidden layer contains 64 neurons and utilizes the \textit{Rectified Linear Unit} (ReLU), defined as $ ReLU(x) = \max(0, x) $, as the activation function. The network eschews an explicit activation function in the output layer and instead produces a direct linear output.
 
-For training the network, it is first instantiated and the computation has been transferred to a CUDA-enabled Graphics Processing Unit (GPU) to leverage hardware acceleration, using a Virtual Machine on CLoudVeneto, thereby enhancing computational efficiency. The \textit{Cross-Entropy} Loss is chosen as the \textit{loss} function due to its efficacy in classification problems. The network's weights are iteratively adjusted through the use of the Adam optimization algorithm.
+For training the network, it is first instantiated and the computation has been transferred to a CUDA-enabled Graphics Processing Unit (GPU) to leverage hardware acceleration, using a Virtual Machine on CloudVeneto, equipped with \textit{NVIDIA T4 Tensor Core GPU}, thereby enhancing computational efficiency. The \textit{Cross-Entropy} Loss is chosen as the \textit{loss} function due to its efficacy in classification problems. The network's weights are iteratively adjusted through the use of the Adam optimization algorithm.
 
 The training process consists of up to \textit{2000 epochs}; however, an early stopping mechanism is integrated to prevent overfitting and to reduce computational overhead. Early stopping functions as an intelligent termination criterion for the training process of a machine learning model. When the model is being trained on a dataset and ceases to exhibit improvement in its performance on an independent validation set, early stopping intervenes to halt the training. This ensures that the model maintains a robust ability to generalize to unseen data and does not overfit by excessively adapting to the idiosyncrasies of the training dataset. 
 Specifically, the training is terminated if the validation loss does not exhibit improvement for a span of 10 consecutive epochs.
 
 
 \subsubsection{Results}
-The model showcased remarkable adeptness in accurately classifying true IBD events and segregating them from the background. To obtain a more detailed representation of the model's accuracy and reliability, a confusion matrix was formed, it is presented in Table \ref{tab:conf_matrix_nn}. This analysis was executed independently for the IBD and BKG sets. The confusion matrix, when constructed, will disclose the count of true positives, false positives, true negatives, and false negatives. The notably small quantity of incorrectly classified events in both the IBD and BKG datasets reflects the model's success in reducing misclassifications. In addition, a distinct table summarizes the efficiency rates for the classifications of IBD and background events. The exemplary efficiency rates further underscore the model's capability in correctly identifying true IBD incidents and effectively filtering out background noise.
+The model showcased remarkable adeptness in accurately classifying true IBD events and segregating them from the background. To obtain a more detailed representation of the model's accuracy and reliability, a confusion matrix was created, it is presented in Table \ref{tab:conf_matrix_nn}. This analysis was executed independently for the IBD and BKG sets. The notably small quantity of incorrectly classified events in both the IBD and BKG datasets reflects the model's success in reducing misclassifications. In addition, a distinct table summarizes the efficiency rates for the classifications of IBD and background events. The exemplary efficiency rates further underscore the model's capability in correctly identifying true IBD incidents and effectively filtering out background noise.
 
 
 \begin{figure}[h]
@@ -506,7 +515,7 @@ This difference in IBD efficiency underscores the transformative impact of machi
 %--------------------------------------------
 Having clearly shown that the efficiency of machine learning models outperforms that of the Manual Cut model, it becomes crucial to delve further into an intricate comparison between two standout machine learning models: XGBoost and the Neural Network.
 %------------------------------------------
-
+\subsubsection{XGBoost and Newral Network}
 To deeply compare the performance of PyTorch and XGBoost, are presented graphs to illustrate how the two algorithms, evaluate the determination of IBD events in comparison to BKG, based on the values of the features $\Delta R$ and $\Delta t$ and $R_{pro}$.
 
 \begin{figure}[h!]
@@ -514,13 +523,13 @@ To deeply compare the performance of PyTorch and XGBoost, are presented graphs t
 	\begin{minipage}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Images/dr_dt_xgboost}
-		\caption{($\Delta t$, $\Delta R$) plot}
+		\caption{($\Delta R$, $\Delta t$) plot}
 		\label{fig:dr_dt_xgboost}
 	\end{minipage}%
 	\begin{minipage}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Images/dr_dt_pytorch}
-		\caption{($\Delta t$, $\Delta R$) plot}
+		\caption{($\Delta R$, $\Delta t$) plot}
 		\label{fig:dr_dt_pytorch}
 	\end{minipage}
 \end{figure}
@@ -535,13 +544,13 @@ Observing the distribution of the $\Delta t$ feature for IBD events reveals an e
 	\begin{minipage}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Images/dr_r_xgboost}
-		\caption{($R_{pro}$, $\Delta R$) plot}
+		\caption{$\Delta R$, ($R_{pro}$) plot}
 		\label{fig:dr_r_xgboost}
 	\end{minipage}%
 	\begin{minipage}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Images/dr_r_pytorch}
-		\caption{($R_{pro}$, $\Delta R$) plot}
+		\caption{$\Delta R$, ($R_{pro}$) plot}
 		\label{fig:dr_r_pytorch}
 	\end{minipage}
 \end{figure}
@@ -551,49 +560,93 @@ Regarding the plots involving the features ($R_{pro}$, $\Delta R$), we can obser
 
 More precisely, for $\Delta R > 4000 mm$ in XGBoost and $\Delta R > 5500 mm$ in PyTorch, there is a clear separation between IBD and BKG events.
 
-However, it is important to consider the distribution of $R_{pro}$. As observed during the feature presentation, around $R_{pro} \approx 16000$ mm, there is a drop n the count of background (BKG) events, followed by a resurgence. 
+However, it is important to consider the distribution of $R_{pro}$. As observed during the feature presentation, around $R_{pro} \approx 16000$ mm, there is a drop n the count of background events, followed by a resurgence. 
 Interestingly, the ($R_{pro}$, $\Delta R$) PyTorch graph shows that the neural network has successfully captured and utilized this behavior to effectively distinguish IBD events that fall within this range. This is evident as a peak in probability in the ($R_{pro}$, $\Delta R$) plot along the $R_{pro}$ axis.
 
-From a physics perspective, this is significant as it demonstrates the algorithm's ability to understand the underlying physical phenomena and interactions that characterize IBD events for the features mentioned.
+%---------------------------------
+\begin{wrapfigure}{t}{0.5\linewidth}
+	
+	\vspace{-1\baselineskip}
+	\caption{($E_{del}, E_{pro}$) PyTorch}
+	\vspace{-0.5\baselineskip}
+	\includegraphics[width=8.5cm]{Images/e_del_e_pro_pytorch}
+	\label{fig:e_del_e_pro_pytorch}
+	\vspace{-1\baselineskip}
+	
+\end{wrapfigure}
+It is essential, however, to observe the behavior exhibited by the neural network (NN) in relation to the $E_{del}$ and $ E_{pro}$ features. As depicted in the Figure \ref{fig:e_del_e_pro_pytorch}, it is readily apparent that the neural network inadequately distinguishes Inverse Beta Decay events occurring within the characteristic peaks of$ E_{del}$.
 
+This deficiency arises from the insufficient training received by the NN, as evident from the $E_{pro}$ and $E_{del}$ plot, as well as the resultant outcomes, which are inferior to those achieved through Manual Cut. It has not undergone the necessary training to effectively address this particular issue. The reasons behind this insufficiency remain unclear, whether due to the utilization of a simplistic model architecture with few layers or other factors.
+
+
+ 
 \section{Conclusion}
+In conclusion, the XGBoost model emerges as the superior choice for the identification of both Inverse Beta Decay and background events. Despite the PyTorch Neural Network's promising ability to discern complex relationships among features, it does not surpass the XGBoost model in terms of overall accuracy. This highlights the robustness and precision of the XGBoost model.
 
-- Si secondo me puoi mettere una tabella con colonne i 3 modelli, righe gli eventi/giorno per ogni componente, e due righe finali aggiuntive con efficiency e purity\\
+To better evaluate the models' selection capabilities, the selection efficiency and purity are calculated based on the number of events per day from source neutrinos, \textit{Accidental Background}, and \textit{Correlated Background}. These calculations involve a combination of factors, including Event/Day and a muon cut, applied to a variety of event types. These include Reactor events, our primary source of antineutrinos, and Correlated Background events, such as Geo-U, Geo-Th, Li9, He8, World Reactors, Atmospheric Neutrinos, Fast Neutrons, and $\mathrm{C}$($\alpha,n)$$^{16}\mathrm{O}$. The results arepresented to in Table \ref{tab:correlated}. The expected IBD events from Accidental background are also evaluated, as detailed in Table \ref{tab:accidentals}.
+
+For each event type, the selection efficiency for IBD (as shown in Tables \ref{tab:confusion_matrix_cut}, \ref{tab:conf_matrix_xgb}, and \ref{tab:conf_matrix_nn}) is multiplied by the \texttt{muon cut} and the events per day to derive the number of IBD events expected when applying the model to the true events generated each day. The calculation for expected IBD events from Accidentals is performed also by multiplying the \texttt{muon cut}, the events per day, and the background efficiency reported in the table, minus 1.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{lcc|ccc}
+		\toprule
+		& \textbf{ev/day} & \textbf{muon cut} & \textbf{Manual Cut} & \textbf{XGBoost} & \textbf{PyTorch} \\
+		\midrule
+		\textbf{Reactor} & 57.4 & 0.916 & 51.4 & 52.6 & 52.6 \\
+		\midrule
+		\textbf{Geo-U} & 1.155 & 0.916 & 1.03 & 1.06 & 1.06 \\
+		\textbf{Geo-Th} & 0.345 & 0.916 & 0.31 & 0.32 & 0.32 \\
+		\textbf{Li9} & 0.81 & 1 & 0.79 & 0.81 & 0.81 \\
+		\textbf{He8} & 0.09 & 1 & 0.09 & 0.09 & 0.09 \\
+		\textbf{World Reactors} & 1.22 & 0.916 & 1.09 & 1.12 & 1.12 \\
+		\textbf{Atmospheric $\nu$} & 0.2 & 0.916 & 0.18 & 0.18 & 0.18 \\
+		\textbf{Fast neutron} & 0.12 & 0.916 & 0.11 & 0.11 & 0.11 \\
+		\textbf{$\mathrm{C}$($\alpha,n)$$^{16}\mathrm{O}$} & 0.06 & 0.916 & 0.05 & 0.05 & 0.05 \\
+		\textbf{Total} & -- & -- & 55.02 & 56.32 & 56.31 \\
+		\bottomrule
+	\end{tabular}
+	\caption{IBD expected from \textit{Reactors} and \textit{Correlated Background}}
+	\label{tab:correlated}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{lcc|ccc}
+		\toprule
+		& \textbf{ev/day} & \textbf{muon cut} & \textbf{Manual Cut} & \textbf{XGBoost} & \textbf{PyTorch} \\
+		\midrule
+		\textbf{Accidentals} & 134124.0 & 0.916 & 22.69 & 18.22 & 209.01 \\
+		\bottomrule
+	\end{tabular}
+	\caption{IBD expected from \textit{Accidental Background}}
+	\label{tab:accidentals}
+\end{table}
+	
 
 
-\begin{tabular}{cccc}
-\toprule
-& \textbf{Manual Cut} &  \textbf{XGBoost}  &  \textbf{PyTorch} \\
-\midrule
-\textbf{Reactor}  &  51.4  &  52.6  &  52.6 \\
-\textbf{Geo-U}  &  1.033676967385257  &  1.0579641475791388  &  1.0578211091531668 \\
-\textbf{Geo-Th}  &  0.30876065259559626  &  0.3160152648613012  &  0.3159725390976992 \\
-\textbf{Li9}  &  0.7913933567572716  &  0.8099878632290803  &  0.8098783515889386 \\
-\textbf{He8}  &  0.08793259519525239  &  0.08999865146989781  &  0.08998648350988206 \\
-\textbf{World\_reactor}s  &  1.091849264251094  &  1.1175032554515578  &  1.1173521672440376 \\
-\textbf{Atmospheric\_nu}  &  0.1789916826641138  &  0.1831972549920587  &  0.18317248643344886 \\
-\textbf{Fast\_neutron}  &  0.10739500959846826  &  0.1099183529952352  &  0.10990349186006929 \\
-\textbf{CO\_alpha\_n}  &  0.05369750479923413  &  0.0549591764976176  &  0.05495174593003464 \\
- &   55.02430995784693  &  56.31715614979673  &  56.30954198121709 \\
-\bottomrule
-\end{tabular}
 
-\begin{tabular}{l}
-\toprule
-\textbf{Efficiency}\\
-0.6610106982742568 \\
-0.7054165087074837 \\
-0.1981388147732311 \\
-\bottomrule
-\end{tabular}
 
-\begin{tabular}{l}
-\toprule
-\textbf{Purity}\\
-0.8949584133205688 \\
-0.9159862749602934 \\
-0.9158624321672442 \\
-\bottomrule
-\end{tabular}
+Finally, the efficiency and purity were calculated as the number of selected IBDs divided by the overall IBDs and the number of selected IBDs divided by the total selected events, respectively. This method provides an estimation of the selection algorithm's efficiency and purity.
+
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}{0.6\textwidth}
+		\centering
+		\begin{tabular}{lccc}
+			\toprule
+			& \textbf{Manual Cut} & \textbf{XGBoost} & \textbf{Neural Network} \\
+			\midrule
+			\textbf{Purity} & 0.6610 & 0.7054 & 0.1981 \\
+			\textbf{Efficiency} & 0.8949 & 0.9160 & 0.9158 \\
+			\bottomrule
+		\end{tabular}
+		\captionof{table}{Performance Evaluation}
+	\end{minipage}
+\end{figure}
+	
+In conclusion, based on the evaluation of overall accuracy and purity, the XGBoost model emerges as the optimal choice for the identification of both Inverse Beta Decay and background  events. It consistently demonstrates high accuracy and purity in distinguishing between the two event types. The PyTorch Neural Network model also exhibits strong accuracy in recognizing IBD events, although its purity is slightly lower compared to XGBoost. On the other hand, the Manual Cut model, while having high background efficiency, shows lower overall accuracy when compared to the machine learning models.
+
+
 
 

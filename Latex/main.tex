@@ -29,6 +29,8 @@
 %inline code
 \usepackage{listings}
 
+%URL
+\usepackage{url}
 \lstset{
 	basicstyle=\ttfamily,
 	columns=flexible,
@@ -46,8 +48,8 @@
 
 % Useful for bibliography:
 \usepackage[style=alphabetic,natbib=false,doi=true,url=false, backend=bibtex]{biblatex}
-\bibliography{references}
-\addbibresource{Bibliography/bibl}
+\addbibresource{Bibliography/bibl.bib}
+
 
 % If you want to use subsections:
 \setsecnumdepth{subsection}
@@ -155,11 +157,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \backmatter
+ 
 
-  %\renewcommand{\bibname}{References}
-  %\nocite{*}
-  %\printbibliography
+  \renewcommand{\bibname}{References}
+  \printbibliography
 
 
 

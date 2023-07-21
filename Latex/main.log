@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  24 JUN 2023 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.25)  27 JUN 2023 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,31 +1230,31 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count496
 \@quotereset=\count497
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 78
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 80
 .
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1287,7 +1287,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 80.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1300,7 +1300,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 78.
+or `english'. on input line 80.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1319,60 +1319,60 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 78.
-Package biblatex Info: Reference segment=0 on input line 78.
-<Images/logo.png, id=66, 598.235pt x 602.25pt>
+Package biblatex Info: Reference section=0 on input line 80.
+Package biblatex Info: Reference segment=0 on input line 80.
+<Images/logo.png, id=70, 598.235pt x 602.25pt>
 File: Images/logo.png Graphic file (type png)
 <use Images/logo.png>
-Package pdftex.def Info: Images/logo.png  used on input line 86.
+Package pdftex.def Info: Images/logo.png  used on input line 88.
 (pdftex.def)             Requested size: 77.77327pt x 78.29524pt.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 90.
+(Font)              using `T1/lmr/bx/n' instead on input line 92.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-06.
+08.
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-06.
+08.
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-106.
+108.
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-106.
+108.
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 106.
+(Font)              <12> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 106.
+(Font)              <8> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 106.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 106
+(Font)              <6> on input line 108.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108
 .
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 106
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108
 .
 
 (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.32924pt too wide) in paragraph at lines 106--112
+Overfull \hbox (5.32924pt too wide) in paragraph at lines 108--114
 [][] 
  []
 
@@ -1384,7 +1384,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125   \newpage
+l.127   \newpage
                  [1
 
 
@@ -1394,7 +1394,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138   \newpage
+l.140   \newpage
                  [2] (Chapters/chapter_1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
@@ -1412,7 +1412,7 @@ n/12 2\OML/lmm/m/it/12 ^^R[]c[] [][] [] \OMS/lmsy/m/n/12 ^^@ [][] \OT1/lmr/m/n/
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 68.
-<Images/antineutino_to_antineutrino_probability_plot.png, id=112, 619.56468pt x
+<Images/antineutino_to_antineutrino_probability_plot.png, id=119, 619.56468pt x
  526.96875pt>
 File: Images/antineutino_to_antineutrino_probability_plot.png Graphic file (typ
 e png)
@@ -1431,7 +1431,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-<Images/juno_scheme_experiment.png, id=129, 616.55344pt x 550.30594pt>
+<Images/juno_scheme_experiment.png, id=136, 616.55344pt x 550.30594pt>
 File: Images/juno_scheme_experiment.png Graphic file (type png)
 <use Images/juno_scheme_experiment.png>
 Package pdftex.def Info: Images/juno_scheme_experiment.png  used on input line 
@@ -1477,19 +1477,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-[7]
-<Images/backgrounds_spectrum.png, id=167, 1110.39844pt x 606.76688pt>
+<Images/backgrounds_spectrum.png, id=169, 1110.39844pt x 606.76688pt>
 File: Images/backgrounds_spectrum.png Graphic file (type png)
 <use Images/backgrounds_spectrum.png>
 Package pdftex.def Info: Images/backgrounds_spectrum.png  used on input line 22
 4.
 (pdftex.def)             Requested size: 338.09853pt x 184.75346pt.
-) (Chapters/chapter_2.tex [8 <./Images/backgrounds_spectrum.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-[9
+[7]) (Chapters/chapter_2.tex [8 <./Images/backgrounds_spectrum.png>] [9
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--30
@@ -1502,232 +1496,312 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<Images/fig_neural_network.png, id=191, 651.43375pt x 454.69875pt>
+<Images/fig_neural_network.png, id=201, 651.43375pt x 454.69875pt>
 File: Images/fig_neural_network.png Graphic file (type png)
 <use Images/fig_neural_network.png>
-Package pdftex.def Info: Images/fig_neural_network.png  used on input line 92.
+Package pdftex.def Info: Images/fig_neural_network.png  used on input line 89.
 (pdftex.def)             Requested size: 193.19705pt x 134.8496pt.
-<Images/nn_neuron.jpg, id=192, 676.77844pt x 413.29407pt>
+<Images/nn_neuron.jpg, id=202, 676.77844pt x 413.29407pt>
 File: Images/nn_neuron.jpg Graphic file (type jpg)
 <use Images/nn_neuron.jpg>
-Package pdftex.def Info: Images/nn_neuron.jpg  used on input line 98.
+Package pdftex.def Info: Images/nn_neuron.jpg  used on input line 95.
 (pdftex.def)             Requested size: 193.19705pt x 117.97922pt.
-[11]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-) (Chapters/chapter_3.tex [12 <./Images/fig_neural_network.png> <./Images/nn_ne
-uron.jpg>]
+[11]) (Chapters/chapter_3.tex [12 <./Images/fig_neural_network.png> <./Images/n
+n_neuron.jpg>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 3.
- (C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [13
 
-] [14] [15] [16]
-<Images/hist_features.png, id=237, 1084.05pt x 722.7pt>
+(C:\Users\Fabio\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (45.35529pt too wide) in paragraph at lines 33--48
+ [][] 
+ []
+
+
+Overfull \hbox (71.4534pt too wide) in paragraph at lines 53--68
+ [][] 
+ []
+
+[13
+
+] [14] [15]
+<Images/hist_features.png, id=243, 1084.05pt x 722.7pt>
 File: Images/hist_features.png Graphic file (type png)
 <use Images/hist_features.png>
-Package pdftex.def Info: Images/hist_features.png  used on input line 134.
+Package pdftex.def Info: Images/hist_features.png  used on input line 144.
 (pdftex.def)             Requested size: 483.0pt x 322.00299pt.
- [17 <./Images/hist_features.png>] [18]
-<Images/Cut/delta_radius.png, id=253, 462.528pt x 317.988pt>
+ [16 <./Images/hist_features.png>] [17]
+<Images/Cut/delta_radius.png, id=259, 462.528pt x 317.988pt>
 File: Images/Cut/delta_radius.png Graphic file (type png)
 <use Images/Cut/delta_radius.png>
-Package pdftex.def Info: Images/Cut/delta_radius.png  used on input line 170.
+Package pdftex.def Info: Images/Cut/delta_radius.png  used on input line 180.
 (pdftex.def)             Requested size: 199.16928pt x 136.9311pt.
-<Images/Cut/delta_time.png, id=254, 462.528pt x 317.988pt>
+<Images/Cut/delta_time.png, id=260, 462.528pt x 317.988pt>
 File: Images/Cut/delta_time.png Graphic file (type png)
 <use Images/Cut/delta_time.png>
-Package pdftex.def Info: Images/Cut/delta_time.png  used on input line 176.
+Package pdftex.def Info: Images/Cut/delta_time.png  used on input line 186.
 (pdftex.def)             Requested size: 199.16928pt x 136.9311pt.
-<Images/Cut/e_pro.png, id=255, 462.528pt x 317.988pt>
+<Images/Cut/e_pro.png, id=261, 462.528pt x 317.988pt>
 File: Images/Cut/e_pro.png Graphic file (type png)
 <use Images/Cut/e_pro.png>
-Package pdftex.def Info: Images/Cut/e_pro.png  used on input line 197.
+Package pdftex.def Info: Images/Cut/e_pro.png  used on input line 207.
 (pdftex.def)             Requested size: 213.39566pt x 146.71294pt.
 
-Underfull \hbox (badness 1275) in paragraph at lines 205--207
+Underfull \hbox (badness 1275) in paragraph at lines 215--217
 \T1/lmr/m/n/12 op-ti-mize the signal-to-background ra-tio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--207
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
-<Images/Cut/e_del.png, id=256, 462.528pt x 317.988pt>
+<Images/Cut/e_del.png, id=262, 462.528pt x 317.988pt>
 File: Images/Cut/e_del.png Graphic file (type png)
 <use Images/Cut/e_del.png>
-Package pdftex.def Info: Images/Cut/e_del.png  used on input line 223.
+Package pdftex.def Info: Images/Cut/e_del.png  used on input line 233.
 (pdftex.def)             Requested size: 213.39566pt x 146.71294pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 [][]\T1/lmr/m/n/12 These en-ergy se-lec-tion win-dows are
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 230--232
+Underfull \hbox (badness 1067) in paragraph at lines 240--242
 \T1/lmr/m/n/12 se-lected to co-in-cide with the ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
-[19 <./Images/Cut/delta_radius.png> <./Images/Cut/delta_time.png> <./Images/Cut
+[18 <./Images/Cut/delta_radius.png> <./Images/Cut/delta_time.png> <./Images/Cut
 /e_pro.png>]
-Overfull \hbox (31.07745pt too wide) in paragraph at lines 249--257
+Overfull \hbox (31.07745pt too wide) in paragraph at lines 259--267
 [][] 
  []
 
 
-Overfull \hbox (30.15973pt too wide) in paragraph at lines 263--271
+Overfull \hbox (30.15973pt too wide) in paragraph at lines 273--281
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 285.
-[20 <./Images/Cut/e_del.png>]
-Overfull \hbox (10.67038pt too wide) in paragraph at lines 308--316
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 295.
+[19 <./Images/Cut/e_del.png>]
+Overfull \hbox (10.67038pt too wide) in paragraph at lines 318--326
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
-[21]
-<Images/Shap/summary_plot.png, id=291, 549.9747pt x 274.626pt>
+[20]
+<Images/Shap/summary_plot.png, id=296, 549.9747pt x 274.626pt>
 File: Images/Shap/summary_plot.png Graphic file (type png)
 <use Images/Shap/summary_plot.png>
-Package pdftex.def Info: Images/Shap/summary_plot.png  used on input line 355.
+Package pdftex.def Info: Images/Shap/summary_plot.png  used on input line 365.
 (pdftex.def)             Requested size: 241.5pt x 120.58856pt.
-<Images/Shap/feature_importance_bar.png, id=292, 551.4201pt x 301.3659pt>
+<Images/Shap/feature_importance_bar.png, id=297, 551.4201pt x 301.3659pt>
 File: Images/Shap/feature_importance_bar.png Graphic file (type png)
 <use Images/Shap/feature_importance_bar.png>
 Package pdftex.def Info: Images/Shap/feature_importance_bar.png  used on input 
-line 361.
+line 371.
 (pdftex.def)             Requested size: 241.5pt x 131.9852pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
-<Images/Shap/E_del_force_plot.png, id=295, 1440.13031pt x 419.31656pt>
+<Images/Shap/E_del_force_plot.png, id=301, 1234.6125pt x 374.14781pt>
 File: Images/Shap/E_del_force_plot.png Graphic file (type png)
 <use Images/Shap/E_del_force_plot.png>
 Package pdftex.def Info: Images/Shap/E_del_force_plot.png  used on input line 3
-78.
-(pdftex.def)             Requested size: 483.0pt x 140.62706pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22 <./Images/Shap/summary_plot.png> <./Images/Shap/feature_importance_bar.png>
+88.
+(pdftex.def)             Requested size: 483.0pt x 146.37376pt.
+[21 <./Images/Shap/summary_plot.png> <./Images/Shap/feature_importance_bar.png>
 ]
-<Images/Shap/waterfall_IBD.png, id=305, 624.4128pt x 326.6604pt>
+<Images/Shap/waterfall_IBD.png, id=314, 624.4128pt x 326.6604pt>
 File: Images/Shap/waterfall_IBD.png Graphic file (type png)
 <use Images/Shap/waterfall_IBD.png>
-Package pdftex.def Info: Images/Shap/waterfall_IBD.png  used on input line 398.
+Package pdftex.def Info: Images/Shap/waterfall_IBD.png  used on input line 407.
 
 (pdftex.def)             Requested size: 241.5pt x 126.34033pt.
-<Images/Shap/waterfall_BKG.png, id=306, 646.8165pt x 326.6604pt>
+<Images/Shap/waterfall_BKG.png, id=315, 646.8165pt x 326.6604pt>
 File: Images/Shap/waterfall_BKG.png Graphic file (type png)
 <use Images/Shap/waterfall_BKG.png>
-Package pdftex.def Info: Images/Shap/waterfall_BKG.png  used on input line 404.
+Package pdftex.def Info: Images/Shap/waterfall_BKG.png  used on input line 413.
 
 (pdftex.def)             Requested size: 241.5pt x 121.964pt.
 
-Overfull \hbox (11.03868pt too wide) in paragraph at lines 410--412
+Overfull \hbox (11.03868pt too wide) in paragraph at lines 419--421
 \T1/lmr/m/n/12 most in-flu-en-tial fea-ture in this in-stance, as we ex-pected.
  Con-versely, '\T1/lmtt/m/n/12 delta_time\T1/lmr/m/n/12 ','\T1/lmtt/m/n/12 E_de
 l\T1/lmr/m/n/12 ','\T1/lmtt/m/n/12 E_pro\T1/lmr/m/n/12 '
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 
  []
 
-[23 <./Images/Shap/E_del_force_plot.png> <./Images/Shap/waterfall_IBD.png> <./I
+[22 <./Images/Shap/E_del_force_plot.png> <./Images/Shap/waterfall_IBD.png> <./I
 mages/Shap/waterfall_BKG.png>]
-<Images/Shap/waterfall_FP.png, id=317, 629.4717pt x 326.6604pt>
+<Images/Shap/waterfall_FP.png, id=326, 629.4717pt x 326.6604pt>
 File: Images/Shap/waterfall_FP.png Graphic file (type png)
 <use Images/Shap/waterfall_FP.png>
-Package pdftex.def Info: Images/Shap/waterfall_FP.png  used on input line 420.
+Package pdftex.def Info: Images/Shap/waterfall_FP.png  used on input line 429.
 (pdftex.def)             Requested size: 241.5pt x 125.32352pt.
-<Images/Shap/waterfall_TN.png, id=318, 632.3625pt x 326.6604pt>
+<Images/Shap/waterfall_TN.png, id=327, 632.3625pt x 326.6604pt>
 File: Images/Shap/waterfall_TN.png Graphic file (type png)
 <use Images/Shap/waterfall_TN.png>
-Package pdftex.def Info: Images/Shap/waterfall_TN.png  used on input line 426.
+Package pdftex.def Info: Images/Shap/waterfall_TN.png  used on input line 435.
 (pdftex.def)             Requested size: 241.5pt x 124.7503pt.
- [24 <./Images/Shap/waterfall_FP.png> <./Images/Shap/waterfall_TN.png>]
-Overfull \hbox (53.31395pt too wide) in paragraph at lines 460--468
+
+Underfull \vbox (badness 6094) has occurred while \output is active []
+
+ [23 <./Images/Shap/waterfall_FP.png> <./Images/Shap/waterfall_TN.png>]
+Overfull \hbox (53.31395pt too wide) in paragraph at lines 469--477
  [][] 
  []
 
 
-Overfull \hbox (30.15973pt too wide) in paragraph at lines 473--481
+Overfull \hbox (30.15973pt too wide) in paragraph at lines 482--490
  [][] 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
+
+Underfull \vbox (badness 5681) has occurred while \output is active []
+
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
-<Images/dr_dt_xgboost.png, id=339, 578.16pt x 578.16pt>
+<Images/dr_dt_xgboost.png, id=348, 591.8913pt x 570.2103pt>
 File: Images/dr_dt_xgboost.png Graphic file (type png)
 <use Images/dr_dt_xgboost.png>
-Package pdftex.def Info: Images/dr_dt_xgboost.png  used on input line 516.
-(pdftex.def)             Requested size: 193.20073pt x 193.19296pt.
-<Images/dr_dt_pytorch.png, id=340, 578.16pt x 578.16pt>
+Package pdftex.def Info: Images/dr_dt_xgboost.png  used on input line 525.
+(pdftex.def)             Requested size: 193.20073pt x 186.1253pt.
+<Images/dr_dt_pytorch.png, id=349, 591.8913pt x 570.2103pt>
 File: Images/dr_dt_pytorch.png Graphic file (type png)
 <use Images/dr_dt_pytorch.png>
-Package pdftex.def Info: Images/dr_dt_pytorch.png  used on input line 522.
-(pdftex.def)             Requested size: 193.20073pt x 193.19296pt.
+Package pdftex.def Info: Images/dr_dt_pytorch.png  used on input line 531.
+(pdftex.def)             Requested size: 193.20073pt x 186.1253pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/dr_r_xgboost.png, id=342, 578.16pt x 578.16pt>
+[25]
+<Images/dr_r_xgboost.png, id=356, 600.5637pt x 570.933pt>
 File: Images/dr_r_xgboost.png Graphic file (type png)
 <use Images/dr_r_xgboost.png>
-Package pdftex.def Info: Images/dr_r_xgboost.png  used on input line 537.
-(pdftex.def)             Requested size: 193.20073pt x 193.19296pt.
-<Images/dr_r_pytorch.png, id=343, 578.16pt x 578.16pt>
+Package pdftex.def Info: Images/dr_r_xgboost.png  used on input line 546.
+(pdftex.def)             Requested size: 193.20073pt x 183.66928pt.
+<Images/dr_r_pytorch.png, id=357, 606.3453pt x 570.933pt>
 File: Images/dr_r_pytorch.png Graphic file (type png)
 <use Images/dr_r_pytorch.png>
-Package pdftex.def Info: Images/dr_r_pytorch.png  used on input line 543.
-(pdftex.def)             Requested size: 193.20073pt x 193.19296pt.
-[26] [27 <./Images/dr_dt_xgboost.png> <./Images/dr_dt_pytorch.png> <./Images/dr
-_r_xgboost.png> <./Images/dr_r_pytorch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
-
- []
-
-
-Overfull \hbox (9.33629pt too wide) in paragraph at lines 564--580
-[][] 
+Package pdftex.def Info: Images/dr_r_pytorch.png  used on input line 552.
+(pdftex.def)             Requested size: 193.20073pt x 181.90952pt.
+ [26 <./Images/dr_dt_xgboost.png> <./Images/dr_dt_pytorch.png> <./Images/dr_r_x
+gboost.png> <./Images/dr_r_pytorch.png>]
+<Images/e_del_e_pro_pytorch.png, id=368, 609.9588pt x 570.933pt>
+File: Images/e_del_e_pro_pytorch.png Graphic file (type png)
+<use Images/e_del_e_pro_pytorch.png>
+Package pdftex.def Info: Images/e_del_e_pro_pytorch.png  used on input line 572
+.
+(pdftex.def)             Requested size: 241.84842pt x 226.37416pt.
+ [27 <./Images/e_del_e_pro_pytorch.png>]
+Overfull \hbox (35.6661pt too wide) in paragraph at lines 636--644
+ [][] 
  []
 
 ) [28]
+Overfull \hbox (2.85156pt too wide) in paragraph at lines 164--164
+\T1/lmr/m/it/12 SIGKDD In-ter-na-tional Con-fer-ence on Knowl-edge Dis-cov-ery 
+and Data Min-ing\T1/lmr/m/n/12 . ACM,
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...lation parameters with {JUNO}{\ast }
+                                                  
+l.164 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.164 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (7.59004pt too wide) in paragraph at lines 164--164
+[]\T1/lmr/m/n/12 ``Sub-percent pre-ci-sion mea-sure-ment of neu-trino os-cil-la
+-tion pa-ram-e-ters with JUNO$\OMS/lmsy/m/n/12 ^^C$\T1/lmr/m/n/12 ''.
+ []
+
+[29
+
+]
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
@@ -1736,19 +1810,19 @@ Overfull \hbox (9.33629pt too wide) in paragraph at lines 564--580
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B5C9A296B27BE442699267BE213B3E47;910.
+(rerunfilecheck)             Checksum: FFAEF5D1DD45BB9F276F7B8B5C6BD434;958.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33516 strings out of 475385
- 617512 string characters out of 2776907
- 1314095 words of memory out of 3000000
- 54317 multiletter control sequences out of 15000+600000
- 555215 words of font info for 79 fonts, out of 8000000 for 9000
+ 33778 strings out of 475385
+ 623282 string characters out of 2776907
+ 1314727 words of memory out of 3000000
+ 54563 multiletter control sequences out of 15000+600000
+ 559478 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,22n,93p,1877b,2587s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 89i,22n,93p,1890b,2587s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
 ers/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users
@@ -1758,26 +1832,28 @@ ers/Fabio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users
 /Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users
 /Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users
 /Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/
-Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/
-Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/
-Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/
-Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/F
-abio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Fa
-bio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Fab
-io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Fabi
-o/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Fabio/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Fabio/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Fabio/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fabio/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Fabio/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Fabio/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Fabio/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (32 pages, 1957288 bytes).
+Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users
+/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users
+/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users
+/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users
+/Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/
+Fabio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/F
+abio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Fa
+bio/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Fab
+io/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Fabio
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Fabio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Fabio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Fabio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Fabio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Fabio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Fabio/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Fabio/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Fabio/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Fabio/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (33 pages, 2085168 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

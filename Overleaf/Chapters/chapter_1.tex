@@ -1,0 +1,245 @@
+\chapter{Introduction}
+
+The Jiangmen Underground Neutrino Observatory (JUNO) \cite{JUNOdet}, currently under construction in south China, is a large liquid scintillator neutrino detector. It is designed to detect electron antineutrino interactions produced by nearby Nuclear Power Plants (NPP) through the inverse beta decay reaction. The primary objective of this experiment is to determine the neutrino mass hierarchy, addressing the Neutrino Mass Ordering (NMO) problem.
+
+The JUNO experiment, thanks to its excellent energy resolution and large fiducial volume, is expected to make significant contributions to this field.
+
+\section{Neutrino Oscillations}
+Neutrinos, originally assumed to be massless, have been experimentally proven to have non zero mass. This result is mainly due to the discovery of neutrino oscillations, a quantum mechanical phenomenon where a neutrino changes its flavor during propagation, providing strong evidence of their mass \cite{dim_osci_neut}.
+
+Each known flavor eigenstate, $(\nu_e,\nu_{\mu},\nu_{\tau})$, linked to three respective charged leptons $(e,\mu,\tau)$  via the charged current interactions can be considered a complex combination of neutrino mass eigenstates as follow:
+
+\begin{equation*}
+	\left(\begin{array}{l}
+		v_e \\
+		v_\mu \\
+		v_\tau
+	\end{array}\right)=U_{\mathrm{PMNS}}\left(\begin{array}{l}
+		v_1 \\
+		v_2 \\
+		v_3
+	\end{array}\right)
+\end{equation*}
+in which $\nu_i$ are the three mass eigensates, with non-degenerate masses  $m_i$  $(i = 1,2,3)$.\\
+
+The matrix $U_{\mathrm{PMNS}}$ \cite{matrix_1}, \cite{matrix_2}, \cite{matrix_3}, the so-called Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix, is composed of three rotation matrices, $R_{23}$, $R_{13}$, and $R_{12}$, each corresponding to a different mixing angle, $\theta_{23}$, $\theta_{13}$, and $\theta_{12}$, respectively and a parameter $\delta_{CP}$ called the Dirac CP-violating phase. In addition, the Majorana $C P$ phases $\eta_i(i=1,2)$, are only physically possible if neutrinos are Majorana-type particles and do not participate in neutrino oscillations. Therefore, $U_{\mathrm{PMNS}}$ can be expressed as:
+
+\begin{equation*} 
+	\begin{split}
+			U_{\text {PMNS }}&=\\
+		=&\left(\begin{array}{ccc}
+			1 & 0 & 0 \\
+			0 & c_{23} & s_{23} \\
+			0 & -s_{23} & c_{23}
+		\end{array}\right) \left(\begin{array}{ccc}
+			c_{13} & 0 & s_{13} \mathrm{e}^{-\mathrm{i} \delta_{C P}} \\
+			0 & 1 & 0 \\
+			-s_{13} \mathrm{e}^{\mathrm{i} \delta_{C P}} & 0 & c_{13}
+		\end{array}\right) 
+		\left(\begin{array}{ccc}
+			c_{12} & s_{12} & 0 \\
+			-s_{12} & c_{12} & 0 \\
+			0 & 0 & 1
+		\end{array}\right)\left(\begin{array}{ccc}
+			\mathrm{e}^{\mathrm{i} \eta_1} & 0 & 0 \\
+			0 & \mathrm{e}^{\mathrm{i} \eta_2} & 0 \\
+			0 & 0 & 1
+		\end{array}\right)
+	\end{split}
+\end{equation*}
+where $s_{i j} \equiv \sin \theta_{i j}, c_{i j} \equiv \cos \theta_{i j}$.
+
+The theoretical framework for neutrino oscillations involves the calculation of the oscillation probability as a function of the distance traveled by the neutrino, the neutrino mixing matrix, and the difference in squared masses between the three neutrino mass states, $\Delta m_{ij}^2 = m^2_i - m^2_j$ for $i,j = 1,2,3, i>j$. In the case of JUNO, two nuclear power reactors 53 $\unit{\kilo\meter}$ away from the detector, produce electron anti-neutrinos $\bar{\nu}_e$ with energy below 10 MeV, as principal sources of neutrinos for the experiment. Therefore, the survival probability $P\left(\bar{\nu}_e \rightarrow \bar{\nu}_e\right)$ of electron antineutrinos reads:
+
+\begin{equation*}
+	P\left(\bar{\nu}_e \rightarrow \bar{\nu}_e\right)=1-\sin ^2 2 \theta_{12} c_{13}^4 \sin ^2\left(\frac{\Delta m_{21}^2 L}{4 \mathcal{E}}\right)-\sin ^2 2 \theta_{13}\left[c_{12}^2 \sin ^2\left(\frac{\Delta m_{31}^2 L}{4 \mathcal{E}}\right)+s_{12}^2 \sin ^2\left(\frac{\Delta m_{32}^2 L}{4 \mathcal{E}}\right)\right]
+\end{equation*}
+
+where $\mathcal{E}$ is the neutrino energy, $L$ the travelled distance and $\Delta m_{i j}^2 \equiv m_i^2-m_j^2$. \\
+Past experiments have already given estimates for $\Delta m_{21}^2,\left|\Delta m_{31}^2\right|$ and the three mixing angles.
+
+Current values for the neutrino oscillation parameters are reported in Table \ref{tab:neutrino_params} \cite{pdg}. The last column denotes the relative uncertainties, expressed in percentage.
+
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{ccc}
+\hline
+\toprule
+\textbf{Parameter} & \textbf{Value} & \textbf{Relative Uncertainty} \\ \midrule
+$\Delta m^2_{32}$ (NO) & $(2.453 \pm 0.034) \times 10^{-3} \, \text{eV}^2$ & 1.4\% \\
+$\Delta m^2_{32}$ (IO) & $-(2.546 \pm 0.037) \times 10^{-3} \, \text{eV}^2$ & 1.5\% \\
+$\Delta m^2_{21}$ & $(7.53 \pm 0.18) \times 10^{-5} \, \text{eV}^2$ & 2.4\% \\
+$\sin^2 \theta_{12}$ & $0.307 \pm 0.013$ & 4.2\% \\
+$\sin^2 \theta_{13}$ & $0.0218 \pm 0.0007$ & 3.2\% \\ \bottomrule
+\hline
+\end{tabular}
+\caption{Neutrino oscillation parameters within the reach of JUNO and their 1$\sigma$ uncertainties, as reported in PDG2020. \cite{pdg}}
+\label{tab:neutrino_params}
+\end{table}
+
+JUNO's primary objective is to improve these measurements and to determine the sign of $\Delta m_{31}^2$, which will distinguish between two potential scenarios:
+\begin{itemize}
+	\item \textit{Normal Ordering (NO)}, where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|+\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_1<m_2<m_3$,
+	\item \textit{Inverted Ordering (IO)}, where $\left|\Delta m_{31}^2\right|=\left|\Delta m_{32}^2\right|-\left|\Delta m_{21}^2\right|$ and the mass hierarchy is $m_3<m_1<m_2$.
+\end{itemize}
+The sign of $\Delta m_{31}^2$ alters the curves of Figure \ref{fig:antineutinotoantineutrinoprobabilityplot}.
+
+
+
+\begin{figure}[h]
+	\begin{minipage}{.4\textwidth}
+		\caption{JUNO's reactor antineutrino energy spectrum is shown with and without the effect of neutrino oscillation. The gray dashed curve includes only the term in the disappearance probability modulated by $sin^2(2\theta_{12})$, while the blue and red curves use the full oscillation probability for normal and inverted mass orderings. Spectral features driven by oscillation parameters are illustrated, highlighting the rich information available in JUNO's high-resolution measurement of the oscillated spectrum. \cite{Sub_osci}}
+		\label{fig:antineutinotoantineutrinoprobabilityplot}
+	\end{minipage}%
+	\hspace{1cm}
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[width=\linewidth]{Images/antineutino_to_antineutrino_probability_plot}
+	\end{minipage}
+\end{figure}
+
+\newpage
+
+
+
+
+\section{The JUNO detector}
+The Jiangmen Underground Neutrino Observatory is currently being constructed beneath Dashi Hill in the town of Jinji, Southern China. Its placement 43 km southwest of Kaiping city was strategically chosen to significantly reduce background  from cosmic rays due to its underground location. JUNO is anticipated to detect antineutrinos, predominantly originating from the Taishan and Yangjiang nuclear power plants. NPPs are approximately 52.5 km away from the JUNO detector and will provide a combined nominal thermal power of 26.6 $GW_{th}$.\\
+
+A schematic illustration of JUNO is presented in Fig.\ref{fig:junoschemeexperiment}.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Images/juno_scheme_experiment}
+	\caption[JUNO scheme experiment]{Schematic view of the JUNO experiment, from \cite{JUNOdet}}
+	\label{fig:junoschemeexperiment}
+\end{figure}
+
+The core of the JUNO detector, the Central Detector (CD), is complemented by a water Cherenkov detector and a Top Tracker (TT). Notably, the CD, designed as a compact, non-segmented detector, boasts an effective energy resolution of $\sigma_E/E =3\% / \sqrt{E (MeV)}$] \cite{JUNOdet}.\\
+
+The CD houses 20 kton of liquid scintillator (LS) within a spherical acrylic vessel, submerged in a water pool. This pool, with a diameter of 43.5 m and a height of 44 m, not only serves as an effective buffer to shield the LS from the radioactive influence of the surrounding rock, but it acts as active scintillation medium. Equipped with PMTs for Cherenkov detection, the pool plays an instrumental role in the active shielding process.
+
+The vessel is supported by a stainless steel (SS) structure through connecting bars. Additional CD PMTs are mounted on the inner surface of this structure, which also hosts compensation coils designed to mitigate the Earth's magnetic field and thereby minimize its impact on the photoelectron collection efficiency of the PMTs.
+
+Above the water pool resides the Top Tracker, an assembly of a plastic scintillator array, meticulously arranged to measure muon tracks accurately. The CD is connected to the external environment through a chimney, which facilitates calibration operations. Located above this chimney is the Calibration House, equipped with special radioactivity shielding and a muon detector, playing a crucial role in the overall experimental setup.
+
+JUNO experiment deploys a specialized compact detector named TAO. Situated approximately 30 meters from one of the Taishan reactors, TAO serves to measure the unoscillated reactor antineutrino spectrum shape precisely. The data collected by TAO is intended to provide a crucial data-driven input to refine the spectra from the other reactor cores. \\
+
+\newpage
+
+\section{JUNO signal and background}
+
+\subsection{Signal}
+The JUNO experiment primarily draws its sources from the Taishan and Yangjiang NPPs, which are made of two and six cores, respectively. In addition to these, the Daya Bay reactor complex contributes to the antineutrino flux. The reactor power and baselines from the Taishan, Yangjiang, and Daya Bay reactor cores are detailed in Table \ref{tab:IBD_reactor_source}.
+
+
+\begin{table}[htp]
+	\centering
+        \small
+	\begin{tabular}{ccc}
+		\toprule
+		Reactor & Power [$GW_{th}$] & Baseline [Km]   \\\midrule
+		Taishan & 9.2 & 52.71 	\\
+		Yangjiang & 17.4 & 52.46 	\\
+		Daya Bay & 17.4 & 215 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Information on nuclear reactors}
+	\label{tab:IBD_reactor_source}
+\end{table}
+
+
+JUNO employs a Liquid Scintillator primarily composed of Linear Alkyl-Benzene (LAB), known for its transparency, high flash points, robust light yield, and low chemical reactivity. The LS, with a density of 0.859 $g/mL$, is further enhanced with 3 $g/L$ of 2,5-diphenyloxazole (PPO) as the fluor, and 15 $mg/L$ of p-bis-(o-methylstyryl)-benzene (bis-MSB) as the wavelength shifter. \\
+
+This process is initiated when an antineutrino interacts with a proton in the liquid scintillator, producing a positron and a neutron. It can be described by the following Inverse Beta Decay (IBD) reaction:
+
+\begin{equation}
+	\begin{aligned}
+		\overline{\nu}_e + p &\rightarrow e^+ + n \\
+	\end{aligned}
+\end{equation}
+
+IBD is characterized by a comparatively low threshold of 1.8 MeV, a substantial cross section, and it can be readily differentiated from the background due to its delayed $\gamma$ signature.\\
+
+The positron, carrying the majority of the antineutrino's initial energy, deposits this energy in the scintillator through ionization. This energy deposition, coupled with the positron's subsequent annihilation typically into two 0.511 MeV photons, forms the \textbf{prompt signal}, characterized as follow: $e^{+} + e^{-} \rightarrow 2\gamma$.
+The energy deposited by the positron directly correlates with the antineutrino energy, providing a precise measure critical for neutrino oscillation studies.\\
+
+Following the prompt signal, the neutron is captured primarily on hydrogen (approximately 99$\%$ of the time) after an average delay of about 220 µs. This capture event releases a single 2.2 MeV photon, creating the \textbf{delayed signal}. Occasionally, the neutron is captured on carbon (around 1$\%$ of the time), resulting in a gamma-ray signal with a total energy of 4.9 MeV \cite{Sub_osci}. The processes are described as follows:
+
+\begin{equation}
+	 n + ^{1}\text{H} \rightarrow ^{2}\text{H}^{*} \rightarrow ^2\text{H} + \gamma
+\end{equation}
+
+\begin{equation}
+n + ^{12}\text{C} \rightarrow ^{13}\text{C}^{*} \rightarrow ^{13}\text{C} + \gamma
+\end{equation}
+
+The scintillation light output originating from these events is detected by the photomultiplier tubes (PMTs), sensitive detectors that convert light into an electrical signal. They operate based on the photoelectric effect and subsequent electron multiplication. The signals from all the PMTs are then combined to reconstruct the position and energy of the original neutrino interaction. This technique allows JUNO to measure the energy of the incoming neutrino with high precision, which is crucial for studying neutrino oscillation. %When a photon hits the photocathode (the light-sensitive surface inside the PMT), it can eject an electron through the photoelectric effect. This electron is then accelerated by an electric field towards a series of electrodes called dynodes. Each time an electron hits a dynode, more electrons are released. This process is repeated multiple times, resulting in a cascade of electrons and a significant amplification of the original signal. The final electrical signal, which can be easily measured, is proportional to the number of photons that hit the photocathode. 
+
+
+\subsection{Background}
+The design and composition of the scintillator in the JUNO experiment have been optimized to minimize background coming from various radiation sources. Despite these efforts, several types of background signals are inevitably produced inside the detector. For the purpose of the analysis, we focus primarily on the three most significant contributors:
+
+\subsubsection*{Radiogenic Backgrounds}
+
+
+Radiogenic backgrounds in the JUNO experiment primarily originate from the radioactive decay of isotopes such as $^{238}\mathrm{U}$, $^{232}\mathrm{Th}$, and $^{40}\mathrm{K}$. These isotopes are naturally present in the materials the JUNO detector is made of, including the acrylic used for the detector walls, the metal structure supporting the detector, the PMT glass, the gas during early filling phases, and the surrounding water. They are also found in the surrounding rock. These isotopes undergo radioactive decay, emitting various forms of radiation. The decay of $^{238}\mathrm{U}$ and $^{232}\mathrm{Th}$ occurs through decay chains, where each isotope successively decays into different isotopes, releasing radiation in the process. The emitted radiation includes alpha particles, beta particles, and gamma rays. As for $^{40}\mathrm{K}$, it undergoes beta decay to $^{40}\mathrm{Ca}$ or electron capture to $^{40}\mathrm{Ar}$, resulting in the emission of a gamma ray. These radiogenic backgrounds need to be carefully accounted for and minimized to accurately detect reactor antineutrinos in the JUNO experiment.
+
+The coincidence of two otherwise uncorrelated events, typically of radiogenic origin, forms the so-called \textit{Accidental Background}. This background  dominates  the low  energy  part  of  the  spectrum  due to its nature.
+
+Accidental background can potentially mimic the signal from IBD in several ways:
+
+\begin{enumerate}
+	\item \textbf{Beta decays and electron captures}: These processes result in the emission of electrons or positrons, which can produce a scintillation signal similar to the prompt signal from IBD.
+
+	\item \textbf{Gamma rays}: High-energy gamma rays can Compton scatter in the detector, producing electrons with enough energy to mimic the prompt signal from IBD. In addition, gamma rays can produce electron-positron pairs in the detector, which can mimic both the prompt and delayed signals from IBD.
+	
+	\item \textbf{Neutrons}: Some decays in the $^{238}\mathrm{U}$ and $^{232}\mathrm{Th}$ chains emit neutrons, which can be captured on protons in the detector, mimicking the delayed signal from IBD.
+
+\end{enumerate}
+
+The goal of this thesis work is to study these accidental background events, a topic that will be discussed in detail in the following sections.
+
+
+
+The term \textit{Correlated Background} refers to cosmogenic backgrounds and other sources of $\bar{\nu}$, which will be discussed in detail below.
+
+These background sources stem from a singular physics process and generate both a prompt and delayed signal, closely mimicking the IBD events originating from the reactor as listed in Table \ref{tab:IBD_reactor_source}. These events share essential characteristics with IBD events, including a prompt signal, a delayed signal, and a similar temporal separation. As a result, these events are indistinguishable from IBD events, presenting substantial challenges in terms of background reduction through cuts or other more sophisticated techniques.
+
+\subsection*{Cosmogenic Backgrounds}
+
+Cosmogenic backgrounds in JUNO primarily result from the interaction of cosmic rays, particularly high-energy muons ($\mathcal{O}(\text{GeV})$), with the detector materials. These interactions lead to the production of fast neutrons and unstable isotopes through the process of spallation in which a high-energy particle strikes a target atom, causing it to emit smaller particles such as neutrons and unstable isotopes. These muons interact with the detector materials, resulting in the production of isotopes like  $^{9}\mathrm{Li}$, $^{8}\mathrm{He}$ and $^{11}\mathrm{C}$, which are unstable and subsequently decay, contributing to additional background events.
+
+These fast neutrons and unstable isotopes, produced from the interactions of muons with the detector materials, can generate signals that mimic an IBD event. Specifically, there are two distinct signals to consider.
+
+The first signal is generated by an electron. The energy and momentum of this electron can make it appear like a positron, the particle that would be expected in an IBD event. The second is generated by a neutron. This neutron can be captured by a proton in the detector, producing a signal identical to what would be expected from the neutron in an IBD event.
+
+
+\subsection*{Additional Sources of $\overline{\nu}_e$}
+
+Other sources of antineutrinos also contribute to the background. Those are geoneutrinos, atmospheric neutrinos, and reactor antineutrinos:\\
+
+\textbf{Geoneutrinos} are antineutrinos produced by natural radioactivity within the Earth. Natural radioactivity exists in materials present in the Earth's crust and mantle, such as $^{238}\mathrm{U}$,$^{232}\mathrm{Th}$ and $^{40}\mathrm{K}$. These materials undergo radioactive decays, generating antineutrinos as decay products, that produce IBD signals.\\
+
+\textbf{Atmospheric neutrinos} are generated by interactions of cosmic rays with the Earth's atmosphere. When high-energy cosmic rays collide with the atmosphere, they produce a cascade of particles, including muons and neutrinos. The muons generated in these interactions can decay, producing antineutrinos.\\
+
+\textbf{World reactors} serve as a significant source of antineutrinos. These reactors, utilized for the production of electrical energy through the process of nuclear fission, also emit antineutrinos as a byproduct of this process. With a total of 832 nuclear reactors globally \cite{word_react}, the collective emission of antineutrinos becomes significant.
+
+Among all the radiogenic processes, only one correlated background requires consideration: the $\mathrm{C}$($\alpha$,n)$^{16}\mathrm{O}$, decay that produces an alpha particle (prompt signal) and a neutron that is captured as delayed, exactly like an IBD, occurring within the liquid scintillator.
+
+
+Here a viasualization sumary of all the bacgrounds contributions:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/backgrounds_spectrum}
+	\caption{Visible energy spectrum with (grey) and without (black) backgrounds. The predicted backgrounds, which make up around 7$\%$ of the whole sample of IBD candidates and are primarily confined below $\approx$ 3 MeV, are shown in the inset as spectra, from \cite{Sub_osci}.}
+	\label{fig:backgroundsspectrum}
+\end{figure}
+
+
+Following the comprehensive discussion of all background events in the JUNO experiment, it becomes clear that due to the significant presence of various types of background events, efforts are being made to study their contribution. Several strategies have been employed to mitigate these background signals. Methods include the use of shielding materials to block external radiation, careful selection and treatment of detector materials to minimize internal radioactivity, and event selection techniques to identify and reject background events.
+
+However, it's important to note that a large portion of the accidental background events are the only ones where significant reduction can be achieved. These are the events that occur randomly and independently, and their reduction requires a different approach compared to correlated backgrounds. The focus of this thesis is precisely on these accidental background events, exploring strategies and techniques to further minimize their impact on the experiment.\\	 
